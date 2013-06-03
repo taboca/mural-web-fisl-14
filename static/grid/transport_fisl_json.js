@@ -57,7 +57,7 @@ var transport =  {
 			var emi = bDate.getMinutes();
 
 			var local = objs[0].slot[k].room;
-			var sum = objs[0].slot[k].id;
+			var sum = objs[0].slot[k].title;
 			var user = '';
 			var para = '';
 			if(!sum) { 
