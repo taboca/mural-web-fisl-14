@@ -18,13 +18,14 @@ body {
 .innerInnerCell { 
   margin-left:4px;
   font-weight:bold;
-  color:white;
+  font-family:arial;
+  color:red;
+  font-size:11px;
   background: -moz-linear-gradient( -90deg, rgb(120,120,120), rgba(40,40,40,1));
   height:100%;
-  padding:.5em;
-  padding-top:.1em;
   overflow: hidden;
   text-overflow:ellipsis;
+  word-wrap:break-word;
 } 
 
 .innerNone { 
