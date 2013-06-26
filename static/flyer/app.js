@@ -88,7 +88,7 @@ var app =  {
 	        var oo = "-o-transition-property: opacity; -o-transition-duration:"+t+"s;opacity:0 ; "
 	        var ww = "-webkit-transition-property: opacity; -webkit-transition-duration:"+t+"s;opacity:0 ; "
 
-	        this.background.setAttribute("style", mm  + oo + ww);
+	    //    this.background.setAttribute("style", mm  + oo + ww);
 
 		var old = this.element.firstChild;
 		this.element.insertBefore(k, this.element.firstChild);
