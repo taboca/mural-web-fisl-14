@@ -1,2 +1,2 @@
-URL_TWIT = '/channel/twit.xml'
+URL_FEED = '/channel/identica.xml'
 
