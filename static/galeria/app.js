@@ -1,6 +1,7 @@
 
 var app =  {
     feed        : null,
+	cycle: 0,
     feedURL     : URL_FOTOS,
     refElement   : null, 
     imageNumber  : 0,
@@ -33,8 +34,7 @@ var app =  {
 		}
 
 		var scopedThis = this;
-                document.getElementById("container").addEventListener("rotate",function handle(e) { scopedThis.timeEvent(e) } , false);
-               	setTimeout( function () { scopedThis.popPic() }, 1000);
+       	setTimeout( function () { scopedThis.popPic() }, 1000);
 	},
 
 	init : function() {
@@ -43,12 +43,7 @@ var app =  {
 		this.feed.setNumEntries(10);
 	},
 
-        flipContainers:0,
-
-        timeEvent: function () {
-		this.cycle=0;
-                this.kickFadeIn();
-        },
+    flipContainers:0,
 
 	popPic: function() {
 		if (this.picQueue.length == 0) { 
@@ -85,18 +80,18 @@ var app =  {
 		} 
 		currImage.className='active';
 		this.imageNumber++;
-                this.kickFadeIn();
+        this.kickFadeIn();
 	},
 
-
-	cycle: 0,
-
 	kickFadeIn : function () { 
-		this.cycle++;	
-		if(this.cycle<=this.totalElements) { 
-			var scopedThis = this;
-        	       	setTimeout( function () { scopedThis.popPic() }, 1000);
-		}  
+        this.cycle++;	
+        if(this.cycle<=this.totalElements) { 
+            var scopedThis = this;
+            setTimeout( function () { scopedThis.popPic() }, 10000);
+        }  else { 
+            this.cycle=0;
+            this.kickFadeIn();
+        } 
 	},
 
 	__feedUpdated : function(result) {
