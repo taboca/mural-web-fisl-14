@@ -34,7 +34,7 @@ var app =  {
 		}
 
 		var scopedThis = this;
-       	setTimeout( function () { scopedThis.popPic() }, 1000);
+       	setTimeout( function () { scopedThis.popPic() }, 30000);
 	},
 
 	init : function() {
