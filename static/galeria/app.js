@@ -87,7 +87,7 @@ var app =  {
         this.cycle++;	
         if(this.cycle<=this.totalElements) { 
             var scopedThis = this;
-            setTimeout( function () { scopedThis.popPic() }, 10000);
+            setTimeout( function () { scopedThis.popPic() }, 30000);
         }  else { 
             this.cycle=0;
             this.kickFadeIn();
