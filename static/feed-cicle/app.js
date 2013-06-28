@@ -84,7 +84,7 @@ var app =  {
 		var counter = 0;
 		var self = this;
 		if(this.queue.length<1) { 
-			setTimeout( function(){self.updateFeed()},1999);
+			setTimeout( function(){self.updateFeed()},19999);
 		} else { 
 			var k = document.createElement('div');
 			k.className="item";
@@ -120,7 +120,7 @@ var app =  {
 
 				this.total--;
 			} 
-			setTimeout( function () { self.render() }, 6009);
+			setTimeout( function () { self.render() }, 12000);
 		} 
 	},
 
