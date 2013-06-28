@@ -1,0 +1,1145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:ctag="http://commontag.org/ns#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:enc="http://purl.oclc.org/net/rss_2.0/enc#" xmlns:sioc="http://rdfs.org/sioc/ns#" xmlns:sioct="http://rdfs.org/sioc/types#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" xmlns:statusnet="http://status.net/ont/" xmlns="http://purl.org/rss/1.0/">
+ <sioc:Site rdf:about="http://identi.ca/">
+  <sioc:name>Identi.ca</sioc:name>
+  <sioc:space_of>
+   <sioc:Container rdf:about="http://identi.ca/fisl/rss"></sioc:Container>
+  </sioc:space_of>
+ </sioc:Site>
+ <channel rdf:about="http://identi.ca/fisl/rss">
+  <title>fisl timeline</title>
+  <link>http://identi.ca/fisl</link>
+  <description>Updates from fisl on Identi.ca!</description>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+  <image rdf:resource="http://avatar.identi.ca/44813-96-20090324224807.png"></image>
+  <items>
+   <rdf:Seq>
+    <rdf:li rdf:resource="http://identi.ca/notice/101387292"></rdf:li>
+    <rdf:li rdf:resource="http://identi.ca/notice/101386339"></rdf:li>
+    <rdf:li rdf:resource="http://identi.ca/notice/101377050"></rdf:li>
+    <rdf:li rdf:resource="http://identi.ca/notice/101358372"></rdf:li>
+    <rdf:li rdf:resource="http://identi.ca/notice/101358362"></rdf:li>
+    <rdf:li rdf:resource="http://identi.ca/notice/101328958"></rdf:li>
+    <rdf:li rdf:resource="http://identi.ca/notice/101323119"></rdf:li>
+    <rdf:li rdf:resource="http://identi.ca/notice/101257895"></rdf:li>
+    <rdf:li rdf:resource="http://identi.ca/notice/101257689"></rdf:li>
+    <rdf:li rdf:resource="http://identi.ca/notice/101254855"></rdf:li>
+    <rdf:li rdf:resource="http://identi.ca/notice/101225914"></rdf:li>
+    <rdf:li rdf:resource="http://identi.ca/notice/101214839"></rdf:li>
+    <rdf:li rdf:resource="http://identi.ca/notice/101204905"></rdf:li>
+    <rdf:li rdf:resource="http://identi.ca/notice/101103057"></rdf:li>
+    <rdf:li rdf:resource="http://identi.ca/notice/101102611"></rdf:li>
+    <rdf:li rdf:resource="http://identi.ca/notice/101025649"></rdf:li>
+    <rdf:li rdf:resource="http://identi.ca/notice/100988520"></rdf:li>
+    <rdf:li rdf:resource="http://identi.ca/notice/100988352"></rdf:li>
+    <rdf:li rdf:resource="http://identi.ca/notice/100987768"></rdf:li>
+    <rdf:li rdf:resource="http://identi.ca/notice/100973412"></rdf:li>
+    <rdf:li rdf:resource="http://identi.ca/notice/100947967"></rdf:li>
+    <rdf:li rdf:resource="http://identi.ca/notice/100916377"></rdf:li>
+    <rdf:li rdf:resource="http://identi.ca/notice/100915631"></rdf:li>
+    <rdf:li rdf:resource="http://identi.ca/notice/100907655"></rdf:li>
+    <rdf:li rdf:resource="http://identi.ca/notice/100903596"></rdf:li>
+    <rdf:li rdf:resource="http://identi.ca/notice/100893844"></rdf:li>
+    <rdf:li rdf:resource="http://identi.ca/notice/100877454"></rdf:li>
+    <rdf:li rdf:resource="http://identi.ca/notice/100870992"></rdf:li>
+    <rdf:li rdf:resource="http://identi.ca/notice/100868916"></rdf:li>
+    <rdf:li rdf:resource="http://identi.ca/notice/100775129"></rdf:li>
+    <rdf:li rdf:resource="http://identi.ca/notice/100763287"></rdf:li>
+    <rdf:li rdf:resource="http://identi.ca/notice/100761667"></rdf:li>
+    <rdf:li rdf:resource="http://identi.ca/notice/100750696"></rdf:li>
+    <rdf:li rdf:resource="http://identi.ca/notice/100750054"></rdf:li>
+    <rdf:li rdf:resource="http://identi.ca/notice/100740575"></rdf:li>
+    <rdf:li rdf:resource="http://identi.ca/notice/100725158"></rdf:li>
+    <rdf:li rdf:resource="http://identi.ca/notice/100659781"></rdf:li>
+    <rdf:li rdf:resource="http://identi.ca/notice/100646223"></rdf:li>
+    <rdf:li rdf:resource="http://identi.ca/notice/100636307"></rdf:li>
+    <rdf:li rdf:resource="http://identi.ca/notice/100620502"></rdf:li>
+    <rdf:li rdf:resource="http://identi.ca/notice/100591350"></rdf:li>
+    <rdf:li rdf:resource="http://identi.ca/notice/100577200"></rdf:li>
+    <rdf:li rdf:resource="http://identi.ca/notice/100562469"></rdf:li>
+    <rdf:li rdf:resource="http://identi.ca/notice/100548299"></rdf:li>
+    <rdf:li rdf:resource="http://identi.ca/notice/100498525"></rdf:li>
+    <rdf:li rdf:resource="http://identi.ca/notice/100429420"></rdf:li>
+    <rdf:li rdf:resource="http://identi.ca/notice/99591328"></rdf:li>
+    <rdf:li rdf:resource="http://identi.ca/notice/99591145"></rdf:li>
+   </rdf:Seq>
+  </items>
+ </channel>
+ <image rdf:about="http://avatar.identi.ca/44813-96-20090324224807.png">
+  <title>fisl timeline</title>
+  <link>http://identi.ca/fisl</link>
+  <url>http://avatar.identi.ca/44813-96-20090324224807.png</url>
+ </image>
+ <item rdf:about="http://identi.ca/notice/101387292" rdf:type="http://rdfs.org/sioc/types#MicroblogPost">
+  <title>fisl: Que tal vestir seu computador com o wallpaper do #FISL14 ﻿? Tem pra celular também! http://va.mu/ch1x</title>
+  <link>http://identi.ca/notice/101387292</link>
+  <description>fisl's status on Wednesday, 26-Jun-13 22:23:36 UTC</description>
+  <content:encoded>Que tal vestir seu computador com o wallpaper do #&lt;span class=&quot;tag&quot;&gt;&lt;a href=&quot;http://identi.ca/tag/fisl14&quot; rel=&quot;tag&quot;&gt;FISL14&lt;/a&gt;&lt;/span&gt; ﻿? Tem pra celular também! &lt;a href=&quot;http://va.mu/ch1x&quot; title=&quot;http://va.mu/ch1x&quot; rel=&quot;nofollow external&quot;&gt;http://va.mu/ch1x&lt;/a&gt;</content:encoded>
+  <dc:date>2013-06-26T22:23:36+00:00</dc:date>
+  <dc:creator>Forum Internacional Software Livre</dc:creator>
+  <foaf:maker rdf:resource="http://identi.ca/user/44813"></foaf:maker>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/44813#acct"></sioc:has_creator>
+  <statusnet:origin geo:lat="-30.03306" geo:long="-51.23" rdf:resource="http://sws.geonames.org/3452925/"></statusnet:origin>
+  <statusnet:postIcon rdf:resource="http://avatar3.status.net/i/identica/44813-96-20090324224807.png"></statusnet:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+  <sioc:has_discussion rdf:resource="http://identi.ca/conversation/100197346"></sioc:has_discussion>
+  <sioc:links_to rdf:resource="http://va.mu/ch1x"></sioc:links_to>
+  <ctag:tagged>
+   <ctag:Tag rdf:about="http://identi.ca/tag/fisl14#concept" ctag:label="fisl14">
+    <foaf:page rdf:resource="http://identi.ca/tag/fisl14"></foaf:page>
+    <rdfs:seeAlso rdf:resource="http://identi.ca/tag/fisl14/rss"></rdfs:seeAlso>
+   </ctag:Tag>
+  </ctag:tagged>
+ </item>
+ <item rdf:about="http://identi.ca/notice/101386339" rdf:type="http://rdfs.org/sioc/types#MicroblogPost">
+  <title>fisl: Falta só uma semana! \o/ #fisl14 te espera em Porto Alegre! fisl.org.br</title>
+  <link>http://identi.ca/notice/101386339</link>
+  <description>fisl's status on Wednesday, 26-Jun-13 19:50:09 UTC</description>
+  <content:encoded>Falta só uma semana! \o/ #&lt;span class=&quot;tag&quot;&gt;&lt;a href=&quot;http://identi.ca/tag/fisl14&quot; rel=&quot;tag&quot;&gt;fisl14&lt;/a&gt;&lt;/span&gt; te espera em Porto Alegre! &lt;a href=&quot;http://fisl.org.br/&quot; title=&quot;http://fisl.org.br/&quot; rel=&quot;nofollow external&quot;&gt;fisl.org.br&lt;/a&gt;</content:encoded>
+  <dc:date>2013-06-26T19:50:09+00:00</dc:date>
+  <dc:creator>Forum Internacional Software Livre</dc:creator>
+  <foaf:maker rdf:resource="http://identi.ca/user/44813"></foaf:maker>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/44813#acct"></sioc:has_creator>
+  <statusnet:origin geo:lat="-30.03306" geo:long="-51.23" rdf:resource="http://sws.geonames.org/3452925/"></statusnet:origin>
+  <statusnet:postIcon rdf:resource="http://avatar3.status.net/i/identica/44813-96-20090324224807.png"></statusnet:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+  <sioc:has_discussion rdf:resource="http://identi.ca/conversation/100196488"></sioc:has_discussion>
+  <sioc:links_to rdf:resource="http://fisl.org.br/"></sioc:links_to>
+  <ctag:tagged>
+   <ctag:Tag rdf:about="http://identi.ca/tag/fisl14#concept" ctag:label="fisl14">
+    <foaf:page rdf:resource="http://identi.ca/tag/fisl14"></foaf:page>
+    <rdfs:seeAlso rdf:resource="http://identi.ca/tag/fisl14/rss"></rdfs:seeAlso>
+   </ctag:Tag>
+  </ctag:tagged>
+ </item>
+ <item rdf:about="http://identi.ca/notice/101377050" rdf:type="http://rdfs.org/sioc/types#MicroblogPost">
+  <title>fisl: Prefeitura de POA assinou nesta segunda termo de cooperação para a realização do #FISL14. http://va.mu/chqa</title>
+  <link>http://identi.ca/notice/101377050</link>
+  <description>fisl's status on Tuesday, 25-Jun-13 19:03:48 UTC</description>
+  <content:encoded>Prefeitura de POA assinou nesta segunda termo de cooperação para a realização do #&lt;span class=&quot;tag&quot;&gt;&lt;a href=&quot;http://identi.ca/tag/fisl14&quot; rel=&quot;tag&quot;&gt;FISL14.&lt;/a&gt;&lt;/span&gt; &lt;a href=&quot;http://va.mu/chqa&quot; title=&quot;http://va.mu/chqa&quot; rel=&quot;nofollow external&quot;&gt;http://va.mu/chqa&lt;/a&gt;</content:encoded>
+  <dc:date>2013-06-25T19:03:48+00:00</dc:date>
+  <dc:creator>Forum Internacional Software Livre</dc:creator>
+  <foaf:maker rdf:resource="http://identi.ca/user/44813"></foaf:maker>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/44813#acct"></sioc:has_creator>
+  <statusnet:origin geo:lat="-30.03306" geo:long="-51.23" rdf:resource="http://sws.geonames.org/3452925/"></statusnet:origin>
+  <statusnet:postIcon rdf:resource="http://avatar3.status.net/i/identica/44813-96-20090324224807.png"></statusnet:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+  <sioc:has_discussion rdf:resource="http://identi.ca/conversation/100188190"></sioc:has_discussion>
+  <sioc:links_to rdf:resource="http://va.mu/chqa"></sioc:links_to>
+  <ctag:tagged>
+   <ctag:Tag rdf:about="http://identi.ca/tag/fisl14#concept" ctag:label="fisl14">
+    <foaf:page rdf:resource="http://identi.ca/tag/fisl14"></foaf:page>
+    <rdfs:seeAlso rdf:resource="http://identi.ca/tag/fisl14/rss"></rdfs:seeAlso>
+   </ctag:Tag>
+  </ctag:tagged>
+ </item>
+ <item rdf:about="http://identi.ca/notice/101358372" rdf:type="http://rdfs.org/sioc/types#MicroblogPost">
+  <title>fisl: Último dia para inscrever seu Grupo de Usuários no #fisl14 http://ur1.ca/ef1v9</title>
+  <link>http://identi.ca/notice/101358372</link>
+  <description>fisl's status on Sunday, 23-Jun-13 15:00:01 UTC</description>
+  <content:encoded>Último dia para inscrever seu Grupo de Usuários no #&lt;span class=&quot;tag&quot;&gt;&lt;a href=&quot;http://identi.ca/tag/fisl14&quot; rel=&quot;tag&quot;&gt;fisl14&lt;/a&gt;&lt;/span&gt; &lt;a href=&quot;http://ur1.ca/ef1v9&quot; title=&quot;http://gus.softwarelivre.org/&quot; rel=&quot;nofollow external&quot;&gt;http://ur1.ca/ef1v9&lt;/a&gt;</content:encoded>
+  <dc:date>2013-06-23T15:00:01+00:00</dc:date>
+  <dc:creator>Forum Internacional Software Livre</dc:creator>
+  <foaf:maker rdf:resource="http://identi.ca/user/44813"></foaf:maker>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/44813#acct"></sioc:has_creator>
+  <statusnet:origin geo:lat="-30.03306" geo:long="-51.23" rdf:resource="http://sws.geonames.org/3452925/"></statusnet:origin>
+  <statusnet:postIcon rdf:resource="http://avatar3.status.net/i/identica/44813-96-20090324224807.png"></statusnet:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+  <sioc:has_discussion rdf:resource="http://identi.ca/conversation/100171339"></sioc:has_discussion>
+  <sioc:links_to rdf:resource="http://gus.softwarelivre.org/"></sioc:links_to>
+  <ctag:tagged>
+   <ctag:Tag rdf:about="http://identi.ca/tag/fisl14#concept" ctag:label="fisl14">
+    <foaf:page rdf:resource="http://identi.ca/tag/fisl14"></foaf:page>
+    <rdfs:seeAlso rdf:resource="http://identi.ca/tag/fisl14/rss"></rdfs:seeAlso>
+   </ctag:Tag>
+  </ctag:tagged>
+ </item>
+ <item rdf:about="http://identi.ca/notice/101358362" rdf:type="http://rdfs.org/sioc/types#MicroblogPost">
+  <title>fisl: Bom dia! Último dia pra se inscrever seu grupo de usuários no #fisl14 http://ur1.ca/ef1v9</title>
+  <link>http://identi.ca/notice/101358362</link>
+  <description>fisl's status on Sunday, 23-Jun-13 14:58:18 UTC</description>
+  <content:encoded>Bom dia! Último dia pra se inscrever seu grupo de usuários no #&lt;span class=&quot;tag&quot;&gt;&lt;a href=&quot;http://identi.ca/tag/fisl14&quot; rel=&quot;tag&quot;&gt;fisl14&lt;/a&gt;&lt;/span&gt; &lt;a href=&quot;http://ur1.ca/ef1v9&quot; title=&quot;http://gus.softwarelivre.org/&quot; rel=&quot;nofollow external&quot;&gt;http://ur1.ca/ef1v9&lt;/a&gt;</content:encoded>
+  <dc:date>2013-06-23T14:58:18+00:00</dc:date>
+  <dc:creator>Forum Internacional Software Livre</dc:creator>
+  <foaf:maker rdf:resource="http://identi.ca/user/44813"></foaf:maker>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/44813#acct"></sioc:has_creator>
+  <statusnet:origin geo:lat="-30.03306" geo:long="-51.23" rdf:resource="http://sws.geonames.org/3452925/"></statusnet:origin>
+  <statusnet:postIcon rdf:resource="http://avatar3.status.net/i/identica/44813-96-20090324224807.png"></statusnet:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+  <sioc:has_discussion rdf:resource="http://identi.ca/conversation/100171330"></sioc:has_discussion>
+  <sioc:links_to rdf:resource="http://gus.softwarelivre.org/"></sioc:links_to>
+  <ctag:tagged>
+   <ctag:Tag rdf:about="http://identi.ca/tag/fisl14#concept" ctag:label="fisl14">
+    <foaf:page rdf:resource="http://identi.ca/tag/fisl14"></foaf:page>
+    <rdfs:seeAlso rdf:resource="http://identi.ca/tag/fisl14/rss"></rdfs:seeAlso>
+   </ctag:Tag>
+  </ctag:tagged>
+ </item>
+ <item rdf:about="http://identi.ca/notice/101328958" rdf:type="http://rdfs.org/sioc/types#MicroblogPost">
+  <title>fisl: Atenção empreendedores! O #fisl14 tem novidades para vocês: http://tinyurl.com/q9kgmq9</title>
+  <link>http://identi.ca/notice/101328958</link>
+  <description>fisl's status on Wednesday, 19-Jun-13 15:50:40 UTC</description>
+  <content:encoded>Atenção empreendedores! O #&lt;span class=&quot;tag&quot;&gt;&lt;a href=&quot;http://identi.ca/tag/fisl14&quot; rel=&quot;tag&quot;&gt;fisl14&lt;/a&gt;&lt;/span&gt; tem novidades para vocês: &lt;a href=&quot;http://tinyurl.com/q9kgmq9&quot; title=&quot;http://tinyurl.com/q9kgmq9&quot; rel=&quot;nofollow external&quot;&gt;http://tinyurl.com/q9kgmq9&lt;/a&gt;</content:encoded>
+  <dc:date>2013-06-19T15:50:40+00:00</dc:date>
+  <dc:creator>Forum Internacional Software Livre</dc:creator>
+  <foaf:maker rdf:resource="http://identi.ca/user/44813"></foaf:maker>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/44813#acct"></sioc:has_creator>
+  <statusnet:origin geo:lat="-30.03306" geo:long="-51.23" rdf:resource="http://sws.geonames.org/3452925/"></statusnet:origin>
+  <statusnet:postIcon rdf:resource="http://avatar3.status.net/i/identica/44813-96-20090324224807.png"></statusnet:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+  <sioc:has_discussion rdf:resource="http://identi.ca/conversation/100145936"></sioc:has_discussion>
+  <sioc:links_to rdf:resource="http://tinyurl.com/q9kgmq9"></sioc:links_to>
+  <ctag:tagged>
+   <ctag:Tag rdf:about="http://identi.ca/tag/fisl14#concept" ctag:label="fisl14">
+    <foaf:page rdf:resource="http://identi.ca/tag/fisl14"></foaf:page>
+    <rdfs:seeAlso rdf:resource="http://identi.ca/tag/fisl14/rss"></rdfs:seeAlso>
+   </ctag:Tag>
+  </ctag:tagged>
+ </item>
+ <item rdf:about="http://identi.ca/notice/101323119" rdf:type="http://rdfs.org/sioc/types#MicroblogPost">
+  <title>fisl: Nossa luta pela liberdade não se restringe a licenças de softwares. #fisl14 http://ur1.ca/ed30v</title>
+  <link>http://identi.ca/notice/101323119</link>
+  <description>fisl's status on Tuesday, 18-Jun-13 18:07:38 UTC</description>
+  <content:encoded>Nossa luta pela liberdade não se restringe a licenças de softwares. #&lt;span class=&quot;tag&quot;&gt;&lt;a href=&quot;http://identi.ca/tag/fisl14&quot; rel=&quot;tag&quot;&gt;fisl14&lt;/a&gt;&lt;/span&gt; &lt;a href=&quot;http://ur1.ca/ed30v&quot; title=&quot;http://softwarelivre.org/asl/noticias/nota-de-repudio&quot; rel=&quot;nofollow external&quot;&gt;http://ur1.ca/ed30v&lt;/a&gt;</content:encoded>
+  <dc:date>2013-06-18T18:07:38+00:00</dc:date>
+  <dc:creator>Forum Internacional Software Livre</dc:creator>
+  <foaf:maker rdf:resource="http://identi.ca/user/44813"></foaf:maker>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/44813#acct"></sioc:has_creator>
+  <statusnet:origin geo:lat="-30.03306" geo:long="-51.23" rdf:resource="http://sws.geonames.org/3452925/"></statusnet:origin>
+  <statusnet:postIcon rdf:resource="http://avatar3.status.net/i/identica/44813-96-20090324224807.png"></statusnet:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+  <sioc:has_discussion rdf:resource="http://identi.ca/conversation/100140909"></sioc:has_discussion>
+  <sioc:links_to rdf:resource="http://softwarelivre.org/asl/noticias/nota-de-repudio"></sioc:links_to>
+  <ctag:tagged>
+   <ctag:Tag rdf:about="http://identi.ca/tag/fisl14#concept" ctag:label="fisl14">
+    <foaf:page rdf:resource="http://identi.ca/tag/fisl14"></foaf:page>
+    <rdfs:seeAlso rdf:resource="http://identi.ca/tag/fisl14/rss"></rdfs:seeAlso>
+   </ctag:Tag>
+  </ctag:tagged>
+ </item>
+ <item rdf:about="http://identi.ca/notice/101257895" rdf:type="http://rdfs.org/sioc/types#MicroblogPost">
+  <title>fisl: Divulgue um banner do #fisl14 e faça parte das nossas #paginasamigas. Saiba como: http://va.mu/cfG6</title>
+  <link>http://identi.ca/notice/101257895</link>
+  <description>fisl's status on Monday, 10-Jun-13 19:30:03 UTC</description>
+  <content:encoded>Divulgue um banner do #&lt;span class=&quot;tag&quot;&gt;&lt;a href=&quot;http://identi.ca/tag/fisl14&quot; rel=&quot;tag&quot;&gt;fisl14&lt;/a&gt;&lt;/span&gt; e faça parte das nossas #&lt;span class=&quot;tag&quot;&gt;&lt;a href=&quot;http://identi.ca/tag/paginasamigas&quot; rel=&quot;tag&quot;&gt;paginasamigas.&lt;/a&gt;&lt;/span&gt; Saiba como: &lt;a href=&quot;http://va.mu/cfG6&quot; title=&quot;http://va.mu/cfG6&quot; rel=&quot;nofollow external&quot;&gt;http://va.mu/cfG6&lt;/a&gt;</content:encoded>
+  <dc:date>2013-06-10T19:30:03+00:00</dc:date>
+  <dc:creator>Forum Internacional Software Livre</dc:creator>
+  <foaf:maker rdf:resource="http://identi.ca/user/44813"></foaf:maker>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/44813#acct"></sioc:has_creator>
+  <statusnet:origin geo:lat="-30.03306" geo:long="-51.23" rdf:resource="http://sws.geonames.org/3452925/"></statusnet:origin>
+  <statusnet:postIcon rdf:resource="http://avatar3.status.net/i/identica/44813-96-20090324224807.png"></statusnet:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+  <sioc:has_discussion rdf:resource="http://identi.ca/conversation/100083852"></sioc:has_discussion>
+  <sioc:links_to rdf:resource="http://va.mu/cfG6"></sioc:links_to>
+  <ctag:tagged>
+   <ctag:Tag rdf:about="http://identi.ca/tag/fisl14#concept" ctag:label="fisl14">
+    <foaf:page rdf:resource="http://identi.ca/tag/fisl14"></foaf:page>
+    <rdfs:seeAlso rdf:resource="http://identi.ca/tag/fisl14/rss"></rdfs:seeAlso>
+   </ctag:Tag>
+  </ctag:tagged>
+  <ctag:tagged>
+   <ctag:Tag rdf:about="http://identi.ca/tag/paginasamigas#concept" ctag:label="paginasamigas">
+    <foaf:page rdf:resource="http://identi.ca/tag/paginasamigas"></foaf:page>
+    <rdfs:seeAlso rdf:resource="http://identi.ca/tag/paginasamigas/rss"></rdfs:seeAlso>
+   </ctag:Tag>
+  </ctag:tagged>
+ </item>
+ <item rdf:about="http://identi.ca/notice/101257689" rdf:type="http://rdfs.org/sioc/types#MicroblogPost">
+  <title>fisl: #fisl14 promove workshop sobre #SoftwareLivre para jornalistas http://va.mu/cfGg</title>
+  <link>http://identi.ca/notice/101257689</link>
+  <description>fisl's status on Monday, 10-Jun-13 19:05:39 UTC</description>
+  <content:encoded>#&lt;span class=&quot;tag&quot;&gt;&lt;a href=&quot;http://identi.ca/tag/fisl14&quot; rel=&quot;tag&quot;&gt;fisl14&lt;/a&gt;&lt;/span&gt; promove workshop sobre #&lt;span class=&quot;tag&quot;&gt;&lt;a href=&quot;http://identi.ca/tag/softwarelivre&quot; rel=&quot;tag&quot;&gt;SoftwareLivre&lt;/a&gt;&lt;/span&gt; para jornalistas &lt;a href=&quot;http://va.mu/cfGg&quot; title=&quot;http://va.mu/cfGg&quot; rel=&quot;nofollow external&quot;&gt;http://va.mu/cfGg&lt;/a&gt;</content:encoded>
+  <dc:date>2013-06-10T19:05:39+00:00</dc:date>
+  <dc:creator>Forum Internacional Software Livre</dc:creator>
+  <foaf:maker rdf:resource="http://identi.ca/user/44813"></foaf:maker>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/44813#acct"></sioc:has_creator>
+  <statusnet:origin geo:lat="-30.03306" geo:long="-51.23" rdf:resource="http://sws.geonames.org/3452925/"></statusnet:origin>
+  <statusnet:postIcon rdf:resource="http://avatar3.status.net/i/identica/44813-96-20090324224807.png"></statusnet:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+  <sioc:has_discussion rdf:resource="http://identi.ca/conversation/100083697"></sioc:has_discussion>
+  <sioc:links_to rdf:resource="http://va.mu/cfGg"></sioc:links_to>
+  <ctag:tagged>
+   <ctag:Tag rdf:about="http://identi.ca/tag/fisl14#concept" ctag:label="fisl14">
+    <foaf:page rdf:resource="http://identi.ca/tag/fisl14"></foaf:page>
+    <rdfs:seeAlso rdf:resource="http://identi.ca/tag/fisl14/rss"></rdfs:seeAlso>
+   </ctag:Tag>
+  </ctag:tagged>
+  <ctag:tagged>
+   <ctag:Tag rdf:about="http://identi.ca/tag/softwarelivre#concept" ctag:label="softwarelivre">
+    <foaf:page rdf:resource="http://identi.ca/tag/softwarelivre"></foaf:page>
+    <rdfs:seeAlso rdf:resource="http://identi.ca/tag/softwarelivre/rss"></rdfs:seeAlso>
+   </ctag:Tag>
+  </ctag:tagged>
+ </item>
+ <item rdf:about="http://identi.ca/notice/101254855" rdf:type="http://rdfs.org/sioc/types#MicroblogPost">
+  <title>fisl: Todos os releases lançados sobre o FISL até agora (e os próximos) estão nesta página: http://ow.ly/lSxun</title>
+  <link>http://identi.ca/notice/101254855</link>
+  <description>fisl's status on Monday, 10-Jun-13 14:27:00 UTC</description>
+  <content:encoded>Todos os releases lançados sobre o FISL até agora (e os próximos) estão nesta página: &lt;a href=&quot;http://ow.ly/lSxun&quot; title=&quot;http://ow.ly/lSxun&quot; rel=&quot;nofollow external&quot;&gt;http://ow.ly/lSxun&lt;/a&gt;</content:encoded>
+  <dc:date>2013-06-10T14:27:00+00:00</dc:date>
+  <dc:creator>Forum Internacional Software Livre</dc:creator>
+  <foaf:maker rdf:resource="http://identi.ca/user/44813"></foaf:maker>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/44813#acct"></sioc:has_creator>
+  <statusnet:origin geo:lat="-30.03306" geo:long="-51.23" rdf:resource="http://sws.geonames.org/3452925/"></statusnet:origin>
+  <statusnet:postIcon rdf:resource="http://avatar3.status.net/i/identica/44813-96-20090324224807.png"></statusnet:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+  <sioc:has_discussion rdf:resource="http://identi.ca/conversation/100081121"></sioc:has_discussion>
+  <sioc:links_to rdf:resource="http://ow.ly/lSxun"></sioc:links_to>
+ </item>
+ <item rdf:about="http://identi.ca/notice/101225914" rdf:type="http://rdfs.org/sioc/types#MicroblogPost">
+  <title>fisl: Pontão de Cultura ECO lança série de televisão produzida utilizando plataforma livre http://va.mu/ceao.qr</title>
+  <link>http://identi.ca/notice/101225914</link>
+  <description>fisl's status on Friday, 07-Jun-13 19:05:30 UTC</description>
+  <content:encoded>Pontão de Cultura ECO lança série de televisão produzida utilizando plataforma livre &lt;a href=&quot;http://va.mu/ceao.qr&quot; title=&quot;http://va.mu/ceao.qr&quot; rel=&quot;nofollow external&quot;&gt;http://va.mu/ceao.qr&lt;/a&gt;</content:encoded>
+  <dc:date>2013-06-07T19:05:30+00:00</dc:date>
+  <dc:creator>Forum Internacional Software Livre</dc:creator>
+  <foaf:maker rdf:resource="http://identi.ca/user/44813"></foaf:maker>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/44813#acct"></sioc:has_creator>
+  <statusnet:origin geo:lat="-30.03306" geo:long="-51.23" rdf:resource="http://sws.geonames.org/3452925/"></statusnet:origin>
+  <statusnet:postIcon rdf:resource="http://avatar3.status.net/i/identica/44813-96-20090324224807.png"></statusnet:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+  <sioc:has_discussion rdf:resource="http://identi.ca/conversation/100055326"></sioc:has_discussion>
+  <sioc:links_to rdf:resource="http://va.mu/ceao.qr"></sioc:links_to>
+ </item>
+ <item rdf:about="http://identi.ca/notice/101214839" rdf:type="http://rdfs.org/sioc/types#MicroblogPost">
+  <title>fisl: Prorrogamos até 23 de junho as inscrições para Grupos de Usuários http://va.mu/ceOR #fisl14 #gus #lugs</title>
+  <link>http://identi.ca/notice/101214839</link>
+  <description>fisl's status on Thursday, 06-Jun-13 18:54:43 UTC</description>
+  <content:encoded>Prorrogamos até 23 de junho as inscrições para Grupos de Usuários &lt;a href=&quot;http://va.mu/ceOR&quot; title=&quot;http://va.mu/ceOR&quot; rel=&quot;nofollow external&quot;&gt;http://va.mu/ceOR&lt;/a&gt; #&lt;span class=&quot;tag&quot;&gt;&lt;a href=&quot;http://identi.ca/tag/fisl14&quot; rel=&quot;tag&quot;&gt;fisl14&lt;/a&gt;&lt;/span&gt; #&lt;span class=&quot;tag&quot;&gt;&lt;a href=&quot;http://identi.ca/tag/gus&quot; rel=&quot;tag&quot;&gt;gus&lt;/a&gt;&lt;/span&gt; #&lt;span class=&quot;tag&quot;&gt;&lt;a href=&quot;http://identi.ca/tag/lugs&quot; rel=&quot;tag&quot;&gt;lugs&lt;/a&gt;&lt;/span&gt;</content:encoded>
+  <dc:date>2013-06-06T18:54:43+00:00</dc:date>
+  <dc:creator>Forum Internacional Software Livre</dc:creator>
+  <foaf:maker rdf:resource="http://identi.ca/user/44813"></foaf:maker>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/44813#acct"></sioc:has_creator>
+  <statusnet:origin geo:lat="-30.03306" geo:long="-51.23" rdf:resource="http://sws.geonames.org/3452925/"></statusnet:origin>
+  <statusnet:postIcon rdf:resource="http://avatar3.status.net/i/identica/44813-96-20090324224807.png"></statusnet:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+  <sioc:has_discussion rdf:resource="http://identi.ca/conversation/100045153"></sioc:has_discussion>
+  <sioc:links_to rdf:resource="http://va.mu/ceOR"></sioc:links_to>
+  <ctag:tagged>
+   <ctag:Tag rdf:about="http://identi.ca/tag/fisl14#concept" ctag:label="fisl14">
+    <foaf:page rdf:resource="http://identi.ca/tag/fisl14"></foaf:page>
+    <rdfs:seeAlso rdf:resource="http://identi.ca/tag/fisl14/rss"></rdfs:seeAlso>
+   </ctag:Tag>
+  </ctag:tagged>
+  <ctag:tagged>
+   <ctag:Tag rdf:about="http://identi.ca/tag/gus#concept" ctag:label="gus">
+    <foaf:page rdf:resource="http://identi.ca/tag/gus"></foaf:page>
+    <rdfs:seeAlso rdf:resource="http://identi.ca/tag/gus/rss"></rdfs:seeAlso>
+   </ctag:Tag>
+  </ctag:tagged>
+  <ctag:tagged>
+   <ctag:Tag rdf:about="http://identi.ca/tag/lugs#concept" ctag:label="lugs">
+    <foaf:page rdf:resource="http://identi.ca/tag/lugs"></foaf:page>
+    <rdfs:seeAlso rdf:resource="http://identi.ca/tag/lugs/rss"></rdfs:seeAlso>
+   </ctag:Tag>
+  </ctag:tagged>
+ </item>
+ <item rdf:about="http://identi.ca/notice/101204905" rdf:type="http://rdfs.org/sioc/types#MicroblogPost">
+  <title>fisl: Que tal pagar meia entrada para o #fisl14 e ainda levar uma cerveja autografada pelo @maddog de brinde? http://va.mu/cd3L #drupalcamp</title>
+  <link>http://identi.ca/notice/101204905</link>
+  <description>fisl's status on Wednesday, 05-Jun-13 20:33:19 UTC</description>
+  <content:encoded>Que tal pagar meia entrada para o #&lt;span class=&quot;tag&quot;&gt;&lt;a href=&quot;http://identi.ca/tag/fisl14&quot; rel=&quot;tag&quot;&gt;fisl14&lt;/a&gt;&lt;/span&gt; e ainda levar uma cerveja autografada pelo @&lt;span class=&quot;vcard&quot;&gt;&lt;a href=&quot;http://identi.ca/user/314284&quot; class=&quot;url&quot; title=&quot;Chuck Richards&quot;&gt;&lt;span class=&quot;fn nickname mention&quot;&gt;maddog&lt;/span&gt;&lt;/a&gt;&lt;/span&gt; de brinde? &lt;a href=&quot;http://va.mu/cd3L&quot; title=&quot;http://va.mu/cd3L&quot; rel=&quot;nofollow external&quot;&gt;http://va.mu/cd3L&lt;/a&gt; #&lt;span class=&quot;tag&quot;&gt;&lt;a href=&quot;http://identi.ca/tag/drupalcamp&quot; rel=&quot;tag&quot;&gt;drupalcamp&lt;/a&gt;&lt;/span&gt;</content:encoded>
+  <dc:date>2013-06-05T20:33:19+00:00</dc:date>
+  <dc:creator>Forum Internacional Software Livre</dc:creator>
+  <foaf:maker rdf:resource="http://identi.ca/user/44813"></foaf:maker>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/44813#acct"></sioc:has_creator>
+  <statusnet:origin geo:lat="-30.03306" geo:long="-51.23" rdf:resource="http://sws.geonames.org/3452925/"></statusnet:origin>
+  <statusnet:postIcon rdf:resource="http://avatar3.status.net/i/identica/44813-96-20090324224807.png"></statusnet:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+  <sioc:has_discussion rdf:resource="http://identi.ca/conversation/100036089"></sioc:has_discussion>
+  <sioc:links_to rdf:resource="http://va.mu/cd3L"></sioc:links_to>
+  <ctag:tagged>
+   <ctag:Tag rdf:about="http://identi.ca/tag/drupalcamp#concept" ctag:label="drupalcamp">
+    <foaf:page rdf:resource="http://identi.ca/tag/drupalcamp"></foaf:page>
+    <rdfs:seeAlso rdf:resource="http://identi.ca/tag/drupalcamp/rss"></rdfs:seeAlso>
+   </ctag:Tag>
+  </ctag:tagged>
+  <ctag:tagged>
+   <ctag:Tag rdf:about="http://identi.ca/tag/fisl14#concept" ctag:label="fisl14">
+    <foaf:page rdf:resource="http://identi.ca/tag/fisl14"></foaf:page>
+    <rdfs:seeAlso rdf:resource="http://identi.ca/tag/fisl14/rss"></rdfs:seeAlso>
+   </ctag:Tag>
+  </ctag:tagged>
+ </item>
+ <item rdf:about="http://identi.ca/notice/101103057" rdf:type="http://rdfs.org/sioc/types#MicroblogPost">
+  <title>fisl: Chance imperdível! 40 vagas gratuitas nos cursos lançados pela @4Linux http://va.mu/cawX</title>
+  <link>http://identi.ca/notice/101103057</link>
+  <description>fisl's status on Monday, 27-May-13 21:33:59 UTC</description>
+  <content:encoded>Chance imperdível! 40 vagas gratuitas nos cursos lançados pela @4Linux &lt;a href=&quot;http://va.mu/cawX&quot; title=&quot;http://va.mu/cawX&quot; rel=&quot;nofollow external&quot;&gt;http://va.mu/cawX&lt;/a&gt;</content:encoded>
+  <dc:date>2013-05-27T21:33:59+00:00</dc:date>
+  <dc:creator>Forum Internacional Software Livre</dc:creator>
+  <foaf:maker rdf:resource="http://identi.ca/user/44813"></foaf:maker>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/44813#acct"></sioc:has_creator>
+  <statusnet:origin geo:lat="-30.03306" geo:long="-51.23" rdf:resource="http://sws.geonames.org/3452925/"></statusnet:origin>
+  <statusnet:postIcon rdf:resource="http://avatar3.status.net/i/identica/44813-96-20090324224807.png"></statusnet:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+  <sioc:has_discussion rdf:resource="http://identi.ca/conversation/99945409"></sioc:has_discussion>
+  <sioc:links_to rdf:resource="http://va.mu/cawX"></sioc:links_to>
+ </item>
+ <item rdf:about="http://identi.ca/notice/101102611" rdf:type="http://rdfs.org/sioc/types#MicroblogPost">
+  <title>fisl: Já inscreveu seu grupo de usuários no #fisl14? A inscrição encerra na próxima semana http://va.mu/cavl</title>
+  <link>http://identi.ca/notice/101102611</link>
+  <description>fisl's status on Monday, 27-May-13 20:34:02 UTC</description>
+  <content:encoded>Já inscreveu seu grupo de usuários no #&lt;span class=&quot;tag&quot;&gt;&lt;a href=&quot;http://identi.ca/tag/fisl14&quot; rel=&quot;tag&quot;&gt;fisl14&lt;/a&gt;&lt;/span&gt;? A inscrição encerra na próxima semana &lt;a href=&quot;http://va.mu/cavl&quot; title=&quot;http://va.mu/cavl&quot; rel=&quot;nofollow external&quot;&gt;http://va.mu/cavl&lt;/a&gt;</content:encoded>
+  <dc:date>2013-05-27T20:34:02+00:00</dc:date>
+  <dc:creator>Forum Internacional Software Livre</dc:creator>
+  <foaf:maker rdf:resource="http://identi.ca/user/44813"></foaf:maker>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/44813#acct"></sioc:has_creator>
+  <statusnet:origin geo:lat="-30.03306" geo:long="-51.23" rdf:resource="http://sws.geonames.org/3452925/"></statusnet:origin>
+  <statusnet:postIcon rdf:resource="http://avatar3.status.net/i/identica/44813-96-20090324224807.png"></statusnet:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+  <sioc:has_discussion rdf:resource="http://identi.ca/conversation/99945022"></sioc:has_discussion>
+  <sioc:links_to rdf:resource="http://va.mu/cavl"></sioc:links_to>
+  <ctag:tagged>
+   <ctag:Tag rdf:about="http://identi.ca/tag/fisl14#concept" ctag:label="fisl14">
+    <foaf:page rdf:resource="http://identi.ca/tag/fisl14"></foaf:page>
+    <rdfs:seeAlso rdf:resource="http://identi.ca/tag/fisl14/rss"></rdfs:seeAlso>
+   </ctag:Tag>
+  </ctag:tagged>
+ </item>
+ <item rdf:about="http://identi.ca/notice/101025649" rdf:type="http://rdfs.org/sioc/types#MicroblogPost">
+  <title>fisl: E aí, já garantiu a vaga para seu grupo de usuários no #fisl14? http://is.gd/ZqitWx</title>
+  <link>http://identi.ca/notice/101025649</link>
+  <description>fisl's status on Monday, 20-May-13 15:07:31 UTC</description>
+  <content:encoded>E aí, já garantiu a vaga para seu grupo de usuários no #&lt;span class=&quot;tag&quot;&gt;&lt;a href=&quot;http://identi.ca/tag/fisl14&quot; rel=&quot;tag&quot;&gt;fisl14&lt;/a&gt;&lt;/span&gt;? &lt;a href=&quot;http://is.gd/ZqitWx&quot; title=&quot;http://is.gd/ZqitWx&quot; rel=&quot;nofollow external&quot;&gt;http://is.gd/ZqitWx&lt;/a&gt;</content:encoded>
+  <dc:date>2013-05-20T15:07:31+00:00</dc:date>
+  <dc:creator>Forum Internacional Software Livre</dc:creator>
+  <foaf:maker rdf:resource="http://identi.ca/user/44813"></foaf:maker>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/44813#acct"></sioc:has_creator>
+  <statusnet:origin geo:lat="-30.03306" geo:long="-51.23" rdf:resource="http://sws.geonames.org/3452925/"></statusnet:origin>
+  <statusnet:postIcon rdf:resource="http://avatar3.status.net/i/identica/44813-96-20090324224807.png"></statusnet:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+  <sioc:has_discussion rdf:resource="http://identi.ca/conversation/99875826"></sioc:has_discussion>
+  <sioc:links_to rdf:resource="http://is.gd/ZqitWx"></sioc:links_to>
+  <ctag:tagged>
+   <ctag:Tag rdf:about="http://identi.ca/tag/fisl14#concept" ctag:label="fisl14">
+    <foaf:page rdf:resource="http://identi.ca/tag/fisl14"></foaf:page>
+    <rdfs:seeAlso rdf:resource="http://identi.ca/tag/fisl14/rss"></rdfs:seeAlso>
+   </ctag:Tag>
+  </ctag:tagged>
+ </item>
+ <item rdf:about="http://identi.ca/notice/100988520" rdf:type="http://rdfs.org/sioc/types#MicroblogPost">
+  <title>fisl: Ao vivo na Rádio Software Livre: Francine Grando, a criadora do meme &quot;O que queremos&quot;. Cobertura da BITS 2013! http://va.mu/cWqQ</title>
+  <link>http://identi.ca/notice/100988520</link>
+  <description>fisl's status on Thursday, 16-May-13 21:36:21 UTC</description>
+  <content:encoded>Ao vivo na Rádio Software Livre: Francine Grando, a criadora do meme &amp;quot;O que queremos&amp;quot;. Cobertura da BITS 2013! &lt;a href=&quot;http://va.mu/cWqQ&quot; title=&quot;http://va.mu/cWqQ&quot; rel=&quot;nofollow external&quot;&gt;http://va.mu/cWqQ&lt;/a&gt;</content:encoded>
+  <dc:date>2013-05-16T21:36:21+00:00</dc:date>
+  <dc:creator>Forum Internacional Software Livre</dc:creator>
+  <foaf:maker rdf:resource="http://identi.ca/user/44813"></foaf:maker>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/44813#acct"></sioc:has_creator>
+  <statusnet:origin geo:lat="-30.03306" geo:long="-51.23" rdf:resource="http://sws.geonames.org/3452925/"></statusnet:origin>
+  <statusnet:postIcon rdf:resource="http://avatar3.status.net/i/identica/44813-96-20090324224807.png"></statusnet:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+  <sioc:has_discussion rdf:resource="http://identi.ca/conversation/99842434"></sioc:has_discussion>
+  <sioc:links_to rdf:resource="http://va.mu/cWqQ"></sioc:links_to>
+ </item>
+ <item rdf:about="http://identi.ca/notice/100988352" rdf:type="http://rdfs.org/sioc/types#MicroblogPost">
+  <title>fisl: Hoje termina mais um período de inscrições com desconto no FISL!  Corra lá e aproveite! http://www.fisl.org.br</title>
+  <link>http://identi.ca/notice/100988352</link>
+  <description>fisl's status on Thursday, 16-May-13 21:17:21 UTC</description>
+  <content:encoded>Hoje termina mais um período de inscrições com desconto no FISL!  Corra lá e aproveite! &lt;a href=&quot;http://www.fisl.org.br/&quot; title=&quot;http://www.fisl.org.br/10/www/&quot; rel=&quot;nofollow external&quot;&gt;http://www.fisl.org.br&lt;/a&gt;</content:encoded>
+  <dc:date>2013-05-16T21:17:21+00:00</dc:date>
+  <dc:creator>Forum Internacional Software Livre</dc:creator>
+  <foaf:maker rdf:resource="http://identi.ca/user/44813"></foaf:maker>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/44813#acct"></sioc:has_creator>
+  <statusnet:origin geo:lat="-30.03306" geo:long="-51.23" rdf:resource="http://sws.geonames.org/3452925/"></statusnet:origin>
+  <statusnet:postIcon rdf:resource="http://avatar3.status.net/i/identica/44813-96-20090324224807.png"></statusnet:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+  <sioc:has_discussion rdf:resource="http://identi.ca/conversation/99842276"></sioc:has_discussion>
+  <sioc:links_to rdf:resource="http://www.fisl.org.br/10/www/"></sioc:links_to>
+ </item>
+ <item rdf:about="http://identi.ca/notice/100987768" rdf:type="http://rdfs.org/sioc/types#MicroblogPost">
+  <title>fisl: Ao vivo na  @RadioSL na cobertura da @bits: um bate papo sobre Revolução Energética  http://va.mu/cWqQ</title>
+  <link>http://identi.ca/notice/100987768</link>
+  <description>fisl's status on Thursday, 16-May-13 15:32:35 UTC</description>
+  <content:encoded>Ao vivo na  @&lt;span class=&quot;vcard&quot;&gt;&lt;a href=&quot;http://identi.ca/user/71873&quot; class=&quot;url&quot; title=&quot;R&amp;#xE1;dio Software Livre&quot;&gt;&lt;span class=&quot;fn nickname mention&quot;&gt;RadioSL&lt;/span&gt;&lt;/a&gt;&lt;/span&gt; na cobertura da @&lt;span class=&quot;vcard&quot;&gt;&lt;a href=&quot;http://identi.ca/user/346966&quot; class=&quot;url&quot; title=&quot;ben&quot;&gt;&lt;span class=&quot;fn nickname mention&quot;&gt;bits&lt;/span&gt;&lt;/a&gt;&lt;/span&gt;: um bate papo sobre Revolução Energética  &lt;a href=&quot;http://va.mu/cWqQ&quot; title=&quot;http://va.mu/cWqQ&quot; rel=&quot;nofollow external&quot;&gt;http://va.mu/cWqQ&lt;/a&gt;</content:encoded>
+  <dc:date>2013-05-16T15:32:35+00:00</dc:date>
+  <dc:creator>Forum Internacional Software Livre</dc:creator>
+  <foaf:maker rdf:resource="http://identi.ca/user/44813"></foaf:maker>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/44813#acct"></sioc:has_creator>
+  <statusnet:origin geo:lat="-30.03306" geo:long="-51.23" rdf:resource="http://sws.geonames.org/3452925/"></statusnet:origin>
+  <statusnet:postIcon rdf:resource="http://avatar3.status.net/i/identica/44813-96-20090324224807.png"></statusnet:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+  <sioc:has_discussion rdf:resource="http://identi.ca/conversation/99841762"></sioc:has_discussion>
+  <sioc:links_to rdf:resource="http://va.mu/cWqQ"></sioc:links_to>
+ </item>
+ <item rdf:about="http://identi.ca/notice/100973412" rdf:type="http://rdfs.org/sioc/types#MicroblogPost">
+  <title>fisl: Oportunidade para desenvolvedores e designers com e para #softwarelivre em Brasília http://va.mu/cWp7</title>
+  <link>http://identi.ca/notice/100973412</link>
+  <description>fisl's status on Wednesday, 15-May-13 15:10:35 UTC</description>
+  <content:encoded>Oportunidade para desenvolvedores e designers com e para #&lt;span class=&quot;tag&quot;&gt;&lt;a href=&quot;http://identi.ca/tag/softwarelivre&quot; rel=&quot;tag&quot;&gt;softwarelivre&lt;/a&gt;&lt;/span&gt; em Brasília &lt;a href=&quot;http://va.mu/cWp7&quot; title=&quot;http://va.mu/cWp7&quot; rel=&quot;nofollow external&quot;&gt;http://va.mu/cWp7&lt;/a&gt;</content:encoded>
+  <dc:date>2013-05-15T15:10:35+00:00</dc:date>
+  <dc:creator>Forum Internacional Software Livre</dc:creator>
+  <foaf:maker rdf:resource="http://identi.ca/user/44813"></foaf:maker>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/44813#acct"></sioc:has_creator>
+  <statusnet:origin geo:lat="-30.03306" geo:long="-51.23" rdf:resource="http://sws.geonames.org/3452925/"></statusnet:origin>
+  <statusnet:postIcon rdf:resource="http://avatar3.status.net/i/identica/44813-96-20090324224807.png"></statusnet:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+  <sioc:has_discussion rdf:resource="http://identi.ca/conversation/99828693"></sioc:has_discussion>
+  <sioc:links_to rdf:resource="http://va.mu/cWp7"></sioc:links_to>
+  <ctag:tagged>
+   <ctag:Tag rdf:about="http://identi.ca/tag/softwarelivre#concept" ctag:label="softwarelivre">
+    <foaf:page rdf:resource="http://identi.ca/tag/softwarelivre"></foaf:page>
+    <rdfs:seeAlso rdf:resource="http://identi.ca/tag/softwarelivre/rss"></rdfs:seeAlso>
+   </ctag:Tag>
+  </ctag:tagged>
+ </item>
+ <item rdf:about="http://identi.ca/notice/100947967" rdf:type="http://rdfs.org/sioc/types#MicroblogPost">
+  <title>fisl: Mulheres se organizam para debater a baixa participação feminina na TI http://va.mu/cWfQ Vamos discutir no #fisl14?</title>
+  <link>http://identi.ca/notice/100947967</link>
+  <description>fisl's status on Monday, 13-May-13 12:54:49 UTC</description>
+  <content:encoded>Mulheres se organizam para debater a baixa participação feminina na TI &lt;a href=&quot;http://va.mu/cWfQ&quot; title=&quot;http://va.mu/cWfQ&quot; rel=&quot;nofollow external&quot;&gt;http://va.mu/cWfQ&lt;/a&gt; Vamos discutir no #&lt;span class=&quot;tag&quot;&gt;&lt;a href=&quot;http://identi.ca/tag/fisl14&quot; rel=&quot;tag&quot;&gt;fisl14&lt;/a&gt;&lt;/span&gt;?</content:encoded>
+  <dc:date>2013-05-13T12:54:49+00:00</dc:date>
+  <dc:creator>Forum Internacional Software Livre</dc:creator>
+  <foaf:maker rdf:resource="http://identi.ca/user/44813"></foaf:maker>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/44813#acct"></sioc:has_creator>
+  <statusnet:origin geo:lat="-30.03306" geo:long="-51.23" rdf:resource="http://sws.geonames.org/3452925/"></statusnet:origin>
+  <statusnet:postIcon rdf:resource="http://avatar3.status.net/i/identica/44813-96-20090324224807.png"></statusnet:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+  <sioc:has_discussion rdf:resource="http://identi.ca/conversation/99806174"></sioc:has_discussion>
+  <sioc:links_to rdf:resource="http://va.mu/cWfQ"></sioc:links_to>
+  <ctag:tagged>
+   <ctag:Tag rdf:about="http://identi.ca/tag/fisl14#concept" ctag:label="fisl14">
+    <foaf:page rdf:resource="http://identi.ca/tag/fisl14"></foaf:page>
+    <rdfs:seeAlso rdf:resource="http://identi.ca/tag/fisl14/rss"></rdfs:seeAlso>
+   </ctag:Tag>
+  </ctag:tagged>
+ </item>
+ <item rdf:about="http://identi.ca/notice/100916377" rdf:type="http://rdfs.org/sioc/types#MicroblogPost">
+  <title>fisl: Um lindo time de tradutores voluntários faz o site do #fisl14 ter tradução para inglês, espanhol, italiano e esperanto! http://va.mu/cWV0 :D</title>
+  <link>http://identi.ca/notice/100916377</link>
+  <description>fisl's status on Friday, 10-May-13 15:20:35 UTC</description>
+  <content:encoded>Um lindo time de tradutores voluntários faz o site do #&lt;span class=&quot;tag&quot;&gt;&lt;a href=&quot;http://identi.ca/tag/fisl14&quot; rel=&quot;tag&quot;&gt;fisl14&lt;/a&gt;&lt;/span&gt; ter tradução para inglês, espanhol, italiano e esperanto! &lt;a href=&quot;http://va.mu/cWV0&quot; title=&quot;http://va.mu/cWV0&quot; rel=&quot;nofollow external&quot;&gt;http://va.mu/cWV0&lt;/a&gt; :D</content:encoded>
+  <dc:date>2013-05-10T15:20:35+00:00</dc:date>
+  <dc:creator>Forum Internacional Software Livre</dc:creator>
+  <foaf:maker rdf:resource="http://identi.ca/user/44813"></foaf:maker>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/44813#acct"></sioc:has_creator>
+  <statusnet:origin geo:lat="-30.03306" geo:long="-51.23" rdf:resource="http://sws.geonames.org/3452925/"></statusnet:origin>
+  <statusnet:postIcon rdf:resource="http://avatar3.status.net/i/identica/44813-96-20090324224807.png"></statusnet:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+  <sioc:has_discussion rdf:resource="http://identi.ca/conversation/99777721"></sioc:has_discussion>
+  <ctag:tagged>
+   <ctag:Tag rdf:about="http://identi.ca/tag/fisl14#concept" ctag:label="fisl14">
+    <foaf:page rdf:resource="http://identi.ca/tag/fisl14"></foaf:page>
+    <rdfs:seeAlso rdf:resource="http://identi.ca/tag/fisl14/rss"></rdfs:seeAlso>
+   </ctag:Tag>
+  </ctag:tagged>
+ </item>
+ <item rdf:about="http://identi.ca/notice/100915631" rdf:type="http://rdfs.org/sioc/types#MicroblogPost">
+  <title>fisl: A @radiosl estreia #conversalivre, o podcast de entrevistas do #fisl14. http://va.mu/cWVc</title>
+  <link>http://identi.ca/notice/100915631</link>
+  <description>fisl's status on Friday, 10-May-13 14:03:24 UTC</description>
+  <content:encoded>A @&lt;span class=&quot;vcard&quot;&gt;&lt;a href=&quot;http://identi.ca/user/71873&quot; class=&quot;url&quot; title=&quot;R&amp;#xE1;dio Software Livre&quot;&gt;&lt;span class=&quot;fn nickname mention&quot;&gt;radiosl&lt;/span&gt;&lt;/a&gt;&lt;/span&gt; estreia #&lt;span class=&quot;tag&quot;&gt;&lt;a href=&quot;http://identi.ca/tag/conversalivre&quot; rel=&quot;tag&quot;&gt;conversalivre&lt;/a&gt;&lt;/span&gt;, o podcast de entrevistas do #&lt;span class=&quot;tag&quot;&gt;&lt;a href=&quot;http://identi.ca/tag/fisl14&quot; rel=&quot;tag&quot;&gt;fisl14.&lt;/a&gt;&lt;/span&gt; &lt;a href=&quot;http://va.mu/cWVc&quot; title=&quot;http://va.mu/cWVc&quot; rel=&quot;nofollow external&quot;&gt;http://va.mu/cWVc&lt;/a&gt;</content:encoded>
+  <dc:date>2013-05-10T14:03:24+00:00</dc:date>
+  <dc:creator>Forum Internacional Software Livre</dc:creator>
+  <foaf:maker rdf:resource="http://identi.ca/user/44813"></foaf:maker>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/44813#acct"></sioc:has_creator>
+  <statusnet:origin geo:lat="-30.03306" geo:long="-51.23" rdf:resource="http://sws.geonames.org/3452925/"></statusnet:origin>
+  <statusnet:postIcon rdf:resource="http://avatar3.status.net/i/identica/44813-96-20090324224807.png"></statusnet:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+  <sioc:has_discussion rdf:resource="http://identi.ca/conversation/99777063"></sioc:has_discussion>
+  <sioc:links_to rdf:resource="http://va.mu/cWVc"></sioc:links_to>
+  <ctag:tagged>
+   <ctag:Tag rdf:about="http://identi.ca/tag/conversalivre#concept" ctag:label="conversalivre">
+    <foaf:page rdf:resource="http://identi.ca/tag/conversalivre"></foaf:page>
+    <rdfs:seeAlso rdf:resource="http://identi.ca/tag/conversalivre/rss"></rdfs:seeAlso>
+   </ctag:Tag>
+  </ctag:tagged>
+  <ctag:tagged>
+   <ctag:Tag rdf:about="http://identi.ca/tag/fisl14#concept" ctag:label="fisl14">
+    <foaf:page rdf:resource="http://identi.ca/tag/fisl14"></foaf:page>
+    <rdfs:seeAlso rdf:resource="http://identi.ca/tag/fisl14/rss"></rdfs:seeAlso>
+   </ctag:Tag>
+  </ctag:tagged>
+ </item>
+ <item rdf:about="http://identi.ca/notice/100907655" rdf:type="http://rdfs.org/sioc/types#MicroblogPost">
+  <title>fisl: Ao vivo: lançamento do @conexoesglobais na Casa de Cultura Mario Quintana, em Porto Alegre. Chegue lá! http://is.gd/rhkCdU</title>
+  <link>http://identi.ca/notice/100907655</link>
+  <description>fisl's status on Thursday, 09-May-13 20:39:46 UTC</description>
+  <content:encoded>Ao vivo: lançamento do @conexoesglobais na Casa de Cultura Mario Quintana, em Porto Alegre. Chegue lá! &lt;a href=&quot;http://is.gd/rhkCdU&quot; title=&quot;http://is.gd/rhkCdU&quot; rel=&quot;nofollow external&quot;&gt;http://is.gd/rhkCdU&lt;/a&gt;</content:encoded>
+  <dc:date>2013-05-09T20:39:46+00:00</dc:date>
+  <dc:creator>Forum Internacional Software Livre</dc:creator>
+  <foaf:maker rdf:resource="http://identi.ca/user/44813"></foaf:maker>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/44813#acct"></sioc:has_creator>
+  <statusnet:origin geo:lat="-30.03306" geo:long="-51.23" rdf:resource="http://sws.geonames.org/3452925/"></statusnet:origin>
+  <statusnet:postIcon rdf:resource="http://avatar3.status.net/i/identica/44813-96-20090324224807.png"></statusnet:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+  <sioc:has_discussion rdf:resource="http://identi.ca/conversation/99770024"></sioc:has_discussion>
+  <sioc:links_to rdf:resource="http://is.gd/rhkCdU"></sioc:links_to>
+ </item>
+ <item rdf:about="http://identi.ca/notice/100903596" rdf:type="http://rdfs.org/sioc/types#MicroblogPost">
+  <title>fisl: Figurinhas do #SoftwareLivre: conheça 4 emblemáticos mascotes da comunidade. Qual deles estará no #fisl14? http://va.mu/cWQl</title>
+  <link>http://identi.ca/notice/100903596</link>
+  <description>fisl's status on Thursday, 09-May-13 13:50:17 UTC</description>
+  <content:encoded>Figurinhas do #&lt;span class=&quot;tag&quot;&gt;&lt;a href=&quot;http://identi.ca/tag/softwarelivre&quot; rel=&quot;tag&quot;&gt;SoftwareLivre&lt;/a&gt;&lt;/span&gt;: conheça 4 emblemáticos mascotes da comunidade. Qual deles estará no #&lt;span class=&quot;tag&quot;&gt;&lt;a href=&quot;http://identi.ca/tag/fisl14&quot; rel=&quot;tag&quot;&gt;fisl14&lt;/a&gt;&lt;/span&gt;? &lt;a href=&quot;http://va.mu/cWQl&quot; title=&quot;http://va.mu/cWQl&quot; rel=&quot;nofollow external&quot;&gt;http://va.mu/cWQl&lt;/a&gt;</content:encoded>
+  <dc:date>2013-05-09T13:50:17+00:00</dc:date>
+  <dc:creator>Forum Internacional Software Livre</dc:creator>
+  <foaf:maker rdf:resource="http://identi.ca/user/44813"></foaf:maker>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/44813#acct"></sioc:has_creator>
+  <statusnet:origin geo:lat="-30.03306" geo:long="-51.23" rdf:resource="http://sws.geonames.org/3452925/"></statusnet:origin>
+  <statusnet:postIcon rdf:resource="http://avatar3.status.net/i/identica/44813-96-20090324224807.png"></statusnet:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+  <sioc:has_discussion rdf:resource="http://identi.ca/conversation/99766437"></sioc:has_discussion>
+  <sioc:links_to rdf:resource="http://va.mu/cWQl"></sioc:links_to>
+  <ctag:tagged>
+   <ctag:Tag rdf:about="http://identi.ca/tag/fisl14#concept" ctag:label="fisl14">
+    <foaf:page rdf:resource="http://identi.ca/tag/fisl14"></foaf:page>
+    <rdfs:seeAlso rdf:resource="http://identi.ca/tag/fisl14/rss"></rdfs:seeAlso>
+   </ctag:Tag>
+  </ctag:tagged>
+  <ctag:tagged>
+   <ctag:Tag rdf:about="http://identi.ca/tag/softwarelivre#concept" ctag:label="softwarelivre">
+    <foaf:page rdf:resource="http://identi.ca/tag/softwarelivre"></foaf:page>
+    <rdfs:seeAlso rdf:resource="http://identi.ca/tag/softwarelivre/rss"></rdfs:seeAlso>
+   </ctag:Tag>
+  </ctag:tagged>
+ </item>
+ <item rdf:about="http://identi.ca/notice/100893844" rdf:type="http://rdfs.org/sioc/types#MicroblogPost">
+  <title>fisl: Alô comunidades do #softwarelivre Inscreva sua turma e ganhe um espaço na mostra de Grupos de Usuários do #fisl14 http://va.mu/cV18 #gus</title>
+  <link>http://identi.ca/notice/100893844</link>
+  <description>fisl's status on Wednesday, 08-May-13 19:29:47 UTC</description>
+  <content:encoded>Alô comunidades do #&lt;span class=&quot;tag&quot;&gt;&lt;a href=&quot;http://identi.ca/tag/softwarelivre&quot; rel=&quot;tag&quot;&gt;softwarelivre&lt;/a&gt;&lt;/span&gt; Inscreva sua turma e ganhe um espaço na mostra de Grupos de Usuários do #&lt;span class=&quot;tag&quot;&gt;&lt;a href=&quot;http://identi.ca/tag/fisl14&quot; rel=&quot;tag&quot;&gt;fisl14&lt;/a&gt;&lt;/span&gt; &lt;a href=&quot;http://va.mu/cV18&quot; title=&quot;http://va.mu/cV18&quot; rel=&quot;nofollow external&quot;&gt;http://va.mu/cV18&lt;/a&gt; #&lt;span class=&quot;tag&quot;&gt;&lt;a href=&quot;http://identi.ca/tag/gus&quot; rel=&quot;tag&quot;&gt;gus&lt;/a&gt;&lt;/span&gt;</content:encoded>
+  <dc:date>2013-05-08T19:29:47+00:00</dc:date>
+  <dc:creator>Forum Internacional Software Livre</dc:creator>
+  <foaf:maker rdf:resource="http://identi.ca/user/44813"></foaf:maker>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/44813#acct"></sioc:has_creator>
+  <statusnet:origin geo:lat="-30.03306" geo:long="-51.23" rdf:resource="http://sws.geonames.org/3452925/"></statusnet:origin>
+  <statusnet:postIcon rdf:resource="http://avatar3.status.net/i/identica/44813-96-20090324224807.png"></statusnet:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+  <sioc:has_discussion rdf:resource="http://identi.ca/conversation/99757970"></sioc:has_discussion>
+  <sioc:links_to rdf:resource="http://va.mu/cV18"></sioc:links_to>
+  <ctag:tagged>
+   <ctag:Tag rdf:about="http://identi.ca/tag/fisl14#concept" ctag:label="fisl14">
+    <foaf:page rdf:resource="http://identi.ca/tag/fisl14"></foaf:page>
+    <rdfs:seeAlso rdf:resource="http://identi.ca/tag/fisl14/rss"></rdfs:seeAlso>
+   </ctag:Tag>
+  </ctag:tagged>
+  <ctag:tagged>
+   <ctag:Tag rdf:about="http://identi.ca/tag/gus#concept" ctag:label="gus">
+    <foaf:page rdf:resource="http://identi.ca/tag/gus"></foaf:page>
+    <rdfs:seeAlso rdf:resource="http://identi.ca/tag/gus/rss"></rdfs:seeAlso>
+   </ctag:Tag>
+  </ctag:tagged>
+  <ctag:tagged>
+   <ctag:Tag rdf:about="http://identi.ca/tag/softwarelivre#concept" ctag:label="softwarelivre">
+    <foaf:page rdf:resource="http://identi.ca/tag/softwarelivre"></foaf:page>
+    <rdfs:seeAlso rdf:resource="http://identi.ca/tag/softwarelivre/rss"></rdfs:seeAlso>
+   </ctag:Tag>
+  </ctag:tagged>
+ </item>
+ <item rdf:about="http://identi.ca/notice/100877454" rdf:type="http://rdfs.org/sioc/types#MicroblogPost">
+  <title>fisl: Sua escola tem um projeto com Software Livre? Traga-o para o #FISLnaEscola #fisl14 http://va.mu/cV3m</title>
+  <link>http://identi.ca/notice/100877454</link>
+  <description>fisl's status on Tuesday, 07-May-13 14:04:20 UTC</description>
+  <content:encoded>Sua escola tem um projeto com Software Livre? Traga-o para o #&lt;span class=&quot;tag&quot;&gt;&lt;a href=&quot;http://identi.ca/tag/fislnaescola&quot; rel=&quot;tag&quot;&gt;FISLnaEscola&lt;/a&gt;&lt;/span&gt; #&lt;span class=&quot;tag&quot;&gt;&lt;a href=&quot;http://identi.ca/tag/fisl14&quot; rel=&quot;tag&quot;&gt;fisl14&lt;/a&gt;&lt;/span&gt; &lt;a href=&quot;http://va.mu/cV3m&quot; title=&quot;http://va.mu/cV3m&quot; rel=&quot;nofollow external&quot;&gt;http://va.mu/cV3m&lt;/a&gt;</content:encoded>
+  <dc:date>2013-05-07T14:04:20+00:00</dc:date>
+  <dc:creator>Forum Internacional Software Livre</dc:creator>
+  <foaf:maker rdf:resource="http://identi.ca/user/44813"></foaf:maker>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/44813#acct"></sioc:has_creator>
+  <statusnet:origin geo:lat="-30.03306" geo:long="-51.23" rdf:resource="http://sws.geonames.org/3452925/"></statusnet:origin>
+  <statusnet:postIcon rdf:resource="http://avatar3.status.net/i/identica/44813-96-20090324224807.png"></statusnet:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+  <sioc:has_discussion rdf:resource="http://identi.ca/conversation/99743629"></sioc:has_discussion>
+  <sioc:links_to rdf:resource="http://va.mu/cV3m"></sioc:links_to>
+  <ctag:tagged>
+   <ctag:Tag rdf:about="http://identi.ca/tag/fisl14#concept" ctag:label="fisl14">
+    <foaf:page rdf:resource="http://identi.ca/tag/fisl14"></foaf:page>
+    <rdfs:seeAlso rdf:resource="http://identi.ca/tag/fisl14/rss"></rdfs:seeAlso>
+   </ctag:Tag>
+  </ctag:tagged>
+  <ctag:tagged>
+   <ctag:Tag rdf:about="http://identi.ca/tag/fislnaescola#concept" ctag:label="fislnaescola">
+    <foaf:page rdf:resource="http://identi.ca/tag/fislnaescola"></foaf:page>
+    <rdfs:seeAlso rdf:resource="http://identi.ca/tag/fislnaescola/rss"></rdfs:seeAlso>
+   </ctag:Tag>
+  </ctag:tagged>
+ </item>
+ <item rdf:about="http://identi.ca/notice/100870992" rdf:type="http://rdfs.org/sioc/types#MicroblogPost">
+  <title>fisl: Conheça o #FISLnaEscola, uma proposta do GT Educação do #FISL14  http://va.mu/cV3m</title>
+  <link>http://identi.ca/notice/100870992</link>
+  <description>fisl's status on Tuesday, 07-May-13 00:05:56 UTC</description>
+  <content:encoded>Conheça o #&lt;span class=&quot;tag&quot;&gt;&lt;a href=&quot;http://identi.ca/tag/fislnaescola&quot; rel=&quot;tag&quot;&gt;FISLnaEscola&lt;/a&gt;&lt;/span&gt;, uma proposta do GT Educação do #&lt;span class=&quot;tag&quot;&gt;&lt;a href=&quot;http://identi.ca/tag/fisl14&quot; rel=&quot;tag&quot;&gt;FISL14&lt;/a&gt;&lt;/span&gt;  &lt;a href=&quot;http://va.mu/cV3m&quot; title=&quot;http://va.mu/cV3m&quot; rel=&quot;nofollow external&quot;&gt;http://va.mu/cV3m&lt;/a&gt;</content:encoded>
+  <dc:date>2013-05-07T00:05:56+00:00</dc:date>
+  <dc:creator>Forum Internacional Software Livre</dc:creator>
+  <foaf:maker rdf:resource="http://identi.ca/user/44813"></foaf:maker>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/44813#acct"></sioc:has_creator>
+  <statusnet:origin geo:lat="-30.03306" geo:long="-51.23" rdf:resource="http://sws.geonames.org/3452925/"></statusnet:origin>
+  <statusnet:postIcon rdf:resource="http://avatar3.status.net/i/identica/44813-96-20090324224807.png"></statusnet:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+  <sioc:has_discussion rdf:resource="http://identi.ca/conversation/99737760"></sioc:has_discussion>
+  <sioc:links_to rdf:resource="http://va.mu/cV3m"></sioc:links_to>
+  <ctag:tagged>
+   <ctag:Tag rdf:about="http://identi.ca/tag/fisl14#concept" ctag:label="fisl14">
+    <foaf:page rdf:resource="http://identi.ca/tag/fisl14"></foaf:page>
+    <rdfs:seeAlso rdf:resource="http://identi.ca/tag/fisl14/rss"></rdfs:seeAlso>
+   </ctag:Tag>
+  </ctag:tagged>
+  <ctag:tagged>
+   <ctag:Tag rdf:about="http://identi.ca/tag/fislnaescola#concept" ctag:label="fislnaescola">
+    <foaf:page rdf:resource="http://identi.ca/tag/fislnaescola"></foaf:page>
+    <rdfs:seeAlso rdf:resource="http://identi.ca/tag/fislnaescola/rss"></rdfs:seeAlso>
+   </ctag:Tag>
+  </ctag:tagged>
+ </item>
+ <item rdf:about="http://identi.ca/notice/100868916" rdf:type="http://rdfs.org/sioc/types#MicroblogPost">
+  <title>fisl: Abriu! Inscrições para Grupos de Usuários no #fisl14, inscreva lá!  &quot;Porque agito de nerd é evento de informática!&quot;  http://va.mu/cV18</title>
+  <link>http://identi.ca/notice/100868916</link>
+  <description>fisl's status on Monday, 06-May-13 20:32:30 UTC</description>
+  <content:encoded>Abriu! Inscrições para Grupos de Usuários no #&lt;span class=&quot;tag&quot;&gt;&lt;a href=&quot;http://identi.ca/tag/fisl14&quot; rel=&quot;tag&quot;&gt;fisl14&lt;/a&gt;&lt;/span&gt;, inscreva lá!  &amp;quot;Porque agito de nerd é evento de informática!&amp;quot;  &lt;a href=&quot;http://va.mu/cV18&quot; title=&quot;http://va.mu/cV18&quot; rel=&quot;nofollow external&quot;&gt;http://va.mu/cV18&lt;/a&gt;</content:encoded>
+  <dc:date>2013-05-06T20:32:30+00:00</dc:date>
+  <dc:creator>Forum Internacional Software Livre</dc:creator>
+  <foaf:maker rdf:resource="http://identi.ca/user/44813"></foaf:maker>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/44813#acct"></sioc:has_creator>
+  <statusnet:origin geo:lat="-30.03306" geo:long="-51.23" rdf:resource="http://sws.geonames.org/3452925/"></statusnet:origin>
+  <statusnet:postIcon rdf:resource="http://avatar3.status.net/i/identica/44813-96-20090324224807.png"></statusnet:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+  <sioc:has_discussion rdf:resource="http://identi.ca/conversation/99735957"></sioc:has_discussion>
+  <sioc:links_to rdf:resource="http://va.mu/cV18"></sioc:links_to>
+  <ctag:tagged>
+   <ctag:Tag rdf:about="http://identi.ca/tag/fisl14#concept" ctag:label="fisl14">
+    <foaf:page rdf:resource="http://identi.ca/tag/fisl14"></foaf:page>
+    <rdfs:seeAlso rdf:resource="http://identi.ca/tag/fisl14/rss"></rdfs:seeAlso>
+   </ctag:Tag>
+  </ctag:tagged>
+ </item>
+ <item rdf:about="http://identi.ca/notice/100775129" rdf:type="http://rdfs.org/sioc/types#MicroblogPost">
+  <title>fisl: Últimas horas para propor uma palestra para o #fisl14 Já inscreveu sua sugestão? http://fisl.org.br/14/papers_ng/</title>
+  <link>http://identi.ca/notice/100775129</link>
+  <description>fisl's status on Sunday, 28-Apr-13 20:42:24 UTC</description>
+  <content:encoded>Últimas horas para propor uma palestra para o #&lt;span class=&quot;tag&quot;&gt;&lt;a href=&quot;http://identi.ca/tag/fisl14&quot; rel=&quot;tag&quot;&gt;fisl14&lt;/a&gt;&lt;/span&gt; Já inscreveu sua sugestão? &lt;a href=&quot;http://fisl.org.br/14/papers_ng/&quot; title=&quot;http://fisl.org.br/14/papers_ng/&quot; class=&quot;attachment&quot; id=&quot;attachment-75737786&quot; rel=&quot;nofollow external&quot;&gt;http://fisl.org.br/14/papers_ng/&lt;/a&gt;</content:encoded>
+  <dc:date>2013-04-28T20:42:24+00:00</dc:date>
+  <dc:creator>Forum Internacional Software Livre</dc:creator>
+  <foaf:maker rdf:resource="http://identi.ca/user/44813"></foaf:maker>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/44813#acct"></sioc:has_creator>
+  <statusnet:origin geo:lat="-30.03306" geo:long="-51.23" rdf:resource="http://sws.geonames.org/3452925/"></statusnet:origin>
+  <statusnet:postIcon rdf:resource="http://avatar3.status.net/i/identica/44813-96-20090324224807.png"></statusnet:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+  <sioc:has_discussion rdf:resource="http://identi.ca/conversation/99652366"></sioc:has_discussion>
+  <enc:enclosure rdf:resource="http://fisl.org.br/14/papers_ng/" dc:date="2013-04-25T21:10:57+00:00" enc:length="864" enc:type="text/xml"></enc:enclosure>
+  <sioc:links_to rdf:resource="http://fisl.org.br/14/papers_ng/"></sioc:links_to>
+  <ctag:tagged>
+   <ctag:Tag rdf:about="http://identi.ca/tag/fisl14#concept" ctag:label="fisl14">
+    <foaf:page rdf:resource="http://identi.ca/tag/fisl14"></foaf:page>
+    <rdfs:seeAlso rdf:resource="http://identi.ca/tag/fisl14/rss"></rdfs:seeAlso>
+   </ctag:Tag>
+  </ctag:tagged>
+ </item>
+ <item rdf:about="http://identi.ca/notice/100763287" rdf:type="http://rdfs.org/sioc/types#MicroblogPost">
+  <title>fisl: Acompanhe ao vivo a transmissão do #flisol Curitiba http://is.gd/mRnZjF</title>
+  <link>http://identi.ca/notice/100763287</link>
+  <description>fisl's status on Saturday, 27-Apr-13 17:38:14 UTC</description>
+  <content:encoded>Acompanhe ao vivo a transmissão do #&lt;span class=&quot;tag&quot;&gt;&lt;a href=&quot;http://identi.ca/tag/flisol&quot; rel=&quot;tag&quot;&gt;flisol&lt;/a&gt;&lt;/span&gt; Curitiba &lt;a href=&quot;http://is.gd/mRnZjF&quot; title=&quot;http://is.gd/mRnZjF&quot; rel=&quot;nofollow external&quot;&gt;http://is.gd/mRnZjF&lt;/a&gt;</content:encoded>
+  <dc:date>2013-04-27T17:38:14+00:00</dc:date>
+  <dc:creator>Forum Internacional Software Livre</dc:creator>
+  <foaf:maker rdf:resource="http://identi.ca/user/44813"></foaf:maker>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/44813#acct"></sioc:has_creator>
+  <statusnet:origin geo:lat="-30.03306" geo:long="-51.23" rdf:resource="http://sws.geonames.org/3452925/"></statusnet:origin>
+  <statusnet:postIcon rdf:resource="http://avatar3.status.net/i/identica/44813-96-20090324224807.png"></statusnet:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+  <sioc:has_discussion rdf:resource="http://identi.ca/conversation/99641625"></sioc:has_discussion>
+  <sioc:links_to rdf:resource="http://is.gd/mRnZjF"></sioc:links_to>
+  <ctag:tagged>
+   <ctag:Tag rdf:about="http://identi.ca/tag/flisol#concept" ctag:label="flisol">
+    <foaf:page rdf:resource="http://identi.ca/tag/flisol"></foaf:page>
+    <rdfs:seeAlso rdf:resource="http://identi.ca/tag/flisol/rss"></rdfs:seeAlso>
+   </ctag:Tag>
+  </ctag:tagged>
+ </item>
+ <item rdf:about="http://identi.ca/notice/100761667" rdf:type="http://rdfs.org/sioc/types#MicroblogPost">
+  <title>fisl: Não esqueça! A chamada de trabalhos do #fisl14 encerra neste domingo http://is.gd/xQikdb</title>
+  <link>http://identi.ca/notice/100761667</link>
+  <description>fisl's status on Saturday, 27-Apr-13 14:44:35 UTC</description>
+  <content:encoded>Não esqueça! A chamada de trabalhos do #&lt;span class=&quot;tag&quot;&gt;&lt;a href=&quot;http://identi.ca/tag/fisl14&quot; rel=&quot;tag&quot;&gt;fisl14&lt;/a&gt;&lt;/span&gt; encerra neste domingo &lt;a href=&quot;http://is.gd/xQikdb&quot; title=&quot;http://is.gd/xQikdb&quot; class=&quot;attachment&quot; id=&quot;attachment-75747409&quot; rel=&quot;nofollow external&quot;&gt;http://is.gd/xQikdb&lt;/a&gt;</content:encoded>
+  <dc:date>2013-04-27T14:44:35+00:00</dc:date>
+  <dc:creator>Forum Internacional Software Livre</dc:creator>
+  <foaf:maker rdf:resource="http://identi.ca/user/44813"></foaf:maker>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/44813#acct"></sioc:has_creator>
+  <statusnet:origin geo:lat="-30.03306" geo:long="-51.23" rdf:resource="http://sws.geonames.org/3452925/"></statusnet:origin>
+  <statusnet:postIcon rdf:resource="http://avatar3.status.net/i/identica/44813-96-20090324224807.png"></statusnet:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+  <sioc:has_discussion rdf:resource="http://identi.ca/conversation/99640243"></sioc:has_discussion>
+  <enc:enclosure rdf:resource="http://is.gd/xQikdb" dc:date="2013-04-27T14:57:48+00:00" enc:length="864" enc:type="text/xml"></enc:enclosure>
+  <sioc:links_to rdf:resource="http://is.gd/xQikdb"></sioc:links_to>
+  <ctag:tagged>
+   <ctag:Tag rdf:about="http://identi.ca/tag/fisl14#concept" ctag:label="fisl14">
+    <foaf:page rdf:resource="http://identi.ca/tag/fisl14"></foaf:page>
+    <rdfs:seeAlso rdf:resource="http://identi.ca/tag/fisl14/rss"></rdfs:seeAlso>
+   </ctag:Tag>
+  </ctag:tagged>
+ </item>
+ <item rdf:about="http://identi.ca/notice/100750696" rdf:type="http://rdfs.org/sioc/types#MicroblogPost">
+  <title>fisl: No site do #fisl14: amanhã tem #flisol! http://is.gd/MP7qLK</title>
+  <link>http://identi.ca/notice/100750696</link>
+  <description>fisl's status on Friday, 26-Apr-13 15:14:23 UTC</description>
+  <content:encoded>No site do #&lt;span class=&quot;tag&quot;&gt;&lt;a href=&quot;http://identi.ca/tag/fisl14&quot; rel=&quot;tag&quot;&gt;fisl14&lt;/a&gt;&lt;/span&gt;: amanhã tem #&lt;span class=&quot;tag&quot;&gt;&lt;a href=&quot;http://identi.ca/tag/flisol&quot; rel=&quot;tag&quot;&gt;flisol&lt;/a&gt;&lt;/span&gt;! &lt;a href=&quot;http://is.gd/MP7qLK&quot; title=&quot;http://is.gd/MP7qLK&quot; rel=&quot;nofollow external&quot;&gt;http://is.gd/MP7qLK&lt;/a&gt;</content:encoded>
+  <dc:date>2013-04-26T15:14:23+00:00</dc:date>
+  <dc:creator>Forum Internacional Software Livre</dc:creator>
+  <foaf:maker rdf:resource="http://identi.ca/user/44813"></foaf:maker>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/44813#acct"></sioc:has_creator>
+  <statusnet:origin geo:lat="-30.03306" geo:long="-51.23" rdf:resource="http://sws.geonames.org/3452925/"></statusnet:origin>
+  <statusnet:postIcon rdf:resource="http://avatar3.status.net/i/identica/44813-96-20090324224807.png"></statusnet:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+  <sioc:has_discussion rdf:resource="http://identi.ca/conversation/99630296"></sioc:has_discussion>
+  <sioc:links_to rdf:resource="http://is.gd/MP7qLK"></sioc:links_to>
+  <ctag:tagged>
+   <ctag:Tag rdf:about="http://identi.ca/tag/fisl14#concept" ctag:label="fisl14">
+    <foaf:page rdf:resource="http://identi.ca/tag/fisl14"></foaf:page>
+    <rdfs:seeAlso rdf:resource="http://identi.ca/tag/fisl14/rss"></rdfs:seeAlso>
+   </ctag:Tag>
+  </ctag:tagged>
+  <ctag:tagged>
+   <ctag:Tag rdf:about="http://identi.ca/tag/flisol#concept" ctag:label="flisol">
+    <foaf:page rdf:resource="http://identi.ca/tag/flisol"></foaf:page>
+    <rdfs:seeAlso rdf:resource="http://identi.ca/tag/flisol/rss"></rdfs:seeAlso>
+   </ctag:Tag>
+  </ctag:tagged>
+ </item>
+ <item rdf:about="http://identi.ca/notice/100750054" rdf:type="http://rdfs.org/sioc/types#MicroblogPost">
+  <title>fisl: E amanhã tem #FLISOL em todo Brasil!\o/  RT @brlinux FLISOL-DF 2013 chega a 5000 inscritos http://t.co/0MGb8tgvL0</title>
+  <link>http://identi.ca/notice/100750054</link>
+  <description>fisl's status on Friday, 26-Apr-13 14:11:03 UTC</description>
+  <content:encoded>E amanhã tem #&lt;span class=&quot;tag&quot;&gt;&lt;a href=&quot;http://identi.ca/tag/flisol&quot; rel=&quot;tag&quot;&gt;FLISOL&lt;/a&gt;&lt;/span&gt; em todo Brasil!\o/  RT @&lt;span class=&quot;vcard&quot;&gt;&lt;a href=&quot;http://identi.ca/user/208710&quot; class=&quot;url&quot; title=&quot;BR-Linux&quot;&gt;&lt;span class=&quot;fn nickname mention&quot;&gt;brlinux&lt;/span&gt;&lt;/a&gt;&lt;/span&gt; FLISOL-DF 2013 chega a 5000 inscritos &lt;a href=&quot;http://t.co/0MGb8tgvL0&quot; title=&quot;http://t.co/0MGb8tgvL0&quot; rel=&quot;nofollow external&quot;&gt;http://t.co/0MGb8tgvL0&lt;/a&gt;</content:encoded>
+  <dc:date>2013-04-26T14:11:03+00:00</dc:date>
+  <dc:creator>Forum Internacional Software Livre</dc:creator>
+  <foaf:maker rdf:resource="http://identi.ca/user/44813"></foaf:maker>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/44813#acct"></sioc:has_creator>
+  <statusnet:origin geo:lat="-30.03306" geo:long="-51.23" rdf:resource="http://sws.geonames.org/3452925/"></statusnet:origin>
+  <statusnet:postIcon rdf:resource="http://avatar3.status.net/i/identica/44813-96-20090324224807.png"></statusnet:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+  <sioc:has_discussion rdf:resource="http://identi.ca/conversation/99629724"></sioc:has_discussion>
+  <sioc:links_to rdf:resource="http://t.co/0MGb8tgvL0"></sioc:links_to>
+  <ctag:tagged>
+   <ctag:Tag rdf:about="http://identi.ca/tag/flisol#concept" ctag:label="flisol">
+    <foaf:page rdf:resource="http://identi.ca/tag/flisol"></foaf:page>
+    <rdfs:seeAlso rdf:resource="http://identi.ca/tag/flisol/rss"></rdfs:seeAlso>
+   </ctag:Tag>
+  </ctag:tagged>
+ </item>
+ <item rdf:about="http://identi.ca/notice/100740575" rdf:type="http://rdfs.org/sioc/types#MicroblogPost">
+  <title>fisl: Já inscreveu sua palestra? O prazo termina em 28.04, domingo! #fisl14 http://fisl.org.br/14/papers_ng/ http://identi.ca/attachment/75737785</title>
+  <link>http://identi.ca/notice/100740575</link>
+  <description>fisl's status on Thursday, 25-Apr-13 20:57:50 UTC</description>
+  <content:encoded>Já inscreveu sua palestra? O prazo termina em 28.04, domingo! #&lt;span class=&quot;tag&quot;&gt;&lt;a href=&quot;http://identi.ca/tag/fisl14&quot; rel=&quot;tag&quot;&gt;fisl14&lt;/a&gt;&lt;/span&gt; &lt;a href=&quot;http://fisl.org.br/14/papers_ng/&quot; title=&quot;http://fisl.org.br/14/papers_ng/&quot; class=&quot;attachment&quot; id=&quot;attachment-75737786&quot; rel=&quot;nofollow external&quot;&gt;http://fisl.org.br/14/papers_ng/&lt;/a&gt; &lt;a href=&quot;http://identi.ca/attachment/75737785&quot; title=&quot;http://file3.status.net/i/identica/fisl-20130425T205748-39lv8dx.jpeg&quot; class=&quot;attachment thumbnail&quot; id=&quot;attachment-75737785&quot; rel=&quot;nofollow external&quot;&gt;http://identi.ca/attachment/75737785&lt;/a&gt;</content:encoded>
+  <dc:date>2013-04-25T20:57:50+00:00</dc:date>
+  <dc:creator>Forum Internacional Software Livre</dc:creator>
+  <foaf:maker rdf:resource="http://identi.ca/user/44813"></foaf:maker>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/44813#acct"></sioc:has_creator>
+  <statusnet:origin geo:lat="-30.03306" geo:long="-51.23" rdf:resource="http://sws.geonames.org/3452925/"></statusnet:origin>
+  <statusnet:postIcon rdf:resource="http://avatar3.status.net/i/identica/44813-96-20090324224807.png"></statusnet:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+  <sioc:has_discussion rdf:resource="http://identi.ca/conversation/99621867"></sioc:has_discussion>
+  <enc:enclosure rdf:resource="http://file3.status.net/i/identica/fisl-20130425T205748-39lv8dx.jpeg" dc:date="2013-04-25T21:10:53+00:00" enc:length="1072385" enc:type="image/jpeg"></enc:enclosure>
+  <sioc:links_to rdf:resource="http://file3.status.net/i/identica/fisl-20130425T205748-39lv8dx.jpeg"></sioc:links_to>
+  <enc:enclosure rdf:resource="http://fisl.org.br/14/papers_ng/" dc:date="2013-04-25T21:10:57+00:00" enc:length="864" enc:type="text/xml"></enc:enclosure>
+  <sioc:links_to rdf:resource="http://fisl.org.br/14/papers_ng/"></sioc:links_to>
+  <ctag:tagged>
+   <ctag:Tag rdf:about="http://identi.ca/tag/fisl14#concept" ctag:label="fisl14">
+    <foaf:page rdf:resource="http://identi.ca/tag/fisl14"></foaf:page>
+    <rdfs:seeAlso rdf:resource="http://identi.ca/tag/fisl14/rss"></rdfs:seeAlso>
+   </ctag:Tag>
+  </ctag:tagged>
+ </item>
+ <item rdf:about="http://identi.ca/notice/100725158" rdf:type="http://rdfs.org/sioc/types#MicroblogPost">
+  <title>fisl: Pague sua inscrição ainda hoje e aprovei o 2º período de descontos: http://fisl.org.br/14/greve/ #fisl14 #ficadica</title>
+  <link>http://identi.ca/notice/100725158</link>
+  <description>fisl's status on Wednesday, 24-Apr-13 15:54:54 UTC</description>
+  <content:encoded>Pague sua inscrição ainda hoje e aprovei o 2º período de descontos: &lt;a href=&quot;http://fisl.org.br/14/greve/&quot; title=&quot;http://fisl.org.br/14/greve/&quot; rel=&quot;nofollow external&quot;&gt;http://fisl.org.br/14/greve/&lt;/a&gt; #&lt;span class=&quot;tag&quot;&gt;&lt;a href=&quot;http://identi.ca/tag/fisl14&quot; rel=&quot;tag&quot;&gt;fisl14&lt;/a&gt;&lt;/span&gt; #&lt;span class=&quot;tag&quot;&gt;&lt;a href=&quot;http://identi.ca/tag/ficadica&quot; rel=&quot;tag&quot;&gt;ficadica&lt;/a&gt;&lt;/span&gt;</content:encoded>
+  <dc:date>2013-04-24T15:54:54+00:00</dc:date>
+  <dc:creator>Forum Internacional Software Livre</dc:creator>
+  <foaf:maker rdf:resource="http://identi.ca/user/44813"></foaf:maker>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/44813#acct"></sioc:has_creator>
+  <statusnet:origin geo:lat="-30.03306" geo:long="-51.23" rdf:resource="http://sws.geonames.org/3452925/"></statusnet:origin>
+  <statusnet:postIcon rdf:resource="http://avatar3.status.net/i/identica/44813-96-20090324224807.png"></statusnet:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+  <sioc:has_discussion rdf:resource="http://identi.ca/conversation/99608444"></sioc:has_discussion>
+  <sioc:links_to rdf:resource="http://fisl.org.br/14/greve/"></sioc:links_to>
+  <ctag:tagged>
+   <ctag:Tag rdf:about="http://identi.ca/tag/ficadica#concept" ctag:label="ficadica">
+    <foaf:page rdf:resource="http://identi.ca/tag/ficadica"></foaf:page>
+    <rdfs:seeAlso rdf:resource="http://identi.ca/tag/ficadica/rss"></rdfs:seeAlso>
+   </ctag:Tag>
+  </ctag:tagged>
+  <ctag:tagged>
+   <ctag:Tag rdf:about="http://identi.ca/tag/fisl14#concept" ctag:label="fisl14">
+    <foaf:page rdf:resource="http://identi.ca/tag/fisl14"></foaf:page>
+    <rdfs:seeAlso rdf:resource="http://identi.ca/tag/fisl14/rss"></rdfs:seeAlso>
+   </ctag:Tag>
+  </ctag:tagged>
+ </item>
+ <item rdf:about="http://identi.ca/notice/100659781" rdf:type="http://rdfs.org/sioc/types#MicroblogPost">
+  <title>fisl: Confira a lista de caravanas confirmadas e pegue sua carona até o #Fisl14! http://softwarelivre.org/fisl14/o-evento/caravanas-confirmadas</title>
+  <link>http://identi.ca/notice/100659781</link>
+  <description>fisl's status on Thursday, 18-Apr-13 18:34:38 UTC</description>
+  <content:encoded>Confira a lista de caravanas confirmadas e pegue sua carona até o #&lt;span class=&quot;tag&quot;&gt;&lt;a href=&quot;http://identi.ca/tag/fisl14&quot; rel=&quot;tag&quot;&gt;Fisl14&lt;/a&gt;&lt;/span&gt;! &lt;a href=&quot;http://softwarelivre.org/fisl14/o-evento/caravanas-confirmadas&quot; title=&quot;http://softwarelivre.org/fisl14/o-evento/caravanas-confirmadas&quot; rel=&quot;nofollow external&quot;&gt;http://softwarelivre.org/fisl14/o-evento/caravanas-confirmadas&lt;/a&gt;</content:encoded>
+  <dc:date>2013-04-18T18:34:38+00:00</dc:date>
+  <dc:creator>Forum Internacional Software Livre</dc:creator>
+  <foaf:maker rdf:resource="http://identi.ca/user/44813"></foaf:maker>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/44813#acct"></sioc:has_creator>
+  <statusnet:origin geo:lat="-30.03306" geo:long="-51.23" rdf:resource="http://sws.geonames.org/3452925/"></statusnet:origin>
+  <statusnet:postIcon rdf:resource="http://avatar3.status.net/i/identica/44813-96-20090324224807.png"></statusnet:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+  <sioc:has_discussion rdf:resource="http://identi.ca/conversation/99550763"></sioc:has_discussion>
+  <sioc:links_to rdf:resource="http://softwarelivre.org/fisl14/o-evento/caravanas-confirmadas"></sioc:links_to>
+  <ctag:tagged>
+   <ctag:Tag rdf:about="http://identi.ca/tag/fisl14#concept" ctag:label="fisl14">
+    <foaf:page rdf:resource="http://identi.ca/tag/fisl14"></foaf:page>
+    <rdfs:seeAlso rdf:resource="http://identi.ca/tag/fisl14/rss"></rdfs:seeAlso>
+   </ctag:Tag>
+  </ctag:tagged>
+ </item>
+ <item rdf:about="http://identi.ca/notice/100646223" rdf:type="http://rdfs.org/sioc/types#MicroblogPost">
+  <title>fisl: Dia 27 de abril tem #FLISOL no Brasil inteiro! Não deixe de participar do maior festival de instalação de SL da galáxia http://is.gd/8g8nAJ</title>
+  <link>http://identi.ca/notice/100646223</link>
+  <description>fisl's status on Wednesday, 17-Apr-13 15:12:09 UTC</description>
+  <content:encoded>Dia 27 de abril tem #&lt;span class=&quot;tag&quot;&gt;&lt;a href=&quot;http://identi.ca/tag/flisol&quot; rel=&quot;tag&quot;&gt;FLISOL&lt;/a&gt;&lt;/span&gt; no Brasil inteiro! Não deixe de participar do maior festival de instalação de SL da galáxia &lt;a href=&quot;http://is.gd/8g8nAJ&quot; title=&quot;http://is.gd/8g8nAJ&quot; rel=&quot;nofollow external&quot;&gt;http://is.gd/8g8nAJ&lt;/a&gt;</content:encoded>
+  <dc:date>2013-04-17T15:12:09+00:00</dc:date>
+  <dc:creator>Forum Internacional Software Livre</dc:creator>
+  <foaf:maker rdf:resource="http://identi.ca/user/44813"></foaf:maker>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/44813#acct"></sioc:has_creator>
+  <statusnet:origin geo:lat="-30.03306" geo:long="-51.23" rdf:resource="http://sws.geonames.org/3452925/"></statusnet:origin>
+  <statusnet:postIcon rdf:resource="http://avatar3.status.net/i/identica/44813-96-20090324224807.png"></statusnet:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+  <sioc:has_discussion rdf:resource="http://identi.ca/conversation/99538600"></sioc:has_discussion>
+  <sioc:links_to rdf:resource="http://is.gd/8g8nAJ"></sioc:links_to>
+  <ctag:tagged>
+   <ctag:Tag rdf:about="http://identi.ca/tag/flisol#concept" ctag:label="flisol">
+    <foaf:page rdf:resource="http://identi.ca/tag/flisol"></foaf:page>
+    <rdfs:seeAlso rdf:resource="http://identi.ca/tag/flisol/rss"></rdfs:seeAlso>
+   </ctag:Tag>
+  </ctag:tagged>
+ </item>
+ <item rdf:about="http://identi.ca/notice/100636307" rdf:type="http://rdfs.org/sioc/types#MicroblogPost">
+  <title>fisl: Homenagem e convite do #Fisl14 às #minashackers, em todos os sentidos  http://softwarelivre.org/fisl14/blog/para-as-futuras-mulheres-na-ti</title>
+  <link>http://identi.ca/notice/100636307</link>
+  <description>fisl's status on Tuesday, 16-Apr-13 19:40:03 UTC</description>
+  <content:encoded>Homenagem e convite do #&lt;span class=&quot;tag&quot;&gt;&lt;a href=&quot;http://identi.ca/tag/fisl14&quot; rel=&quot;tag&quot;&gt;Fisl14&lt;/a&gt;&lt;/span&gt; às #&lt;span class=&quot;tag&quot;&gt;&lt;a href=&quot;http://identi.ca/tag/minashackers&quot; rel=&quot;tag&quot;&gt;minashackers&lt;/a&gt;&lt;/span&gt;, em todos os sentidos  &lt;a href=&quot;http://softwarelivre.org/fisl14/blog/para-as-futuras-mulheres-na-ti&quot; title=&quot;http://softwarelivre.org/fisl14/blog/para-as-futuras-mulheres-na-ti&quot; rel=&quot;nofollow external&quot;&gt;http://softwarelivre.org/fisl14/blog/para-as-futuras-mulheres-na-ti&lt;/a&gt;</content:encoded>
+  <dc:date>2013-04-16T19:40:03+00:00</dc:date>
+  <dc:creator>Forum Internacional Software Livre</dc:creator>
+  <foaf:maker rdf:resource="http://identi.ca/user/44813"></foaf:maker>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/44813#acct"></sioc:has_creator>
+  <statusnet:origin geo:lat="-30.03306" geo:long="-51.23" rdf:resource="http://sws.geonames.org/3452925/"></statusnet:origin>
+  <statusnet:postIcon rdf:resource="http://avatar3.status.net/i/identica/44813-96-20090324224807.png"></statusnet:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+  <sioc:has_discussion rdf:resource="http://identi.ca/conversation/99529988"></sioc:has_discussion>
+  <sioc:links_to rdf:resource="http://softwarelivre.org/fisl14/blog/para-as-futuras-mulheres-na-ti"></sioc:links_to>
+  <ctag:tagged>
+   <ctag:Tag rdf:about="http://identi.ca/tag/fisl14#concept" ctag:label="fisl14">
+    <foaf:page rdf:resource="http://identi.ca/tag/fisl14"></foaf:page>
+    <rdfs:seeAlso rdf:resource="http://identi.ca/tag/fisl14/rss"></rdfs:seeAlso>
+   </ctag:Tag>
+  </ctag:tagged>
+  <ctag:tagged>
+   <ctag:Tag rdf:about="http://identi.ca/tag/minashackers#concept" ctag:label="minashackers">
+    <foaf:page rdf:resource="http://identi.ca/tag/minashackers"></foaf:page>
+    <rdfs:seeAlso rdf:resource="http://identi.ca/tag/minashackers/rss"></rdfs:seeAlso>
+   </ctag:Tag>
+  </ctag:tagged>
+ </item>
+ <item rdf:about="http://identi.ca/notice/100620502" rdf:type="http://rdfs.org/sioc/types#MicroblogPost">
+  <title>fisl: Pentaho Day 2013 acontece na próxima semana em Fortaleza http://va.mu/cULz</title>
+  <link>http://identi.ca/notice/100620502</link>
+  <description>fisl's status on Monday, 15-Apr-13 13:29:19 UTC</description>
+  <content:encoded>Pentaho Day 2013 acontece na próxima semana em Fortaleza &lt;a href=&quot;http://va.mu/cULz&quot; title=&quot;http://va.mu/cULz&quot; rel=&quot;nofollow external&quot;&gt;http://va.mu/cULz&lt;/a&gt;</content:encoded>
+  <dc:date>2013-04-15T13:29:19+00:00</dc:date>
+  <dc:creator>Forum Internacional Software Livre</dc:creator>
+  <foaf:maker rdf:resource="http://identi.ca/user/44813"></foaf:maker>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/44813#acct"></sioc:has_creator>
+  <statusnet:origin geo:lat="-30.03306" geo:long="-51.23" rdf:resource="http://sws.geonames.org/3452925/"></statusnet:origin>
+  <statusnet:postIcon rdf:resource="http://avatar3.status.net/i/identica/44813-96-20090324224807.png"></statusnet:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+  <sioc:has_discussion rdf:resource="http://identi.ca/conversation/99515898"></sioc:has_discussion>
+  <sioc:links_to rdf:resource="http://va.mu/cULz"></sioc:links_to>
+ </item>
+ <item rdf:about="http://identi.ca/notice/100591350" rdf:type="http://rdfs.org/sioc/types#MicroblogPost">
+  <title>fisl: Quer um ingresso para o JudCon 2013, em SP? Os primeiros e-mails para comunicacao@asl.org.br ganham. Participe ;)</title>
+  <link>http://identi.ca/notice/100591350</link>
+  <description>fisl's status on Friday, 12-Apr-13 19:23:03 UTC</description>
+  <content:encoded>Quer um ingresso para o JudCon 2013, em SP? Os primeiros e-mails para &lt;a href=&quot;mailto:comunicacao@asl.org.br&quot; title=&quot;mailto:comunicacao@asl.org.br&quot; rel=&quot;nofollow external&quot;&gt;comunicacao@asl.org.br&lt;/a&gt; ganham. Participe ;)</content:encoded>
+  <dc:date>2013-04-12T19:23:03+00:00</dc:date>
+  <dc:creator>Forum Internacional Software Livre</dc:creator>
+  <foaf:maker rdf:resource="http://identi.ca/user/44813"></foaf:maker>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/44813#acct"></sioc:has_creator>
+  <statusnet:origin geo:lat="-30.03306" geo:long="-51.23" rdf:resource="http://sws.geonames.org/3452925/"></statusnet:origin>
+  <statusnet:postIcon rdf:resource="http://avatar3.status.net/i/identica/44813-96-20090324224807.png"></statusnet:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+  <sioc:has_discussion rdf:resource="http://identi.ca/conversation/99490277"></sioc:has_discussion>
+  <sioc:links_to rdf:resource="http://@asl.org.br/"></sioc:links_to>
+ </item>
+ <item rdf:about="http://identi.ca/notice/100577200" rdf:type="http://rdfs.org/sioc/types#MicroblogPost">
+  <title>fisl: Reunião de planejamento discute ações do CISL para 2013 e 2014 http://va.mu/cT3d</title>
+  <link>http://identi.ca/notice/100577200</link>
+  <description>fisl's status on Thursday, 11-Apr-13 15:21:42 UTC</description>
+  <content:encoded>Reunião de planejamento discute ações do CISL para 2013 e 2014 &lt;a href=&quot;http://va.mu/cT3d&quot; title=&quot;http://va.mu/cT3d&quot; rel=&quot;nofollow external&quot;&gt;http://va.mu/cT3d&lt;/a&gt;</content:encoded>
+  <dc:date>2013-04-11T15:21:42+00:00</dc:date>
+  <dc:creator>Forum Internacional Software Livre</dc:creator>
+  <foaf:maker rdf:resource="http://identi.ca/user/44813"></foaf:maker>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/44813#acct"></sioc:has_creator>
+  <statusnet:origin geo:lat="-30.03306" geo:long="-51.23" rdf:resource="http://sws.geonames.org/3452925/"></statusnet:origin>
+  <statusnet:postIcon rdf:resource="http://avatar3.status.net/i/identica/44813-96-20090324224807.png"></statusnet:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+  <sioc:has_discussion rdf:resource="http://identi.ca/conversation/99477783"></sioc:has_discussion>
+  <sioc:links_to rdf:resource="http://va.mu/cT3d"></sioc:links_to>
+ </item>
+ <item rdf:about="http://identi.ca/notice/100562469" rdf:type="http://rdfs.org/sioc/types#MicroblogPost">
+  <title>fisl: Acompanhe o debate do Planejamento do CISL, Comitê de Implentação de Software Livre do Governo http://t.co/mQHMfP62sH @CISLGovBR @SERPRO</title>
+  <link>http://identi.ca/notice/100562469</link>
+  <description>fisl's status on Wednesday, 10-Apr-13 13:58:04 UTC</description>
+  <content:encoded>Acompanhe o debate do Planejamento do CISL, Comitê de Implentação de Software Livre do Governo &lt;a href=&quot;http://t.co/mQHMfP62sH&quot; title=&quot;http://t.co/mQHMfP62sH&quot; rel=&quot;nofollow external&quot;&gt;http://t.co/mQHMfP62sH&lt;/a&gt; @CISLGovBR @&lt;span class=&quot;vcard&quot;&gt;&lt;a href=&quot;http://identi.ca/user/225323&quot; class=&quot;url&quot; title=&quot;SERPRO&quot;&gt;&lt;span class=&quot;fn nickname mention&quot;&gt;SERPRO&lt;/span&gt;&lt;/a&gt;&lt;/span&gt;</content:encoded>
+  <dc:date>2013-04-10T13:58:04+00:00</dc:date>
+  <dc:creator>Forum Internacional Software Livre</dc:creator>
+  <foaf:maker rdf:resource="http://identi.ca/user/44813"></foaf:maker>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/44813#acct"></sioc:has_creator>
+  <statusnet:origin geo:lat="-30.03306" geo:long="-51.23" rdf:resource="http://sws.geonames.org/3452925/"></statusnet:origin>
+  <statusnet:postIcon rdf:resource="http://avatar3.status.net/i/identica/44813-96-20090324224807.png"></statusnet:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+  <sioc:has_discussion rdf:resource="http://identi.ca/conversation/99464664"></sioc:has_discussion>
+  <sioc:links_to rdf:resource="http://t.co/mQHMfP62sH"></sioc:links_to>
+ </item>
+ <item rdf:about="http://identi.ca/notice/100548299" rdf:type="http://rdfs.org/sioc/types#MicroblogPost">
+  <title>fisl: Deixou para enviar sua palestra para o #fisl14 no último dia e perdeu o prazo? Seus problemas acabaram: http://is.gd/OYsLJP</title>
+  <link>http://identi.ca/notice/100548299</link>
+  <description>fisl's status on Tuesday, 09-Apr-13 13:35:11 UTC</description>
+  <content:encoded>Deixou para enviar sua palestra para o #&lt;span class=&quot;tag&quot;&gt;&lt;a href=&quot;http://identi.ca/tag/fisl14&quot; rel=&quot;tag&quot;&gt;fisl14&lt;/a&gt;&lt;/span&gt; no último dia e perdeu o prazo? Seus problemas acabaram: &lt;a href=&quot;http://is.gd/OYsLJP&quot; title=&quot;http://is.gd/OYsLJP&quot; rel=&quot;nofollow external&quot;&gt;http://is.gd/OYsLJP&lt;/a&gt;</content:encoded>
+  <dc:date>2013-04-09T13:35:11+00:00</dc:date>
+  <dc:creator>Forum Internacional Software Livre</dc:creator>
+  <foaf:maker rdf:resource="http://identi.ca/user/44813"></foaf:maker>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/44813#acct"></sioc:has_creator>
+  <statusnet:origin geo:lat="-30.03306" geo:long="-51.23" rdf:resource="http://sws.geonames.org/3452925/"></statusnet:origin>
+  <statusnet:postIcon rdf:resource="http://avatar3.status.net/i/identica/44813-96-20090324224807.png"></statusnet:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+  <sioc:has_discussion rdf:resource="http://identi.ca/conversation/99452489"></sioc:has_discussion>
+  <sioc:links_to rdf:resource="http://is.gd/OYsLJP"></sioc:links_to>
+  <ctag:tagged>
+   <ctag:Tag rdf:about="http://identi.ca/tag/fisl14#concept" ctag:label="fisl14">
+    <foaf:page rdf:resource="http://identi.ca/tag/fisl14"></foaf:page>
+    <rdfs:seeAlso rdf:resource="http://identi.ca/tag/fisl14/rss"></rdfs:seeAlso>
+   </ctag:Tag>
+  </ctag:tagged>
+ </item>
+ <item rdf:about="http://identi.ca/notice/100498525" rdf:type="http://rdfs.org/sioc/types#MicroblogPost">
+  <title>fisl: Governo Federal renova estratégias para difusão do #softwarelivre em 2013. #cisl http://is.gd/zwOCiN</title>
+  <link>http://identi.ca/notice/100498525</link>
+  <description>fisl's status on Friday, 05-Apr-13 18:43:47 UTC</description>
+  <content:encoded>Governo Federal renova estratégias para difusão do #&lt;span class=&quot;tag&quot;&gt;&lt;a href=&quot;http://identi.ca/tag/softwarelivre&quot; rel=&quot;tag&quot;&gt;softwarelivre&lt;/a&gt;&lt;/span&gt; em 2013. #&lt;span class=&quot;tag&quot;&gt;&lt;a href=&quot;http://identi.ca/tag/cisl&quot; rel=&quot;tag&quot;&gt;cisl&lt;/a&gt;&lt;/span&gt; &lt;a href=&quot;http://is.gd/zwOCiN&quot; title=&quot;http://is.gd/zwOCiN&quot; rel=&quot;nofollow external&quot;&gt;http://is.gd/zwOCiN&lt;/a&gt;</content:encoded>
+  <dc:date>2013-04-05T18:43:47+00:00</dc:date>
+  <dc:creator>Forum Internacional Software Livre</dc:creator>
+  <foaf:maker rdf:resource="http://identi.ca/user/44813"></foaf:maker>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/44813#acct"></sioc:has_creator>
+  <statusnet:origin geo:lat="-30.03306" geo:long="-51.23" rdf:resource="http://sws.geonames.org/3452925/"></statusnet:origin>
+  <statusnet:postIcon rdf:resource="http://avatar3.status.net/i/identica/44813-96-20090324224807.png"></statusnet:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+  <sioc:has_discussion rdf:resource="http://identi.ca/conversation/99408865"></sioc:has_discussion>
+  <sioc:links_to rdf:resource="http://is.gd/zwOCiN"></sioc:links_to>
+  <ctag:tagged>
+   <ctag:Tag rdf:about="http://identi.ca/tag/cisl#concept" ctag:label="cisl">
+    <foaf:page rdf:resource="http://identi.ca/tag/cisl"></foaf:page>
+    <rdfs:seeAlso rdf:resource="http://identi.ca/tag/cisl/rss"></rdfs:seeAlso>
+   </ctag:Tag>
+  </ctag:tagged>
+  <ctag:tagged>
+   <ctag:Tag rdf:about="http://identi.ca/tag/softwarelivre#concept" ctag:label="softwarelivre">
+    <foaf:page rdf:resource="http://identi.ca/tag/softwarelivre"></foaf:page>
+    <rdfs:seeAlso rdf:resource="http://identi.ca/tag/softwarelivre/rss"></rdfs:seeAlso>
+   </ctag:Tag>
+  </ctag:tagged>
+ </item>
+ <item rdf:about="http://identi.ca/notice/100429420" rdf:type="http://rdfs.org/sioc/types#MicroblogPost">
+  <title>fisl: Prazo para se inscrever no #fisl14 por APENAS R$ 100,00 termina amanhã. #ficadica  http://fisl.org.br/14/greve/</title>
+  <link>http://identi.ca/notice/100429420</link>
+  <description>fisl's status on Monday, 01-Apr-13 14:24:03 UTC</description>
+  <content:encoded>Prazo para se inscrever no #&lt;span class=&quot;tag&quot;&gt;&lt;a href=&quot;http://identi.ca/tag/fisl14&quot; rel=&quot;tag&quot;&gt;fisl14&lt;/a&gt;&lt;/span&gt; por APENAS R$ 100,00 termina amanhã. #&lt;span class=&quot;tag&quot;&gt;&lt;a href=&quot;http://identi.ca/tag/ficadica&quot; rel=&quot;tag&quot;&gt;ficadica&lt;/a&gt;&lt;/span&gt;  &lt;a href=&quot;http://fisl.org.br/14/greve/&quot; title=&quot;http://fisl.org.br/14/greve/&quot; rel=&quot;nofollow external&quot;&gt;http://fisl.org.br/14/greve/&lt;/a&gt;</content:encoded>
+  <dc:date>2013-04-01T14:24:03+00:00</dc:date>
+  <dc:creator>Forum Internacional Software Livre</dc:creator>
+  <foaf:maker rdf:resource="http://identi.ca/user/44813"></foaf:maker>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/44813#acct"></sioc:has_creator>
+  <statusnet:origin geo:lat="-30.03306" geo:long="-51.23" rdf:resource="http://sws.geonames.org/3452925/"></statusnet:origin>
+  <statusnet:postIcon rdf:resource="http://avatar3.status.net/i/identica/44813-96-20090324224807.png"></statusnet:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+  <sioc:has_discussion rdf:resource="http://identi.ca/conversation/99347827"></sioc:has_discussion>
+  <sioc:links_to rdf:resource="http://fisl.org.br/14/greve/"></sioc:links_to>
+  <ctag:tagged>
+   <ctag:Tag rdf:about="http://identi.ca/tag/ficadica#concept" ctag:label="ficadica">
+    <foaf:page rdf:resource="http://identi.ca/tag/ficadica"></foaf:page>
+    <rdfs:seeAlso rdf:resource="http://identi.ca/tag/ficadica/rss"></rdfs:seeAlso>
+   </ctag:Tag>
+  </ctag:tagged>
+  <ctag:tagged>
+   <ctag:Tag rdf:about="http://identi.ca/tag/fisl14#concept" ctag:label="fisl14">
+    <foaf:page rdf:resource="http://identi.ca/tag/fisl14"></foaf:page>
+    <rdfs:seeAlso rdf:resource="http://identi.ca/tag/fisl14/rss"></rdfs:seeAlso>
+   </ctag:Tag>
+  </ctag:tagged>
+ </item>
+ <item rdf:about="http://identi.ca/notice/99591328" rdf:type="http://rdfs.org/sioc/types#MicroblogPost">
+  <title>fisl: Do you have a paper on #FLOSS? Join the #WSL during #FISL14, in Porto Alegre. Submission till Feb 20th! http://softwarelivre.org/wsl</title>
+  <link>http://identi.ca/notice/99591328</link>
+  <description>fisl's status on Thursday, 14-Feb-13 16:54:52 UTC</description>
+  <content:encoded>Do you have a paper on #&lt;span class=&quot;tag&quot;&gt;&lt;a href=&quot;http://identi.ca/tag/floss&quot; rel=&quot;tag&quot;&gt;FLOSS&lt;/a&gt;&lt;/span&gt;? Join the #&lt;span class=&quot;tag&quot;&gt;&lt;a href=&quot;http://identi.ca/tag/wsl&quot; rel=&quot;tag&quot;&gt;WSL&lt;/a&gt;&lt;/span&gt; during #&lt;span class=&quot;tag&quot;&gt;&lt;a href=&quot;http://identi.ca/tag/fisl14&quot; rel=&quot;tag&quot;&gt;FISL14&lt;/a&gt;&lt;/span&gt;, in Porto Alegre. Submission till Feb 20th! &lt;a href=&quot;http://softwarelivre.org/wsl&quot; title=&quot;http://softwarelivre.org/wsl&quot; rel=&quot;nofollow external&quot;&gt;http://softwarelivre.org/wsl&lt;/a&gt;</content:encoded>
+  <dc:date>2013-02-14T16:54:52+00:00</dc:date>
+  <dc:creator>Forum Internacional Software Livre</dc:creator>
+  <foaf:maker rdf:resource="http://identi.ca/user/44813"></foaf:maker>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/44813#acct"></sioc:has_creator>
+  <statusnet:origin geo:lat="-30.03306" geo:long="-51.23" rdf:resource="http://sws.geonames.org/3452925/"></statusnet:origin>
+  <statusnet:postIcon rdf:resource="http://avatar3.status.net/i/identica/44813-96-20090324224807.png"></statusnet:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+  <sioc:has_discussion rdf:resource="http://identi.ca/conversation/98586839"></sioc:has_discussion>
+  <sioc:links_to rdf:resource="http://softwarelivre.org/wsl"></sioc:links_to>
+  <ctag:tagged>
+   <ctag:Tag rdf:about="http://identi.ca/tag/fisl14#concept" ctag:label="fisl14">
+    <foaf:page rdf:resource="http://identi.ca/tag/fisl14"></foaf:page>
+    <rdfs:seeAlso rdf:resource="http://identi.ca/tag/fisl14/rss"></rdfs:seeAlso>
+   </ctag:Tag>
+  </ctag:tagged>
+  <ctag:tagged>
+   <ctag:Tag rdf:about="http://identi.ca/tag/floss#concept" ctag:label="floss">
+    <foaf:page rdf:resource="http://identi.ca/tag/floss"></foaf:page>
+    <rdfs:seeAlso rdf:resource="http://identi.ca/tag/floss/rss"></rdfs:seeAlso>
+   </ctag:Tag>
+  </ctag:tagged>
+  <ctag:tagged>
+   <ctag:Tag rdf:about="http://identi.ca/tag/wsl#concept" ctag:label="wsl">
+    <foaf:page rdf:resource="http://identi.ca/tag/wsl"></foaf:page>
+    <rdfs:seeAlso rdf:resource="http://identi.ca/tag/wsl/rss"></rdfs:seeAlso>
+   </ctag:Tag>
+  </ctag:tagged>
+ </item>
+ <item rdf:about="http://identi.ca/notice/99591145" rdf:type="http://rdfs.org/sioc/types#MicroblogPost">
+  <title>fisl: O #SoftwareLivre é tema do seu trabalho acadêmico? Inscreva-se no #WSL! Últimos dias! http://softwarelivre.org/wsl #fisl14</title>
+  <link>http://identi.ca/notice/99591145</link>
+  <description>fisl's status on Thursday, 14-Feb-13 16:43:42 UTC</description>
+  <content:encoded>O #&lt;span class=&quot;tag&quot;&gt;&lt;a href=&quot;http://identi.ca/tag/softwarelivre&quot; rel=&quot;tag&quot;&gt;SoftwareLivre&lt;/a&gt;&lt;/span&gt; é tema do seu trabalho acadêmico? Inscreva-se no #&lt;span class=&quot;tag&quot;&gt;&lt;a href=&quot;http://identi.ca/tag/wsl&quot; rel=&quot;tag&quot;&gt;WSL&lt;/a&gt;&lt;/span&gt;! Últimos dias! &lt;a href=&quot;http://softwarelivre.org/wsl&quot; title=&quot;http://softwarelivre.org/wsl&quot; rel=&quot;nofollow external&quot;&gt;http://softwarelivre.org/wsl&lt;/a&gt; #&lt;span class=&quot;tag&quot;&gt;&lt;a href=&quot;http://identi.ca/tag/fisl14&quot; rel=&quot;tag&quot;&gt;fisl14&lt;/a&gt;&lt;/span&gt;</content:encoded>
+  <dc:date>2013-02-14T16:43:42+00:00</dc:date>
+  <dc:creator>Forum Internacional Software Livre</dc:creator>
+  <foaf:maker rdf:resource="http://identi.ca/user/44813"></foaf:maker>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/44813#acct"></sioc:has_creator>
+  <statusnet:origin geo:lat="-30.03306" geo:long="-51.23" rdf:resource="http://sws.geonames.org/3452925/"></statusnet:origin>
+  <statusnet:postIcon rdf:resource="http://avatar3.status.net/i/identica/44813-96-20090324224807.png"></statusnet:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+  <sioc:has_discussion rdf:resource="http://identi.ca/conversation/98586670"></sioc:has_discussion>
+  <sioc:links_to rdf:resource="http://softwarelivre.org/wsl"></sioc:links_to>
+  <ctag:tagged>
+   <ctag:Tag rdf:about="http://identi.ca/tag/fisl14#concept" ctag:label="fisl14">
+    <foaf:page rdf:resource="http://identi.ca/tag/fisl14"></foaf:page>
+    <rdfs:seeAlso rdf:resource="http://identi.ca/tag/fisl14/rss"></rdfs:seeAlso>
+   </ctag:Tag>
+  </ctag:tagged>
+  <ctag:tagged>
+   <ctag:Tag rdf:about="http://identi.ca/tag/softwarelivre#concept" ctag:label="softwarelivre">
+    <foaf:page rdf:resource="http://identi.ca/tag/softwarelivre"></foaf:page>
+    <rdfs:seeAlso rdf:resource="http://identi.ca/tag/softwarelivre/rss"></rdfs:seeAlso>
+   </ctag:Tag>
+  </ctag:tagged>
+  <ctag:tagged>
+   <ctag:Tag rdf:about="http://identi.ca/tag/wsl#concept" ctag:label="wsl">
+    <foaf:page rdf:resource="http://identi.ca/tag/wsl"></foaf:page>
+    <rdfs:seeAlso rdf:resource="http://identi.ca/tag/wsl/rss"></rdfs:seeAlso>
+   </ctag:Tag>
+  </ctag:tagged>
+ </item>
+ <foaf:Agent rdf:about="http://identi.ca/user/44813">
+  <foaf:nick>fisl</foaf:nick>
+  <foaf:name>Forum Internacional Software Livre</foaf:name>
+  <foaf:holdsAccount rdf:resource="http://identi.ca/user/44813#acct"></foaf:holdsAccount>
+  <foaf:depiction rdf:resource="http://avatar3.status.net/i/identica/44813-96-20090324224807.png"></foaf:depiction>
+ </foaf:Agent>
+</rdf:RDF>
