@@ -76,7 +76,7 @@ var app =  {
                  this.flipflop=false; return 'color:black';
              } 
              else { 
-                 this.flipflop=true; return 'color:darkred';
+                 this.flipflop=true; return 'color:#444';
              } 
     },
 

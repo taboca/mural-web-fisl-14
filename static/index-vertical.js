@@ -9,8 +9,8 @@ $(document).ready(function() {
    register("/main/footer", "cabecalho", "./digitando/index.html", iframeTemplate);
    register("/main/middle", "meio", "./grade/index.html", iframeTemplate);
    register("/main/topmiddle", "mid", "./destaques/index.html", iframeTemplate);
-   register("/main/bottomsection", "tweeter", "http://www.telasocial.com/ts/fisl/twitter/index.html", iframeTemplate);
-   register("/main/bottomsection2", "identica", "./feed-cicle/index.html", iframeTemplate);
+   register("/main/bottomsection2", "tweeter", "http://www.telasocial.com/ts/fisl/twitter/index.html", iframeTemplate);
+   register("/main/bottomsection", "identica", "./feed-cicle/index.html", iframeTemplate);
 
    register("/main/climatempo", "clima", "./clima/index.html", iframeTemplate);
    register("/main/hora", "hora", "./tempo/index.html", iframeTemplate);
