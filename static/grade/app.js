@@ -179,10 +179,10 @@ var app = {
         replaceRoom[8]='40T';
         replaceRoom[1]='41A';
         replaceRoom[2]='41B';
-        replaceRoom[3]='41B';
-        replaceRoom[4]='41C';
-        replaceRoom[5]='41D';
-        replaceRoom[6]='41E';
+        replaceRoom[3]='41C';
+        replaceRoom[4]='41D';
+        replaceRoom[5]='41E';
+        replaceRoom[6]='41F';
         replaceRoom[7]='40A';
         replaceRoom[716]='P09';
         replaceRoom[11]='P11';
@@ -217,6 +217,26 @@ var app = {
 		var dumpHeader=false;
 		var dumpHours=0;
 
+        var orderList = new Array();
+        orderList[0]='40T';
+        orderList[1]='41A';
+        orderList[2]='41B';
+        orderList[3]='41C';
+        orderList[4]='41D';
+        orderList[5]='41E';
+        orderList[6]='41F';
+        orderList[7]='40A';
+        orderList[8]='P09';
+        orderList[9]='P11';
+        orderList[10]='701';
+        orderList[11]='702';
+        orderList[12]='710';
+        orderList[13]='713';
+        orderList[14]='714';
+        orderList[15]='715';
+        orderList[16]='F12';
+        orderList[17]='F13';
+
 		for(var hour in hourSlices ) { 
 			
             if(hourIndex==0&&!dumpHeader) { 
@@ -228,9 +248,9 @@ var app = {
                 } 
             } 
             var columnCount=0;
-
-
-            for( var e in updateColumns ) { 
+            //for( var e in updateColumns ) { 
+            for( var eee=0;eee<orderList.length;eee++ ) { 
+                var e = orderList[eee];
     			if(columnCount==0) { 
                      var e2=null;
                      if(typeof slicesSequence[hourIndex+1] != 'undefined') { 
