@@ -3,6 +3,7 @@
 
 var charToElement = new Array();
 var gridCharUsed=32000;
+
 function mapCell(storeElement) { 
   var proposalUTFChar = getUnicodeCharacter(gridCharUsed++);
   charToElement[proposalUTFChar]=storeElement;
@@ -76,7 +77,7 @@ var app = {
 	// the prior algorithm adds a first column for the sake of hours 
 	// reference. 
 
-      var i=0,j=0;
+    var i=0,j=0;
 	var cutChars = false;
 	var buffer2 = '';
 	var collectBuffer = '';
@@ -174,6 +175,26 @@ var app = {
 		// We count, collect the columns
 		var updateColumns = new Array();
                       
+        var replaceRoom = new Array(); 
+        replaceRoom[8]='40T';
+        replaceRoom[1]='41A';
+        replaceRoom[2]='41B';
+        replaceRoom[3]='41B';
+        replaceRoom[4]='41C';
+        replaceRoom[5]='41D';
+        replaceRoom[6]='41E';
+        replaceRoom[7]='40A';
+        replaceRoom[716]='P09';
+        replaceRoom[11]='P11';
+        replaceRoom[701]='701';
+        replaceRoom[702]='702';
+        replaceRoom[715]='710';
+        replaceRoom[723]='713';
+        replaceRoom[714]='714';
+        replaceRoom[722]='715';
+        replaceRoom[717]='F12';
+        replaceRoom[718]='F13';
+
 		var slicesSequence = new Array();
 		var slicesCount=0;
 		for(var hour in hourSlices ) { 
@@ -181,10 +202,10 @@ var app = {
 			for( var i in eventBegins[hour] ) { 
 				  var item = eventBegins[hour][i];
 				  item.cellMap=mapCell({'type':'event','value':item , 'begin': strToMins(item.inicio),'end': strToMins(item.fim), flag:false});
-				  if(!updateColumns[item.local]) { 
-					updateColumns[item.local]=new Array();
+				  if(!updateColumns[replaceRoom[item.local]]) { 
+					updateColumns[replaceRoom[item.local]]=new Array();
 				  } 
-				  updateColumns[item.local].push(item);
+				  updateColumns[replaceRoom[item.local]].push(item);
 			} 
 		} 
 		var cols = 0;
@@ -198,69 +219,70 @@ var app = {
 
 		for(var hour in hourSlices ) { 
 			
-		   if(hourIndex==0&&!dumpHeader) { 
-			dumpHeader = true; 
-			buffer=mapCell({'type':'corner'});
-		        for( var e in updateColumns ) { 
-				var roomChar = mapCell({'type':'header', 'value': e});
-				buffer+=roomChar;
-			} 
-		   } 
-		   var columnCount=0;
-		   for( var e in updateColumns ) { 
-			if(columnCount==0) { 
-                           var e2=null;
-			   if(typeof slicesSequence[hourIndex+1] != 'undefined') { 
-                              e2=slicesSequence[hourIndex+1];
-			   } else { 
-                              e2=parseInt(slicesSequence[hourIndex])+30;
-		 	   } 
-			   var delta = parseInt(e2-slicesSequence[hourIndex]);
-			   var roomChar = mapCell({'type':'slices', 'value': hour, 'height': delta , 'begin':slicesSequence[hourIndex], 'end':e2, 'flag':false});
-			   buffer+=roomChar;
-		        } 
-			var items = updateColumns[e];
-			var keyChar='';
-			for( var kk in items) { 
-				var item = items[kk];
-				if(strToMins(item.inicio)==parseInt(hour)) { 
-					keyChar = item.cellMap;  
-					openElements[e]=item;
-				} 
-			} 
-			if(keyChar=='') { 
-				if(openElements[e]) { 	
-					if(strToMins(openElements[e].fim)>parseInt(hour)) { 
-						keyChar = openElements[e].cellMap;
-					} else { 
-						// we may consider killing open elements
-					} 
-				} 
-			} 
-			if(keyChar=='') { 
-				var hEnd = slicesSequence[hourIndex+1];
-				var hBegin = slicesSequence[hourIndex];
-				var delta = parseInt(hEnd-hBegin);
-				keyChar = mapCell({'type':'none', 'value': delta, 'begin':slicesSequence[hourIndex], 'end':slicesSequence[hourIndex+1]}); 
-			} 
-			buffer+=keyChar;
-			roomIndex++;
-			columnCount++;
-		     } // columns = rooms  
-                     hourIndex++;
+            if(hourIndex==0&&!dumpHeader) { 
+                dumpHeader = true; 
+                buffer=mapCell({'type':'corner'});
+                for( var e in updateColumns ) { 
+                    var roomChar = mapCell({'type':'header', 'value': e});
+                    buffer+=roomChar;
+                } 
+            } 
+            var columnCount=0;
+
+
+            for( var e in updateColumns ) { 
+    			if(columnCount==0) { 
+                     var e2=null;
+                     if(typeof slicesSequence[hourIndex+1] != 'undefined') { 
+                        e2=slicesSequence[hourIndex+1];
+                     } else { 
+                        e2=parseInt(slicesSequence[hourIndex])+30;
+                     } 
+                     var delta = parseInt(e2-slicesSequence[hourIndex]);
+                     var roomChar = mapCell({'type':'slices', 'value': hour, 'height': delta , 'begin':slicesSequence[hourIndex], 'end':e2, 'flag':false});
+                     buffer+=roomChar;
+    		    } 
+    			var items = updateColumns[e];
+    			var keyChar='';
+    			for( var kk in items) { 
+    				var item = items[kk];
+    				if(strToMins(item.inicio)==parseInt(hour)) { 
+    					keyChar = item.cellMap;  
+    					openElements[e]=item;
+    				} 
+    			} 
+    			if(keyChar=='') { 
+    				if(openElements[e]) { 	
+    					if(strToMins(openElements[e].fim)>parseInt(hour)) { 
+    						keyChar = openElements[e].cellMap;
+    					} else { 
+    						// we may consider killing open elements
+    					} 
+    				} 
+    			} 
+    			if(keyChar=='') { 
+    				var hEnd = slicesSequence[hourIndex+1];
+    				var hBegin = slicesSequence[hourIndex];
+    				var delta = parseInt(hEnd-hBegin);
+    				keyChar = mapCell({'type':'none', 'value': delta, 'begin':slicesSequence[hourIndex], 'end':slicesSequence[hourIndex+1]}); 
+    			} 
+    			buffer+=keyChar;
+    			roomIndex++;
+    			columnCount++;
+            } // columns = rooms  
+            hourIndex++;
+
 		}  // hours = slices 
-
 		this.gridBuffer=buffer;
-		this.gridCols  =cols;
-
+		this.gridCols=cols;
 	}, 
 
   generateDivs: function () { 
 
-		var buffer = this.gridBuffer; 
-		var cols   = this.gridCols;
-		var container=document.createElement('div');
-       		var cName = 'container_'+Math.random();
+        var buffer = this.gridBuffer; 
+        var cols   = this.gridCols;
+        var container=document.createElement('div');
+        var cName = 'container_'+Math.random();
 		container.setAttribute('id', cName);
 		document.body.appendChild(container);
 		cssWidth = parseInt(parseInt(document.getElementById(cName).offsetWidth-50)/cols);
@@ -305,17 +327,16 @@ var app = {
 			   } 
 
 			   if(probeElement.type == 'slices') { 
-                                var hour = probeElement.value;
-                                var delta = probeElement.height;
-								
-				if(!delta) { delta=these.chunkHourSpace; } 
-				$(this).addClass('innerHour');
-				var localWidth='50px';
-				var hourSliceId = 'hourSlice_'+Math.random(); 
-				var strHH = ''+Math.floor(parseInt(hour)/60);
-				var strMM = ''+parseInt(hour)%60; 
-				if(strMM<10) { strMM+='0'; } 
-				var strProposal = strHH+':'+strMM;
+                     var hour = probeElement.value;
+                     var delta = probeElement.height;
+                    if(!delta) { delta=these.chunkHourSpace; } 
+                    $(this).addClass('innerHour');
+                    var localWidth='50px';
+                    var hourSliceId = 'hourSlice_'+Math.random(); 
+                    var strHH = ''+Math.floor(parseInt(hour)/60);
+                    var strMM = ''+parseInt(hour)%60; 
+                    if(strMM<10) { strMM+='0'; } 
+                    var strProposal = strHH+':'+strMM;
 
 				if(probeElement.flag) { 
 					strProposal='';
@@ -329,7 +350,7 @@ var app = {
 			   } 
 
 			   if(probeElement.type == 'header') { 
-                                       var room = probeElement.value;
+                var room = probeElement.value;
 				$(this).addClass('innerHeader');
 				$(this).attr("style",'width:'+cssWidth+'px;');
 			 	$(this).html('<div class="innerInnerHeader">'+room+'</div>');
@@ -337,7 +358,7 @@ var app = {
 
 			   if(probeElement.type == 'corner') { 
 				var localWidth='50px';
-                                       var room = probeElement.value;
+                var room = probeElement.value;
 				$(this).attr("style",'width:'+localWidth+';');
 			 	$(this).html('<div class="innerInnerCorner" style="-moz-transform-orifin:0px 0px; -moz-transform:rotate(-90deg)"> </div>');
 			   } 

@@ -9,35 +9,33 @@
 
    function grid(str,cols,target, className) { 
 	gClassName = className;
-        gStr = str; 
-        gCols= cols; 
+    gStr = str; 
+    gCols= cols; 
   	var indexLine=0;
-        var parseUpToLine=gStr.length;
+    var parseUpToLine=gStr.length;
 	currEl = document.getElementById(target);
-        clusterFlip(false, currEl, 0,str,cols);
+    clusterFlip(false, currEl, 0,str,cols);
    } 
     
    var flipFlop = true;
    var classType ='';
    function clusterFlip(flipFlop, currEl, index, str,shift) { 
-	var range = str.length/shift;
-	while(index<range) { 
-	  if(str!='') { 
-	    if(flipFlop) { 
-		classType = 'c gh';
-	    } else { 
-		classType = 'c gv';
-            }  
-		var el = document.createElement("div");
-		el.setAttribute("class", classType);
-	        currEl.appendChild(el);	
-       		index = clusterQuery(flipFlop, el,str,shift);
+    var range = str.length/shift;
+    while(index<range) { 
+      if(str!='') { 
+        if(flipFlop) { 
+           classType = 'c gh';
+        } else { 
+           classType = 'c gv';
+        }  
+        var el = document.createElement("div");
+        el.setAttribute("class", classType);
+        currEl.appendChild(el);	
+        index = clusterQuery(flipFlop, el,str,shift);
 		str = str.substr(index*shift, str.length);
 	  } else { break;} 
-
   	} 
    } 
-    
 
    // For rows 
    // index, shift  ( cols or lines ), indexLine, parseUpToLine = indexLine+cols;  
@@ -88,14 +86,12 @@
 	} 
 	return { c: cCount } 
    } 
-   
 
    function flipString(inputStr, lines, cols) { 
 	var outputString='';
 	for(j=0;j<cols;j++) { 
 		for(var i=0;i<lines;i++) { 
 			outputString+=inputStr[i*cols+j];
-			
 		} 
 	} 
 	return outputString; 

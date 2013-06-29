@@ -62,7 +62,7 @@ function strToMins(item) {
 } 
 
 var dateUtil =  {
- mos: ['Janeiro','Fevereito','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro'],
+ mos: ['Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro'],
   getPtBrMonth: function () { 
     var ddd = new Date();
     return this.mos[ddd.getMonth()];
