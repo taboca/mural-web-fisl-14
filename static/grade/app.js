@@ -85,118 +85,108 @@ var app = {
     var time_end=0;
  
     for(var k = 0; k<this.gridBuffer.length; k++) { 
-	
-		var electChar = this.gridBuffer[k]; 
-
-		if(i>0) { // we think for lines not the header.. 
-			if(j==0) { 
-				var currEl = charToElement[this.gridBuffer[k]];
-				var currBegin = currEl.begin; // example 840 mins 
-				// currHour = 360 min  = 6AM 
-
-				if(currBegin<currHour) { 
-					cutChars=true;	
-					time_start = parseInt(charToElement[this.gridBuffer[k]].begin);
-					time_end = parseInt(charToElement[this.gridBuffer[k]].end);
-				} else { 
-					if(one==true && collectBuffer.length>0) { 
-						one=false;
-						var from = collectBuffer.length-this.gridCols-1;
-						collectBuffer = collectBuffer.slice(from,collectBuffer.length);
-						for(var cB=0;cB<collectBuffer.length;cB++) { 
-							charToElement[collectBuffer[cB]].flag=true;
-						} 
-                        for(var bI=0;bI<collectBuffer.length;bI++) {
-						    buffer2.push(collectBuffer[bI]);
+        var electChar = this.gridBuffer[k]; 
+        if(i>0) { // we think for lines not the header.. 
+            if(j==0) { 
+                var currEl = charToElement[this.gridBuffer[k]];
+                var currBegin = currEl.begin; // example 840 mins 
+                // currHour = 360 min  = 6AM 
+                if(currBegin<currHour) { 
+                    cutChars=true;	
+                    time_start = parseInt(charToElement[this.gridBuffer[k]].begin);
+                    time_end = parseInt(charToElement[this.gridBuffer[k]].end);
+                } else { 
+                    if(one==true && collectBuffer.length>0) { 
+                        one=false;
+                        var from = collectBuffer.length-this.gridCols-1;
+                        collectBuffer = collectBuffer.slice(from,collectBuffer.length);
+                        for(var cB=0;cB<collectBuffer.length;cB++) { 
+                            charToElement[collectBuffer[cB]].flag=true;
                         } 
-					} 		
-				}  
-			}
-			if(cutChars) { 
-				if(j>0) { 
-					var el = charToElement[this.gridBuffer[k]]; 
-					if(el.type=='event') { 
-						var original = el.begin;
-						var dT = parseInt(time_end)-parseInt(time_start);
-
-						charToElement[this.gridBuffer[k]].begin=parseInt(original)+dT;
-					} 
-				} 
-				if(j==this.gridCols) { 
-					cutChars=false;
-				} 
-				collectBuffer.push(this.gridBuffer[k]);
-				electChar=null;
-			}  
-			
-		} 
+                        for(var bI=0;bI<collectBuffer.length;bI++) {
+                            buffer2.push(collectBuffer[bI]);
+                        } 
+                    } 		
+                }  
+            }
+            if(cutChars) { 
+                if(j>0) { 
+                    var el = charToElement[this.gridBuffer[k]]; 
+                    if(el.type=='event') { 
+                        var original = el.begin;
+                        var dT = parseInt(time_end)-parseInt(time_start);
+                        charToElement[this.gridBuffer[k]].begin=parseInt(original)+dT;
+                    } 
+                } 
+                if(j==this.gridCols) { 
+                    cutChars=false;
+                } 
+                collectBuffer.push(this.gridBuffer[k]);
+                electChar=null;
+            }  
+        } 
         if(electChar) { 	
             buffer2.push(electChar);
         }
-		j++;
-		if(j>this.gridCols) { i++; j=0; } 	
+        j++;
+        if(j>this.gridCols) { i++; j=0; } 	
     }  
-	this.gridBuffer=buffer2;	
+    this.gridBuffer=buffer2;	
   },
 
   gridFillForDay: function (currentDay) { 
-		// warning ( inverted ) 
-		var eventBegins = new Array();
-		var eventEnds = new Array();
-		var listHourKeys = new Array();
-		for(var k=currentDay.length-1;k>=0;k--) { 
-			var eventItem = currentDay[k];
-			var plainHour = strToMins(eventItem.inicio);
-			if(!eventBegins[plainHour]) { 
-				eventBegins[plainHour] = new Array();
-			} 
-			eventBegins[plainHour].push(eventItem);
-			listHourKeys.push(plainHour);
-		 	var plainHour = strToMins(eventItem.fim);
-			if(!eventEnds[plainHour]) { 
-				eventEnds[plainHour] = new Array();
-			} 
-			eventEnds[plainHour].push(eventItem);
-			listHourKeys.push(plainHour);
-		}
+        // warning ( inverted ) 
+        var eventBegins = new Array();
+        var eventEnds = new Array();
+        var listHourKeys = new Array();
+        for(var k=currentDay.length-1;k>=0;k--) { 
+            var eventItem = currentDay[k];
+            var plainHour = strToMins(eventItem.inicio);
+            if(!eventBegins[plainHour]) { 
+           	eventBegins[plainHour] = new Array();
+            } 
+            eventBegins[plainHour].push(eventItem);
+            listHourKeys.push(plainHour);
+            var plainHour = strToMins(eventItem.fim);
+            if(!eventEnds[plainHour]) { 
+                eventEnds[plainHour] = new Array();
+            } 
+            eventEnds[plainHour].push(eventItem);
+            listHourKeys.push(plainHour);
+        }
 
 		// We sort 
-		var hoursKeys = eventsBySortedHours(listHourKeys);
-		var hourSlices = new Array();
-		for(var k in hoursKeys) { 
-			var hourToCheck =  listHourKeys[hoursKeys[k]];
-			if(!hourSlices[hourToCheck]) { 
-				hourSlices[hourToCheck]=true;
-			} 
-		} 
-
-		// We count, collect the columns
-		var updateColumns = new Array();
-                      
-		var slicesSequence = new Array();
-		var slicesCount=0;
-		for(var hour in hourSlices ) { 
-			slicesSequence[slicesCount++]=hour; // this is for later use, we simply counting 
-			for( var i in eventBegins[hour] ) { 
-				  var item = eventBegins[hour][i];
-				  item.cellMap=mapCell({'type':'event','value':item , 'begin': strToMins(item.inicio),'end': strToMins(item.fim), flag:false});
-				  if(!updateColumns[replaceRoom[item.local]]) { 
-					updateColumns[replaceRoom[item.local]]=new Array();
-				  } 
-				  updateColumns[replaceRoom[item.local]].push(item);
-			} 
-		} 
-		var cols = 0;
-		for(var k in updateColumns) { cols++; } 
-
-		var buffer = new Array();
-		var hourIndex=0, roomIndex=0;
-		var openElements = new Array();
-		var dumpHeader=false;
-		var dumpHours=0;
-
-		for(var hour in hourSlices ) { 
-			
+        var hoursKeys = eventsBySortedHours(listHourKeys);
+        var hourSlices = new Array();
+        for(var k in hoursKeys) { 
+        	var hourToCheck =  listHourKeys[hoursKeys[k]];
+        	if(!hourSlices[hourToCheck]) { 
+                hourSlices[hourToCheck]=true;
+            } 
+        } 
+        // We count, collect the columns
+        var updateColumns = new Array();
+        var slicesSequence = new Array();
+        var slicesCount=0;
+        for(var hour in hourSlices ) { 
+            slicesSequence[slicesCount++]=hour; // this is for later use, we simply counting 
+            for( var i in eventBegins[hour] ) { 
+                var item = eventBegins[hour][i];
+                item.cellMap=mapCell({'type':'event','value':item , 'begin': strToMins(item.inicio),'end': strToMins(item.fim), flag:false});
+                if(!updateColumns[replaceRoom[item.local]]) { 
+                    updateColumns[replaceRoom[item.local]]=new Array();
+                } 
+                updateColumns[replaceRoom[item.local]].push(item);
+            } 
+        } 
+        var cols = 0;
+        for(var k in updateColumns) { cols++; } 
+        var buffer = new Array();
+        var hourIndex=0, roomIndex=0;
+        var openElements = new Array();
+        var dumpHeader=false;
+        var dumpHours=0;
+        for(var hour in hourSlices ) { 
             if(hourIndex==0&&!dumpHeader) { 
                 dumpHeader = true; 
                 buffer.push(mapCell({'type':'corner'}));
@@ -211,7 +201,7 @@ var app = {
             //for( var e in updateColumns ) { 
             for( var eee=0;eee<orderList.length;eee++ ) { 
                 var e = orderList[eee];
-    			if(columnCount==0) { 
+                if(columnCount==0) { 
                      var e2=null;
                      if(typeof slicesSequence[hourIndex+1] != 'undefined') { 
                         e2=slicesSequence[hourIndex+1];
@@ -221,42 +211,41 @@ var app = {
                      var delta = parseInt(e2-slicesSequence[hourIndex]);
                      var roomChar = mapCell({'type':'slices', 'value': hour, 'height': delta , 'begin':slicesSequence[hourIndex], 'end':e2, 'flag':false});
                      buffer.push(roomChar);
-    		    } 
-    			var items = updateColumns[e];
-    			var keyChar='';
-    			for( var kk in items) { 
-    				var item = items[kk];
-    				if(strToMins(item.inicio)==parseInt(hour)) { 
-    					keyChar = item.cellMap;  
-    					openElements[e]=item;
-    				} 
-    			} 
-    			if(keyChar=='') { 
-    				if(openElements[e]) { 	
-    					if(strToMins(openElements[e].fim)>parseInt(hour)) { 
-    						keyChar = openElements[e].cellMap;
-    					} else { 
-    						// we may consider killing open elements
-    					} 
-    				} 
-    			} 
-    			if(keyChar=='') { 
-    				var hEnd = slicesSequence[hourIndex+1];
-    				var hBegin = slicesSequence[hourIndex];
-    				var delta = parseInt(hEnd-hBegin);
-    				keyChar = mapCell({'type':'none', 'value': delta, 'begin':slicesSequence[hourIndex], 'end':slicesSequence[hourIndex+1]}); 
-    			} 
+                } 
+                var items = updateColumns[e];
+                var keyChar='';
+                for( var kk in items) { 
+                    var item = items[kk];
+                    if(strToMins(item.inicio)==parseInt(hour)) { 
+                        keyChar = item.cellMap;  
+                        openElements[e]=item;
+                    } 
+                } 
+                if(keyChar=='') { 
+                    if(openElements[e]) { 	
+                        if(strToMins(openElements[e].fim)>parseInt(hour)) { 
+                            keyChar = openElements[e].cellMap;
+                        } else { 
+                            // we may consider killing open elements
+                        } 
+                    } 
+                } 
+                if(keyChar=='') { 
+                    var hEnd = slicesSequence[hourIndex+1];
+                    var hBegin = slicesSequence[hourIndex];
+                    var delta = parseInt(hEnd-hBegin);
+                    keyChar = mapCell({'type':'none', 'value': delta, 'begin':slicesSequence[hourIndex], 'end':slicesSequence[hourIndex+1]}); 
+                } 
                 if(keyChar!='') {
                     buffer.push(keyChar);
                 }
-    			roomIndex++;
-    			columnCount++;
+                roomIndex++;
+                columnCount++;
             } // columns = rooms  
             hourIndex++;
-
-		}  // hours = slices 
-		this.gridBuffer=buffer;
-		this.gridCols=cols;
+        }  // hours = slices 
+        this.gridBuffer=buffer;
+        this.gridCols=cols;
 	}, 
 
     generateDivs: function () { 
