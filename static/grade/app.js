@@ -2,10 +2,10 @@
 // returns unicode characters so we have a lot of possible table values
 
 var charToElement = new Array();
-var gridCharUsed=32000;
+var gridCharUsed=0;
 
 function mapCell(storeElement) { 
-  var proposalUTFChar = getUnicodeCharacter(gridCharUsed++);
+  var proposalUTFChar = '_'+gridCharUsed++;
   charToElement[proposalUTFChar]=storeElement;
   return proposalUTFChar;
 } 
@@ -78,13 +78,14 @@ var app = {
 	// reference. 
 
     var i=0,j=0;
-	var cutChars = false;
-	var buffer2 = '';
-	var collectBuffer = '';
-		var one= true;
-	var time_start=0; var time_end=0;
+    var cutChars = false;
+    var buffer2 = new Array();
+    var collectBuffer = new Array();
+    var one= true;
+    var time_start=0;
+    var time_end=0;
  
-      for(var k = 0; k<this.gridBuffer.length; k++) { 
+    for(var k = 0; k<this.gridBuffer.length; k++) { 
 	
 		var electChar = this.gridBuffer[k]; 
 
@@ -99,14 +100,16 @@ var app = {
 					time_start = parseInt(charToElement[this.gridBuffer[k]].begin);
 					time_end = parseInt(charToElement[this.gridBuffer[k]].end);
 				} else { 
-					if(one==true && collectBuffer!='') { 
+					if(one==true && collectBuffer.length>0) { 
 						one=false;
 						var from = collectBuffer.length-this.gridCols-1;
-						collectBuffer = collectBuffer.substring(from,collectBuffer.length);
+						collectBuffer = collectBuffer.slice(from,collectBuffer.length);
 						for(var cB=0;cB<collectBuffer.length;cB++) { 
 							charToElement[collectBuffer[cB]].flag=true;
 						} 
-						buffer2+=collectBuffer;
+                        for(var bI=0;bI<collectBuffer.length;bI++) {
+						    buffer2.push(collectBuffer[bI]);
+                        } 
 					} 		
 				}  
 			}
@@ -123,28 +126,25 @@ var app = {
 				if(j==this.gridCols) { 
 					cutChars=false;
 				} 
-				collectBuffer+=this.gridBuffer[k];
-				electChar='';
+				collectBuffer.push(this.gridBuffer[k]);
+				electChar=null;
 			}  
 			
 		} 
-		
-		buffer2+=electChar;
+        if(electChar) { 	
+            buffer2.push(electChar);
+        }
 		j++;
 		if(j>this.gridCols) { i++; j=0; } 	
-      }  
+    }  
 	this.gridBuffer=buffer2;	
-
   },
 
   gridFillForDay: function (currentDay) { 
-
-		var innerAll = "";
 		// warning ( inverted ) 
 		var eventBegins = new Array();
 		var eventEnds = new Array();
 		var listHourKeys = new Array();
-
 		for(var k=currentDay.length-1;k>=0;k--) { 
 			var eventItem = currentDay[k];
 			var plainHour = strToMins(eventItem.inicio);
@@ -153,7 +153,6 @@ var app = {
 			} 
 			eventBegins[plainHour].push(eventItem);
 			listHourKeys.push(plainHour);
-
 		 	var plainHour = strToMins(eventItem.fim);
 			if(!eventEnds[plainHour]) { 
 				eventEnds[plainHour] = new Array();
@@ -211,7 +210,7 @@ var app = {
 		var cols = 0;
 		for(var k in updateColumns) { cols++; } 
 
-		var buffer = '';
+		var buffer = new Array();
 		var hourIndex=0, roomIndex=0;
 		var openElements = new Array();
 		var dumpHeader=false;
@@ -241,10 +240,10 @@ var app = {
 			
             if(hourIndex==0&&!dumpHeader) { 
                 dumpHeader = true; 
-                buffer=mapCell({'type':'corner'});
+                buffer.push(mapCell({'type':'corner'}));
                 for( var e in updateColumns ) { 
                     var roomChar = mapCell({'type':'header', 'value': e});
-                    buffer+=roomChar;
+                    buffer.push(roomChar);
                 } 
             } 
             var columnCount=0;
@@ -260,7 +259,7 @@ var app = {
                      } 
                      var delta = parseInt(e2-slicesSequence[hourIndex]);
                      var roomChar = mapCell({'type':'slices', 'value': hour, 'height': delta , 'begin':slicesSequence[hourIndex], 'end':e2, 'flag':false});
-                     buffer+=roomChar;
+                     buffer.push(roomChar);
     		    } 
     			var items = updateColumns[e];
     			var keyChar='';
@@ -286,7 +285,9 @@ var app = {
     				var delta = parseInt(hEnd-hBegin);
     				keyChar = mapCell({'type':'none', 'value': delta, 'begin':slicesSequence[hourIndex], 'end':slicesSequence[hourIndex+1]}); 
     			} 
-    			buffer+=keyChar;
+                if(keyChar!='') {
+                    buffer.push(keyChar);
+                }
     			roomIndex++;
     			columnCount++;
             } // columns = rooms  
@@ -309,6 +310,7 @@ var app = {
 		var uniqueClassName = 'inner'+parseInt(Math.random()*1000);
 
 		if(buffer.length>cols+1) { 
+            alert(buffer);
 			grid(buffer, cols+1, cName, uniqueClassName);
 		} 
 
@@ -318,37 +320,35 @@ var app = {
 			var probeElement = charToElement[$(this).attr('id')];
 		 	if(probeElement)  {	
 			   if(probeElement.type=='event') { 
-                                var el = probeElement.value;
-
-				var addStyle='';
-				if(el.descricao.indexOf('mudou')>-1) { 
-					addStyle='background:red ! important';
-				} 
-			 	$(this).html('<div class="innerInnerCell" style="'+addStyle+'">'+el.descricao+'</div>');
-				$(this).addClass('inner');
-				var delta = probeElement.end-probeElement.begin;
+                    var el = probeElement.value;
+                    var addStyle='';
+                    if(el.descricao.indexOf('mudou')>-1) { 
+                        addStyle='background:red ! important';
+                    } 
+                    $(this).html('<div class="innerInnerCell" style="'+addStyle+'">'+el.descricao+'</div>');
+                    $(this).addClass('inner');
+                    var delta = probeElement.end-probeElement.begin;
 	
-				if(probeElement.flag) { 
-					delta=delta+these.chunkHourSpace;
-				} 
-				//if(delta==0) { delta=200 } 
-				$(this).attr("style",'width:'+cssWidth+'px;height:'+these.fixScaleHeight(delta)+'px;');
+                    if(probeElement.flag) { 
+                        delta=delta+these.chunkHourSpace;
+                    } 
+                    //if(delta==0) { delta=200 } 
+                    $(this).attr("style",'width:'+cssWidth+'px;height:'+these.fixScaleHeight(delta)+'px;');
 			   } 
 
 			   if(probeElement.type == 'none') { 
-                                       var delta = probeElement.value;
-				if(probeElement.flag) { 
-					delta=these.chunkHourSpace;
-				} 
-	
-				$(this).addClass('innerNone');
-				$(this).attr("style",'width:'+cssWidth+'px;height:'+these.fixScaleHeight(delta)+'px;');
-				$(this).html('');
+                    var delta = probeElement.value;
+                    if(probeElement.flag) { 
+                        delta=these.chunkHourSpace;
+                    } 
+                    $(this).addClass('innerNone');
+                    $(this).attr("style",'width:'+cssWidth+'px;height:'+these.fixScaleHeight(delta)+'px;');
+                    $(this).html('');
 			   } 
 
 			   if(probeElement.type == 'slices') { 
-                     var hour = probeElement.value;
-                     var delta = probeElement.height;
+                    var hour = probeElement.value;
+                    var delta = probeElement.height;
                     if(!delta) { delta=these.chunkHourSpace; } 
                     $(this).addClass('innerHour');
                     var localWidth='50px';
@@ -357,38 +357,33 @@ var app = {
                     var strMM = ''+parseInt(hour)%60; 
                     if(strMM<10) { strMM+='0'; } 
                     var strProposal = strHH+':'+strMM;
-
-				if(probeElement.flag) { 
-					strProposal='';
-					delta=these.chunkHourSpace;
-				}	
-				$(this).attr("style",'width:'+localWidth+';height:'+these.fixScaleHeight(delta)+'px;');
-			 	$(this).html('<div id="'+hourSliceId+'" class="innerInnerHour" style="display:inline-block;padding:0px"><div>'+strProposal+'</div></div>');
+                    if(probeElement.flag) { 
+                        strProposal='';
+                        delta=these.chunkHourSpace;
+                    }	
+                    $(this).attr("style",'width:'+localWidth+';height:'+these.fixScaleHeight(delta)+'px;');
+                 	$(this).html('<div id="'+hourSliceId+'" class="innerInnerHour" style="display:inline-block;padding:0px"><div>'+strProposal+'</div></div>');
 	
-				// This -20 is due to the padding and the 4 is for borders? 
-	  			var elWidth = document.getElementById(hourSliceId).offsetWidth; 
+                    // This -20 is due to the padding and the 4 is for borders? 
+                    var elWidth = document.getElementById(hourSliceId).offsetWidth; 
 			   } 
 
 			   if(probeElement.type == 'header') { 
-                var room = probeElement.value;
-				$(this).addClass('innerHeader');
-				$(this).attr("style",'width:'+cssWidth+'px;');
-			 	$(this).html('<div class="innerInnerHeader">'+room+'</div>');
+                    var room = probeElement.value;
+                    $(this).addClass('innerHeader');
+                    $(this).attr("style",'width:'+cssWidth+'px;');
+                    $(this).html('<div class="innerInnerHeader">'+room+'</div>');
 			   } 
 
 			   if(probeElement.type == 'corner') { 
-				var localWidth='50px';
-                var room = probeElement.value;
-				$(this).attr("style",'width:'+localWidth+';');
-			 	$(this).html('<div class="innerInnerCorner" style="-moz-transform-orifin:0px 0px; -moz-transform:rotate(-90deg)"> </div>');
+                    var localWidth='50px';
+                    var room = probeElement.value;
+                    $(this).attr("style",'width:'+localWidth+';');
+                    $(this).html('<div class="innerInnerCorner" style="-moz-transform-orifin:0px 0px; -moz-transform:rotate(-90deg)"> </div>');
 			   } 
-
 			} 
 		});
-  
 	//window.parent.parent.setHeight('middle',$('body').height());
-
-
   },
 
   init : function (eventData) {

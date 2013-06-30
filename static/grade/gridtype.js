@@ -22,7 +22,7 @@
    function clusterFlip(flipFlop, currEl, index, str,shift) { 
     var range = str.length/shift;
     while(index<range) { 
-      if(str!='') { 
+      if(str.length!=0) { 
         if(flipFlop) { 
            classType = 'c gh';
         } else { 
@@ -32,7 +32,7 @@
         el.setAttribute("class", classType);
         currEl.appendChild(el);	
         index = clusterQuery(flipFlop, el,str,shift);
-		str = str.substr(index*shift, str.length);
+		str = str.slice(index*shift, str.length);
 	  } else { break;} 
   	} 
    } 
@@ -45,12 +45,12 @@
 	var indexLine = 0;
 	var parseUpToLine = indexLine+1; 
 	var oIndex = indexLine; 
-	var buff = '';
+	var buff = new Array();
 	//alert('max ' + parseUpToLine);
 	var pixel = 0;
 	while(indexLine<parseUpToLine) { 
 		var cellUpToLine = hashChars[range[pixel]]-1;
-		buff += range[pixel];
+		buff.push(range[pixel]);
 		if(cellUpToLine>=parseUpToLine) { 
 			parseUpToLine=cellUpToLine+1;
 		} 
@@ -88,10 +88,10 @@
    } 
 
    function flipString(inputStr, lines, cols) { 
-	var outputString='';
+	var outputString=new Array();
 	for(j=0;j<cols;j++) { 
 		for(var i=0;i<lines;i++) { 
-			outputString+=inputStr[i*cols+j];
+			outputString.push(inputStr[i*cols+j]);
 		} 
 	} 
 	return outputString; 
@@ -102,13 +102,15 @@
    function hashSum(str,cols) { 
 	var hashChars=new Array();
 	var line = 0;
-	for(k in str) { 
-		var hit = k % cols; 
+	for(var i=0;i<str.length;i++)  {
+        //k in str) { 
+		var hit = i % cols; 
 		if(hit==0) { line++ } 
-		var curr = str[k];
+		var curr = str[i];
 		if(!hashChars[curr]) { hashChars[curr]=line; } 
 		if(line > hashChars[curr]) { hashChars[curr]=line } 
   	} 
+    
 	return hashChars;
    } 
  
