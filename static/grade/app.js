@@ -25,7 +25,7 @@ var app = {
   },
 
   start : function (queryDays) {
-    document.body.innerHTML='';
+    document.getElementById('container').innerHTML='';
     for(var k in queryDays) { 
         //var ddate = new Date();
         //dday = ddate.getDate();
@@ -60,7 +60,7 @@ var app = {
                 var preHeaderElement= document.createElement("div");
                 preHeaderElement.setAttribute("class","dayStamp");	
                 preHeaderElement.innerHTML="<div style='clear:both'></div><h2>"+dday+" de "+( dateUtil.getPtBrMonth());
-                document.body.appendChild(preHeaderElement);
+                document.getElementById('container').appendChild(preHeaderElement);
 			}  
 			// generateDivs are to use gridBuffer, cols 
 			// and the inner util function gridtype to make
@@ -310,7 +310,7 @@ var app = {
 		var uniqueClassName = 'inner'+parseInt(Math.random()*1000);
 
 		if(buffer.length>cols+1) { 
-            alert(buffer);
+            document.getElementById('debug').innerHTML=buffer;
 			grid(buffer, cols+1, cName, uniqueClassName);
 		} 
 
