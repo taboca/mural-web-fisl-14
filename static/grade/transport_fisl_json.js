@@ -86,7 +86,6 @@ var transport =  {
             if(eho<0) { 
             	eho=24+eho;
             } 
-            alert(replaceRoom[local]);
             this.dataOut[daStr].push( { 'inicio': ho+":"+mi, 'fim': eho+':'+emi, 'descricao': sub, 'sigla': "- ",'local': local,'apresentador': ""});
 
         } catch (i) { } 

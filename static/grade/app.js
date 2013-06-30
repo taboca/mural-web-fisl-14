@@ -270,7 +270,9 @@ var app = {
 		var uniqueClassName = 'inner'+parseInt(Math.random()*1000);
 
 		if(buffer.length>cols+1) { 
-            document.getElementById('debug').innerHTML=buffer;
+            for(var o=0;o<20;o++) { 
+              document.getElementById('debug').innerHTML+=buffer[o]+'='+charToElement[buffer[o]].value+'-';
+            } 
 			grid(buffer, cols+1, cName, uniqueClassName);
 		} 
 
