@@ -32,40 +32,40 @@ var app = {
         dday = queryDays[k];
         var currentDay = this.evento[dday];
         if(parseInt(dday)>=(new Date()).getDate()) {
-          if(currentDay) { 
-    // gridFill for day will take things like 
-    // event A = 8am - 10am, room a
-    // event B = 9am - 11am, room b
-    // event C = 10am - 12pm, room c 
-            this.gridFillForDay(currentDay);
-    // into a specification for the grid type 
-    // str to divs inline API 
-    // which wants something like this 
-    // 8am:  a,_,_
-    // 9am:  a,b,_
-    // 10am: _,b,c
-    // 11am: _,_,c
-    // 12pm: _,_,_ 
+            if(currentDay) { 
+               // gridFill for day will take things like 
+                // event A = 8am - 10am, room a
+                // event B = 9am - 11am, room b
+                // event C = 10am - 12pm, room c 
+                this.gridFillForDay(currentDay);
+                // into a specification for the grid type 
+                // str to divs inline API 
+                // which wants something like this 
+                // 8am:  a,_,_
+                // 9am:  a,b,_
+                // 10am: _,b,c
+                // 11am: _,_,c
+                // 12pm: _,_,_ 
 
-    // So, before we actually generate the divs we 	
-    // can cut based in a given interest area. For 
-    // example, if current Time = 9:50am, we do not 
-    // have to show 8-9am line one. 
+                // So, before we actually generate the divs we 	
+               // can cut based in a given interest area. For 
+                // example, if current Time = 9:50am, we do not 
+                // have to show 8-9am line one. 
 
-            var currHourFlat = (new Date()).getHours()*60+(new Date()).getMinutes()-60;
-           if((new Date()).getDate()==dday) { 
-                this.bufferStrip(currHourFlat);
-            } else { 
-                var preHeaderElement= document.createElement("div");
-                preHeaderElement.setAttribute("class","dayStamp");	
-                preHeaderElement.innerHTML="<div style='clear:both'></div><h2>"+dday+" de "+( dateUtil.getPtBrMonth());
-                document.getElementById('container').appendChild(preHeaderElement);
-            }  
-            // generateDivs are to use gridBuffer, cols 
-            // and the inner util function gridtype to make
-            // 4,abcd format into DIVs inline 
-            this.generateDivs();
-          }
+                var currHourFlat = (new Date()).getHours()*60+(new Date()).getMinutes()-60;
+                if((new Date()).getDate()==dday) { 
+                    this.bufferStrip(currHourFlat);
+                } else { 
+                    var preHeaderElement= document.createElement("div");
+                    preHeaderElement.setAttribute("class","dayStamp");	
+                    preHeaderElement.innerHTML="<div style='clear:both'></div><h2>"+dday+" de "+( dateUtil.getPtBrMonth());
+                    document.getElementById('container').appendChild(preHeaderElement);
+                }  
+                // generateDivs are to use gridBuffer, cols 
+                // and the inner util function gridtype to make
+                // 4,abcd format into DIVs inline 
+                this.generateDivs();
+            }
         }	
     } 
   }, 
