@@ -259,27 +259,25 @@ var app = {
 		this.gridCols=cols;
 	}, 
 
-  generateDivs: function () { 
+    generateDivs: function () { 
 
         var buffer = this.gridBuffer; 
         var cols   = this.gridCols;
         var container=document.createElement('div');
         var cName = 'container_'+Math.random();
-		container.setAttribute('id', cName);
-		document.getElementById('container').appendChild(container);
-		cssWidth = parseInt(parseInt(document.getElementById(cName).offsetWidth-50)/cols);
-		var uniqueClassName = 'inner'+parseInt(Math.random()*1000);
-
-		if(buffer.length>cols+1) { 
-			grid(buffer, cols+1, cName, uniqueClassName);
-		} 
-
-		var proposedHeight=0;
-		var these = this;
-		$('.'+uniqueClassName).each(function() { 
-			var probeElement = charToElement[$(this).attr('id')];
-		 	if(probeElement)  {	
-			   if(probeElement.type=='event') { 
+        container.setAttribute('id', cName);
+        document.getElementById('container').appendChild(container);
+        cssWidth = parseInt(parseInt(document.getElementById(cName).offsetWidth-50)/cols);
+        var uniqueClassName = 'inner'+parseInt(Math.random()*1000);
+        if(buffer.length>cols+1) { 
+        	grid(buffer, cols+1, cName, uniqueClassName);
+        } 
+        var proposedHeight=0;
+        var these = this;
+        $('.'+uniqueClassName).each(function() { 
+            var probeElement = charToElement[$(this).attr('id')];
+            if(probeElement)  {	
+                if(probeElement.type=='event') { 
                     var el = probeElement.value;
                     var addStyle='';
                     if(el.descricao.indexOf('mudou')>-1) { 
@@ -288,15 +286,13 @@ var app = {
                     $(this).html('<div class="innerInnerCell" style="'+addStyle+'">'+el.descricao+'</div>');
                     $(this).addClass('inner');
                     var delta = probeElement.end-probeElement.begin;
-	
                     if(probeElement.flag) { 
                         delta=delta+these.chunkHourSpace;
                     } 
                     //if(delta==0) { delta=200 } 
                     $(this).attr("style",'width:'+cssWidth+'px;height:'+these.fixScaleHeight(delta)+'px;');
-			   } 
-
-			   if(probeElement.type == 'none') { 
+                } 
+                if(probeElement.type == 'none') { 
                     var delta = probeElement.value;
                     if(probeElement.flag) { 
                         delta=these.chunkHourSpace;
@@ -304,9 +300,8 @@ var app = {
                     $(this).addClass('innerNone');
                     $(this).attr("style",'width:'+cssWidth+'px;height:'+these.fixScaleHeight(delta)+'px;');
                     $(this).html('');
-			   } 
-
-			   if(probeElement.type == 'slices') { 
+                } 
+                if(probeElement.type == 'slices') { 
                     var hour = probeElement.value;
                     var delta = probeElement.height;
                     if(!delta) { delta=these.chunkHourSpace; } 
@@ -323,33 +318,28 @@ var app = {
                     }	
                     $(this).attr("style",'width:'+localWidth+';height:'+these.fixScaleHeight(delta)+'px;');
                  	$(this).html('<div id="'+hourSliceId+'" class="innerInnerHour" style="display:inline-block;padding:0px"><div>'+strProposal+'</div></div>');
-	
                     // This -20 is due to the padding and the 4 is for borders? 
                     var elWidth = document.getElementById(hourSliceId).offsetWidth; 
-			   } 
-
-			   if(probeElement.type == 'header') { 
+                } 
+                if(probeElement.type == 'header') { 
                     var room = probeElement.value;
                     $(this).addClass('innerHeader');
                     $(this).attr("style",'width:'+cssWidth+'px;');
                     $(this).html('<div class="innerInnerHeader">'+room+'</div>');
-			   } 
-
-			   if(probeElement.type == 'corner') { 
+                } 
+                if(probeElement.type == 'corner') { 
                     var localWidth='50px';
                     var room = probeElement.value;
                     $(this).attr("style",'width:'+localWidth+';');
                     $(this).html('<div class="innerInnerCorner" style="-moz-transform-orifin:0px 0px; -moz-transform:rotate(-90deg)"> </div>');
-			   } 
-			} 
-		});
-	//window.parent.parent.setHeight('middle',$('body').height());
-  },
-
-  init : function (eventData) {
-    this.evento=eventData;
-  } 
-
+                } 
+            } 
+        });
+    //window.parent.parent.setHeight('middle',$('body').height());
+    },
+    init : function (eventData) {
+        this.evento=eventData;
+    } 
 } // end of grade
 
 
