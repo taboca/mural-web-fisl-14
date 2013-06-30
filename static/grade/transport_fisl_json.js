@@ -71,25 +71,25 @@ var transport =  {
 	}
 	, 
 	addEvento: function (ye,mo,da,ho,mi,sub, eye,emo,eda,eho,emi, local) { 
-		var daStr = da+'';
-		if(!this.dataOut[daStr]) { 
-			this.dataOut[daStr]=new Array();
-		} 
-		try { 
-			ho-=0;
-			if(ho<0) { 
-				ho=24+ho;
-				var newD=parseInt(daStr-1);
-				daStr=newD;
-			} 
-	
-			eho-=0;
-			if(eho<0) { 
-				eho=24+eho;
-			} 
-		this.dataOut[daStr].push( { 'inicio': ho+":"+mi, 'fim': eho+':'+emi, 'descricao': sub, 'sigla': "- ",'local': local,'apresentador': ""});
-		} catch (i) { } 
-	} 
- 
+        var daStr = da+'';
+        if(!this.dataOut[daStr]) { 
+            this.dataOut[daStr]=new Array();
+        } 
+        try { 
+        	ho-=0;
+            if(ho<0) { 
+                ho=24+ho;
+                var newD=parseInt(daStr-1);
+                daStr=newD;
+            } 
+            eho-=0;
+            if(eho<0) { 
+            	eho=24+eho;
+            } 
+            alert(replaceRoom[local]);
+            this.dataOut[daStr].push( { 'inicio': ho+":"+mi, 'fim': eho+':'+emi, 'descricao': sub, 'sigla': "- ",'local': local,'apresentador': ""});
+
+        } catch (i) { } 
+    } 
 }
 
