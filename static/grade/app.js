@@ -305,7 +305,7 @@ var app = {
         var container=document.createElement('div');
         var cName = 'container_'+Math.random();
 		container.setAttribute('id', cName);
-		document.body.appendChild(container);
+		document.getElementById('container').appendChild(container);
 		cssWidth = parseInt(parseInt(document.getElementById(cName).offsetWidth-50)/cols);
 		var uniqueClassName = 'inner'+parseInt(Math.random()*1000);
 
