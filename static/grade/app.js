@@ -201,8 +201,11 @@ var app = {
             if(hourIndex==0&&!dumpHeader) { 
                 dumpHeader = true; 
                 buffer.push(mapCell({'type':'corner'}));
-                for( var e in updateColumns ) { 
+                //for( var e in updateColumns ) { 
+                for( var eee=0;eee<orderList.length;eee++ ) { 
+                    var e = orderList[eee];
                     var roomChar = mapCell({'type':'header', 'value': e});
+              //document.getElementById('debug').innerHTML+=e+'-';
                     buffer.push(roomChar);
                 } 
             } 
@@ -271,7 +274,7 @@ var app = {
 
 		if(buffer.length>cols+1) { 
             for(var o=0;o<20;o++) { 
-              document.getElementById('debug').innerHTML+=buffer[o]+'='+charToElement[buffer[o]].value+'-';
+              //document.getElementById('debug').innerHTML+=buffer[o]+'='+charToElement[buffer[o]].value+'-';
             } 
 			grid(buffer, cols+1, cName, uniqueClassName);
 		} 
