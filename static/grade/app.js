@@ -173,10 +173,10 @@ var app = {
             for( var i in eventBegins[hour] ) { 
                 var item = eventBegins[hour][i];
                 item.cellMap=mapCell({'type':'event','value':item , 'begin': strToMins(item.inicio),'end': strToMins(item.fim), flag:false});
-                if(!updateColumns[replaceRoom[item.local]]) { 
-                    updateColumns[replaceRoom[item.local]]=new Array();
+                if(!updateColumns[util_roomNameReplacer[item.local]]) { 
+                    updateColumns[util_roomNameReplacer[item.local]]=new Array();
                 } 
-                updateColumns[replaceRoom[item.local]].push(item);
+                updateColumns[util_roomNameReplacer[item.local]].push(item);
             } 
         } 
         var cols = 0;
@@ -191,16 +191,16 @@ var app = {
                 dumpHeader = true; 
                 buffer.push(mapCell({'type':'corner'}));
                 //for( var e in updateColumns ) { 
-                for( var eee=0;eee<orderList.length;eee++ ) { 
-                    var e = orderList[eee];
+                for( var eee=0;eee<util_columnOrderReference.length;eee++ ) { 
+                    var e = util_columnOrderReference[eee];
                     var roomChar = mapCell({'type':'header', 'value': e});
                     buffer.push(roomChar);
                 } 
             } 
             var columnCount=0;
             //for( var e in updateColumns ) { 
-            for( var eee=0;eee<orderList.length;eee++ ) { 
-                var e = orderList[eee];
+            for( var eee=0;eee<util_columnOrderReference.length;eee++ ) { 
+                var e = util_columnOrderReference[eee];
                 if(columnCount==0) { 
                      var e2=null;
                      if(typeof slicesSequence[hourIndex+1] != 'undefined') { 
