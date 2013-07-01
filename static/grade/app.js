@@ -13,8 +13,8 @@ function mapCell(storeElement) {
 var app = {
 
   evento: null, 
-  chunkHourSpace:50,
-  ratioForHeight:1.3,
+  chunkHourSpace:60,
+  ratioForHeight:1.5,
   descricao : new Array(),
   gridCols: 0, 
   gridBuffer: null, 
