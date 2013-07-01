@@ -88,6 +88,7 @@ var app = {
       for(var k = 0; k<this.gridBuffer.length; k++) { 
 	
 		var electChar = this.gridBuffer[k]; 
+        charToElement[electChar].flagToday = true;
 
 		if(i>0) { // we think for lines not the header.. 
 			if(j==0) { 
@@ -181,7 +182,7 @@ var app = {
 			slicesSequence[slicesCount++]=hour; // this is for later use, we simply counting 
 			for( var i in eventBegins[hour] ) { 
 				  var item = eventBegins[hour][i];
-				  item.cellMap=mapCell({'type':'event','value':item , 'begin': strToMins(item.inicio),'end': strToMins(item.fim), flag:false});
+				  item.cellMap=mapCell({'type':'event','value':item , 'begin': strToMins(item.inicio),'end': strToMins(item.fim), flag:false, flagToday:false});
 				  if(!updateColumns[util_roomNameReplacer[item.local]]) { 
 					updateColumns[util_roomNameReplacer[item.local]]=new Array();
 				  } 
@@ -295,13 +296,14 @@ var app = {
                     } 
                     var dateTodayNow = new Date();
                     var thresholdHourNow = dateTodayNow.getHours()*60+dateTodayNow.getMinutes();
-                    if(probeElement.begin<thresholdHourNow) { 
-                       addStyle='background:rgb(200,150,0)';
+                    if(probeElement.flagToday) {
+                       if(probeElement.begin<thresholdHourNow) { 
+                           addStyle='background:rgb(200,150,0)';
+                        }
+                        if(probeElement.end<thresholdHourNow) { 
+                           addStyle='background:rgb(150,90,50)';
+                        } 
                     }
-                    if(probeElement.end<thresholdHourNow) { 
-                       addStyle='background:rgb(150,90,50)';
-                    } 
- 
 
                     if(el.descricao.indexOf('mudou')>-1) { 
                         addStyle='background:red ! important';
