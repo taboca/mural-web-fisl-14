@@ -1,3 +1,5 @@
+INNER_FONT_SIZE = 16;
+
 var util_roomNameReplacer = new Array(); 
 util_roomNameReplacer[8]='40T';
 util_roomNameReplacer[1]='41A';

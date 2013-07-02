@@ -17,11 +17,9 @@ body {
 
 .innerInnerCell { 
   margin-left:4px;
-  font-family:arial;
-  color:red;
   font-size:13px;
-  line-height:10px;
   background: -moz-linear-gradient( -90deg, rgb(120,120,120), rgba(40,40,40,1));
+  padding:2px;
   height:100%;
   overflow: hidden;
   text-overflow:ellipsis;

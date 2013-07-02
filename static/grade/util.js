@@ -1,4 +1,19 @@
 
+function doFilter(str) { 
+    //return str; 
+    $('#temp').html(str);
+    var str = $('#temp').text();
+    var fontSize = INNER_FONT_SIZE;
+    var s = str.split(' ');
+    htmlMarkup = '';
+    for (var i=0;i<s.length;i++) { 
+        var el = s[i];
+        var elMark = '<span style="color:inherit;margin-right:3px;font-size:'+fontSize+'px">'+el+'</span>';
+        fontSize-=1;
+        htmlMarkup+=elMark;
+    }
+    return htmlMarkup; 
+} 
 /* http://tools.ietf.org/html/rfc5545 
    This will go up to the minutes */
 

@@ -25,7 +25,7 @@ var app = {
   },
 
   start : function (queryDays) {
-    document.body.innerHTML='';
+    document.getElementById('container').innerHTML='';
     for(var k in queryDays) { 
         //var ddate = new Date();
         //dday = ddate.getDate();
@@ -61,7 +61,7 @@ var app = {
                 var preHeaderElement= document.createElement("div");
                 preHeaderElement.setAttribute("class","dayStamp");	
                 preHeaderElement.innerHTML="<div style='clear:both'></div><h2>"+dday+" de "+( dateUtil.getPtBrMonth());
-                document.body.appendChild(preHeaderElement);
+                document.getElementById('container').appendChild(preHeaderElement);
             }  
 			// generateDivs are to use gridBuffer, cols 
 			// and the inner util function gridtype to make
@@ -267,7 +267,7 @@ var app = {
         var container=document.createElement('div');
         var cName = 'container_'+Math.random();
 		container.setAttribute('id', cName);
-		document.body.appendChild(container);
+		document.getElementById('container').appendChild(container);
 		cssWidth = parseInt(parseInt(document.getElementById(cName).offsetWidth-50)/cols);
 		var uniqueClassName = 'inner'+parseInt(Math.random()*1000);
 
@@ -284,7 +284,7 @@ var app = {
 
                 if(probeElement.type=='event') { 
                     var el = probeElement.value;
-                    $(this).html('<div class="innerInnerCell">'+el.descricao+'</div>');
+                    $(this).html('<div class="innerInnerCell">'+doFilter(el.descricao)+'</div>');
                     $(this).addClass('inner');
                     var delta = probeElement.end-probeElement.begin;
 
@@ -298,7 +298,7 @@ var app = {
                     var thresholdHourNow = dateTodayNow.getHours()*60+dateTodayNow.getMinutes();
                     if(probeElement.flagToday) {
                        if(probeElement.begin<thresholdHourNow) { 
-                           addStyle='background:rgb(250,190,0);color:black';
+                           addStyle='background:rgb(250,190,0);color:black ! important;';
                         }
                         if(probeElement.end<thresholdHourNow) { 
                            addStyle='background:rgb(150,60,0)';
@@ -362,7 +362,7 @@ var app = {
 
 			} 
 		});
-	//window.parent.parent.setHeight('middle',$('body').height());
+	//window.parent.parent.setHeight('middle',$('getElementById('container')').height());
   },
 
   init : function (eventData) {
