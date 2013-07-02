@@ -1,3 +1,5 @@
+// if you want a cloud crazy wrap spans 
+// style="float:left
 
 function doFilter(str) { 
     //return str; 
@@ -8,7 +10,7 @@ function doFilter(str) {
     htmlMarkup = '';
     for (var i=0;i<s.length;i++) { 
         var el = s[i];
-        var elMark = '<span style="color:inherit;margin-right:3px;font-size:'+fontSize+'px">'+el+'</span>';
+        var elMark = '<span style=" float:left; ;color:inherit;margin-right:3px;font-size:'+fontSize+'px">'+el+'</span>';
         fontSize-=1;
         htmlMarkup+=elMark;
     }
