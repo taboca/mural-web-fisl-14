@@ -44,7 +44,7 @@ var app =  {
 
         this.elementStore = document.createElement('div');
 		this.elementStore.setAttribute("id","container");
-		document.body.appendChild(this.elementStore);
+		document.getElementById('container').appendChild(this.elementStore);
 		this.element = document.createElement('div');
 		this.element.className="";
 		this.element.id = Math.random();
@@ -54,7 +54,7 @@ var app =  {
 
 		this.tweetRepeated = {};
 		this.element.appendChild(first);
-		document.body.appendChild(this.element);
+		document.getElementById('container').appendChild(this.element);
 		var self = this;
 		setTimeout( function(){self.updateFeed()},1500);
 	},
