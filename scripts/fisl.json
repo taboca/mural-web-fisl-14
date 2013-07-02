@@ -9,7 +9,7 @@
 {
  "about":"next",
  "function":"timer",
- "data":{"value":90000},
+ "data":{"value":180000},
  "to":"start"
 }
 
