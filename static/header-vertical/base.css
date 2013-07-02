@@ -1,0 +1,32 @@
+@import url("http://fonts.googleapis.com/css?family=Varela");
+
+html, body { margin:0; padding:0; overflow:hidden } 
+
+* { 
+  font-family: 'Varela', sans-serif;
+} 
+
+body { color:white } 
+
+.leg {
+    border-radius:10px;background-color:rgb(90,50,0);float:left;
+    font-size:14px; 
+    margin:.5em;
+    padding:12px;
+    font-weight:bold;
+
+}
+
+.old { 
+    background-color:rgb(160,50,0);
+} 
+
+.going { 
+    background-color:rgb(250,190,0);
+} 
+.cancel { 
+    background-color:rgb(255,0,0);
+} 
+.prox { 
+    background-color:rgb(85,80,80);
+}
