@@ -1,0 +1,55 @@
+<html>
+<header>
+<script src="../t8l/jquery-min.js"></script>
+<script src="../t8l/tagvisor.js"></script>
+    <script>
+        function start() { 
+              if(document.location.toString().indexOf("mode")>-1) { 
+                      var param = document.location.toString().split("mode=");
+                      if(param[1]=="tv") {
+                          tv.add($('#animation li'));
+                          tv.tickMode = true;
+                          tv.play();
+                      } 
+              }
+              setTimeout('start()',40000);
+        }
+
+</script>
+<style> 
+   
+    .slide { border:0px solid red; width:960px;height:230px;margin:0;padding:0;text-align:center}
+    
+   .align2 { 
+        vertical-align:middle;
+    }
+
+   .align { 
+        vertical-align:middle;
+        height:100%; 
+        margin:auto;
+        width:1px;
+        display:inline-block;
+   } 
+
+
+    body { background-color:white } 
+</style>
+
+</header>
+	
+<body onload='start()'>
+   					
+    <div id='slide1' class='slide' ><div class='align' ></div><img class='align2' src="diamante-1.png" style='margin-top:100px' width="830" /></div>
+
+    <div id='slide2' class='slide' ><div class='align' ></div><img class='align2' src="diamante-2.png" style='margin-top:100px' width="830" /></div>
+    <div id='slide3' class='slide' ><div class='align' ></div><img class='align2' src="diamante-3.png" style='margin-top:100px' width="830" /></div>
+
+
+    <ul id="animation" style="display: none;">
+                <li data-target="slide1" data-time="2s" data-effect="scalefit" data-duration="3s"></li>
+                <li data-target="slide2" data-time="15s" data-effect="scalefit" data-duration="3s"></li>
+                <li data-target="slide3" data-time="30s" data-effect="scalefit" data-duration="3s"></li>
+              </ul>
+
+</body></html>
