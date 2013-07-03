@@ -4,410 +4,495 @@
       xmlns:flickr="urn:flickr:user"
       xmlns:media="http://search.yahoo.com/mrss/">
 
-  <title>Content from Recepção aos calouros 2012</title>
-  <link rel="self" href="http://api.flickr.com/services/feeds/photoset.gne?set=72157629279414302&amp;nsid=76472067@N08&amp;lang=en-us" />
-  <link rel="alternate" type="text/html" href="http://www.flickr.com/photos/76472067@N08/sets/72157629279414302"/>
-  <id>tag:flickr.com,2005:http://www.flickr.com/photos/76472067@N08/sets/72157629279414302</id>
-  <icon>http://farm8.staticflickr.com/7136/6860302496_0cee37ce67_s.jpg</icon>
-  <subtitle>Fotos por Jordana Terciano Dias
-</subtitle>
-  <updated>2012-03-22T18:58:19Z</updated>
+  <title>Uploads recentes com a tag fisl</title>
+  <link rel="self" href="http://api.flickr.com/services/feeds/photos_public.gne?tags=FISL&amp;lang=pt-br&amp;format=" />
+  <link rel="alternate" type="text/html" href="http://www.flickr.com/photos/tags/fisl/"/>
+  <id>tag:flickr.com,2005:/photos/public/tagged/all/fisl</id>
+  <icon>http://l.yimg.com/g/images/buddyicon.gif</icon>
+  <subtitle></subtitle>
+  <updated>2013-06-26T05:46:58Z</updated>
   <generator uri="http://www.flickr.com/">Flickr</generator>
 
 <entry>
-    <title>DSC00638</title>
-    <link rel="alternate" type="text/html" href="http://www.flickr.com/photos/76472067@N08/7006420433/in/set-72157629279414302/"/>
-    <id>tag:flickr.com,2005:/photo/7006420433/in/set-72157629279414302</id>
-    <published>2012-03-22T18:58:19Z</published>
-    <updated>2012-03-22T18:58:19Z</updated>
-    <flickr:date_taken>2012-02-27T08:44:57-08:00</flickr:date_taken>
-    <dc:date.Taken>2012-02-27T08:44:57-08:00</dc:date.Taken>
-    <content type="html">			&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/people/76472067@N08/&quot;&gt;Escola de Engenharia de São Carlos&lt;/a&gt; posted a photo:&lt;/p&gt;
+    <title>Student Loans - SchoolandUniversity.com</title>
+    <link rel="alternate" type="text/html" href="http://www.flickr.com/photos/universityandschool/9139496875/"/>
+    <id>tag:flickr.com,2005:/photo/9139496875</id>
+    <published>2013-06-26T05:46:58Z</published>
+    <updated>2013-06-26T05:46:58Z</updated>
+    <flickr:date_taken>2013-06-25T22:42:15-08:00</flickr:date_taken>
+    <dc:date.Taken>2013-06-25T22:42:15-08:00</dc:date.Taken>
+    <content type="html">			&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/people/universityandschool/&quot;&gt;School and University&lt;/a&gt; postou uma foto:&lt;/p&gt;
 	
-&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/76472067@N08/7006420433/&quot; title=&quot;DSC00638&quot;&gt;&lt;img src=&quot;http://farm7.staticflickr.com/6112/7006420433_9957dc1a48_m.jpg&quot; width=&quot;240&quot; height=&quot;180&quot; alt=&quot;DSC00638&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/universityandschool/9139496875/&quot; title=&quot;Student Loans - SchoolandUniversity.com&quot;&gt;&lt;img src=&quot;http://farm8.staticflickr.com/7281/9139496875_7d88a38810_m.jpg&quot; width=&quot;240&quot; height=&quot;159&quot; alt=&quot;Student Loans - SchoolandUniversity.com&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
-</content>
+&lt;p&gt;&lt;a href=&quot;http://www.schoolanduniversity.com/financial-aid/student-loans&quot; rel=&quot;nofollow&quot;&gt;www.schoolanduniversity.com/financial-aid/student-loans&lt;/a&gt;&lt;/p&gt;</content>
     <author>
-      <name>Escola de Engenharia de São Carlos</name>
-      <uri>http://www.flickr.com/people/76472067@N08/</uri>
-      <flickr:nsid>76472067@N08</flickr:nsid>
+      <name>School and University</name>
+      <uri>http://www.flickr.com/people/universityandschool/</uri>
+      <flickr:nsid>92055406@N06</flickr:nsid>
+      <flickr:buddyicon>http://farm9.staticflickr.com/8079/buddyicons/92055406@N06.jpg?1357716343#92055406@N06</flickr:buddyicon>
     </author>
-    <link rel="enclosure" type="image/jpeg" href="http://farm7.staticflickr.com/6112/7006420433_9957dc1a48_b.jpg" />
-    <category term="" scheme="http://www.flickr.com/photos/tags/" />
+    <link rel="enclosure" type="image/jpeg" href="http://farm8.staticflickr.com/7281/9139496875_7d88a38810_b.jpg" />
+    <category term="perkins" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="heal" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="fisl" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="nsl" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="loans" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="studentloans" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="repayment" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="financialaid" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="privatestudentloans" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="consolidationloans" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="lowinterestloans" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="federalloans" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="perkinsloan" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="educationloans" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="schoolanduniversitycom" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="collegestudentloans" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="grantsforcollegestudents" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="lowintereststudentloans" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="staffordloan" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="parentloan" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="plusloan" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="ffelp" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="healthprofessionalstudentloans" scheme="http://www.flickr.com/photos/tags/" />
 </entry>
 
 <entry>
-    <title>DSC00636</title>
-    <link rel="alternate" type="text/html" href="http://www.flickr.com/photos/76472067@N08/7006420207/in/set-72157629279414302/"/>
-    <id>tag:flickr.com,2005:/photo/7006420207/in/set-72157629279414302</id>
-    <published>2012-03-22T18:58:19Z</published>
-    <updated>2012-03-22T18:58:19Z</updated>
-    <flickr:date_taken>2012-02-27T08:43:29-08:00</flickr:date_taken>
-    <dc:date.Taken>2012-02-27T08:43:29-08:00</dc:date.Taken>
-    <content type="html">			&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/people/76472067@N08/&quot;&gt;Escola de Engenharia de São Carlos&lt;/a&gt; posted a photo:&lt;/p&gt;
+    <title>IMG_1863</title>
+    <link rel="alternate" type="text/html" href="http://www.flickr.com/photos/sergiovl/8873535427/"/>
+    <id>tag:flickr.com,2005:/photo/8873535427</id>
+    <published>2013-05-29T02:26:45Z</published>
+    <updated>2013-05-29T02:26:45Z</updated>
+    <flickr:date_taken>2005-06-04T02:20:55-08:00</flickr:date_taken>
+    <dc:date.Taken>2005-06-04T02:20:55-08:00</dc:date.Taken>
+    <content type="html">			&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/people/sergiovl/&quot;&gt;Animal-X®&lt;/a&gt; postou uma foto:&lt;/p&gt;
 	
-&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/76472067@N08/7006420207/&quot; title=&quot;DSC00636&quot;&gt;&lt;img src=&quot;http://farm8.staticflickr.com/7117/7006420207_9fb5283035_m.jpg&quot; width=&quot;240&quot; height=&quot;180&quot; alt=&quot;DSC00636&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/sergiovl/8873535427/&quot; title=&quot;IMG_1863&quot;&gt;&lt;img src=&quot;http://farm3.staticflickr.com/2833/8873535427_63f4deb140_m.jpg&quot; width=&quot;240&quot; height=&quot;180&quot; alt=&quot;IMG_1863&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 </content>
     <author>
-      <name>Escola de Engenharia de São Carlos</name>
-      <uri>http://www.flickr.com/people/76472067@N08/</uri>
-      <flickr:nsid>76472067@N08</flickr:nsid>
+      <name>Animal-X®</name>
+      <uri>http://www.flickr.com/people/sergiovl/</uri>
+      <flickr:nsid>57061476@N00</flickr:nsid>
+      <flickr:buddyicon>http://farm9.staticflickr.com/8255/buddyicons/57061476@N00.jpg?1369340810#57061476@N00</flickr:buddyicon>
     </author>
-    <link rel="enclosure" type="image/jpeg" href="http://farm8.staticflickr.com/7117/7006420207_9fb5283035_b.jpg" />
-    <category term="" scheme="http://www.flickr.com/photos/tags/" />
+    <link rel="enclosure" type="image/jpeg" href="http://farm3.staticflickr.com/2833/8873535427_63f4deb140_b.jpg" />
+    <category term="fisl" scheme="http://www.flickr.com/photos/tags/" />
 </entry>
 
 <entry>
-    <title>DSC00634</title>
-    <link rel="alternate" type="text/html" href="http://www.flickr.com/photos/76472067@N08/7006419999/in/set-72157629279414302/"/>
-    <id>tag:flickr.com,2005:/photo/7006419999/in/set-72157629279414302</id>
-    <published>2012-03-22T18:58:19Z</published>
-    <updated>2012-03-22T18:58:19Z</updated>
-    <flickr:date_taken>2012-02-27T08:42:48-08:00</flickr:date_taken>
-    <dc:date.Taken>2012-02-27T08:42:48-08:00</dc:date.Taken>
-    <content type="html">			&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/people/76472067@N08/&quot;&gt;Escola de Engenharia de São Carlos&lt;/a&gt; posted a photo:&lt;/p&gt;
+    <title>dsc00706</title>
+    <link rel="alternate" type="text/html" href="http://www.flickr.com/photos/sergiovl/8873548597/"/>
+    <id>tag:flickr.com,2005:/photo/8873548597</id>
+    <published>2013-05-29T02:26:26Z</published>
+    <updated>2013-05-29T02:26:26Z</updated>
+    <flickr:date_taken>2005-06-02T11:47:08-08:00</flickr:date_taken>
+    <dc:date.Taken>2005-06-02T11:47:08-08:00</dc:date.Taken>
+    <content type="html">			&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/people/sergiovl/&quot;&gt;Animal-X®&lt;/a&gt; postou uma foto:&lt;/p&gt;
 	
-&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/76472067@N08/7006419999/&quot; title=&quot;DSC00634&quot;&gt;&lt;img src=&quot;http://farm8.staticflickr.com/7200/7006419999_7abece2350_m.jpg&quot; width=&quot;240&quot; height=&quot;180&quot; alt=&quot;DSC00634&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/sergiovl/8873548597/&quot; title=&quot;dsc00706&quot;&gt;&lt;img src=&quot;http://farm3.staticflickr.com/2846/8873548597_19618645a2_m.jpg&quot; width=&quot;240&quot; height=&quot;180&quot; alt=&quot;dsc00706&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
-</content>
+&lt;p&gt;&lt;/p&gt;</content>
     <author>
-      <name>Escola de Engenharia de São Carlos</name>
-      <uri>http://www.flickr.com/people/76472067@N08/</uri>
-      <flickr:nsid>76472067@N08</flickr:nsid>
+      <name>Animal-X®</name>
+      <uri>http://www.flickr.com/people/sergiovl/</uri>
+      <flickr:nsid>57061476@N00</flickr:nsid>
+      <flickr:buddyicon>http://farm9.staticflickr.com/8255/buddyicons/57061476@N00.jpg?1369340810#57061476@N00</flickr:buddyicon>
     </author>
-    <link rel="enclosure" type="image/jpeg" href="http://farm8.staticflickr.com/7200/7006419999_7abece2350_b.jpg" />
-    <category term="" scheme="http://www.flickr.com/photos/tags/" />
+    <link rel="enclosure" type="image/jpeg" href="http://farm3.staticflickr.com/2846/8873548597_19618645a2_b.jpg" />
+    <category term="fisl" scheme="http://www.flickr.com/photos/tags/" />
 </entry>
 
 <entry>
-    <title>DSC00633</title>
-    <link rel="alternate" type="text/html" href="http://www.flickr.com/photos/76472067@N08/7006419889/in/set-72157629279414302/"/>
-    <id>tag:flickr.com,2005:/photo/7006419889/in/set-72157629279414302</id>
-    <published>2012-03-22T18:58:19Z</published>
-    <updated>2012-03-22T18:58:19Z</updated>
-    <flickr:date_taken>2012-02-27T08:42:43-08:00</flickr:date_taken>
-    <dc:date.Taken>2012-02-27T08:42:43-08:00</dc:date.Taken>
-    <content type="html">			&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/people/76472067@N08/&quot;&gt;Escola de Engenharia de São Carlos&lt;/a&gt; posted a photo:&lt;/p&gt;
+    <title>dsc00724</title>
+    <link rel="alternate" type="text/html" href="http://www.flickr.com/photos/sergiovl/8873546193/"/>
+    <id>tag:flickr.com,2005:/photo/8873546193</id>
+    <published>2013-05-29T02:26:28Z</published>
+    <updated>2013-05-29T02:26:28Z</updated>
+    <flickr:date_taken>2005-06-02T17:08:48-08:00</flickr:date_taken>
+    <dc:date.Taken>2005-06-02T17:08:48-08:00</dc:date.Taken>
+    <content type="html">			&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/people/sergiovl/&quot;&gt;Animal-X®&lt;/a&gt; postou uma foto:&lt;/p&gt;
 	
-&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/76472067@N08/7006419889/&quot; title=&quot;DSC00633&quot;&gt;&lt;img src=&quot;http://farm8.staticflickr.com/7036/7006419889_b3cbb3e9b4_m.jpg&quot; width=&quot;240&quot; height=&quot;180&quot; alt=&quot;DSC00633&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/sergiovl/8873546193/&quot; title=&quot;dsc00724&quot;&gt;&lt;img src=&quot;http://farm8.staticflickr.com/7284/8873546193_d93da726e1_m.jpg&quot; width=&quot;240&quot; height=&quot;180&quot; alt=&quot;dsc00724&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
-</content>
+&lt;p&gt;&lt;/p&gt;</content>
     <author>
-      <name>Escola de Engenharia de São Carlos</name>
-      <uri>http://www.flickr.com/people/76472067@N08/</uri>
-      <flickr:nsid>76472067@N08</flickr:nsid>
+      <name>Animal-X®</name>
+      <uri>http://www.flickr.com/people/sergiovl/</uri>
+      <flickr:nsid>57061476@N00</flickr:nsid>
+      <flickr:buddyicon>http://farm9.staticflickr.com/8255/buddyicons/57061476@N00.jpg?1369340810#57061476@N00</flickr:buddyicon>
     </author>
-    <link rel="enclosure" type="image/jpeg" href="http://farm8.staticflickr.com/7036/7006419889_b3cbb3e9b4_b.jpg" />
-    <category term="" scheme="http://www.flickr.com/photos/tags/" />
+    <link rel="enclosure" type="image/jpeg" href="http://farm8.staticflickr.com/7284/8873546193_d93da726e1_b.jpg" />
+    <category term="fisl" scheme="http://www.flickr.com/photos/tags/" />
 </entry>
 
 <entry>
-    <title>DSC00639</title>
-    <link rel="alternate" type="text/html" href="http://www.flickr.com/photos/76472067@N08/6860304136/in/set-72157629279414302/"/>
-    <id>tag:flickr.com,2005:/photo/6860304136/in/set-72157629279414302</id>
-    <published>2012-03-22T18:58:19Z</published>
-    <updated>2012-03-22T18:58:19Z</updated>
-    <flickr:date_taken>2012-02-27T08:45:04-08:00</flickr:date_taken>
-    <dc:date.Taken>2012-02-27T08:45:04-08:00</dc:date.Taken>
-    <content type="html">			&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/people/76472067@N08/&quot;&gt;Escola de Engenharia de São Carlos&lt;/a&gt; posted a photo:&lt;/p&gt;
+    <title>dsc00725</title>
+    <link rel="alternate" type="text/html" href="http://www.flickr.com/photos/sergiovl/8873545879/"/>
+    <id>tag:flickr.com,2005:/photo/8873545879</id>
+    <published>2013-05-29T02:26:29Z</published>
+    <updated>2013-05-29T02:26:29Z</updated>
+    <flickr:date_taken>2005-06-02T17:12:33-08:00</flickr:date_taken>
+    <dc:date.Taken>2005-06-02T17:12:33-08:00</dc:date.Taken>
+    <content type="html">			&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/people/sergiovl/&quot;&gt;Animal-X®&lt;/a&gt; postou uma foto:&lt;/p&gt;
 	
-&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/76472067@N08/6860304136/&quot; title=&quot;DSC00639&quot;&gt;&lt;img src=&quot;http://farm7.staticflickr.com/6041/6860304136_8ec8c8d3b7_m.jpg&quot; width=&quot;240&quot; height=&quot;180&quot; alt=&quot;DSC00639&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/sergiovl/8873545879/&quot; title=&quot;dsc00725&quot;&gt;&lt;img src=&quot;http://farm8.staticflickr.com/7286/8873545879_c25af3497e_m.jpg&quot; width=&quot;240&quot; height=&quot;180&quot; alt=&quot;dsc00725&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
-</content>
+&lt;p&gt;&lt;/p&gt;</content>
     <author>
-      <name>Escola de Engenharia de São Carlos</name>
-      <uri>http://www.flickr.com/people/76472067@N08/</uri>
-      <flickr:nsid>76472067@N08</flickr:nsid>
+      <name>Animal-X®</name>
+      <uri>http://www.flickr.com/people/sergiovl/</uri>
+      <flickr:nsid>57061476@N00</flickr:nsid>
+      <flickr:buddyicon>http://farm9.staticflickr.com/8255/buddyicons/57061476@N00.jpg?1369340810#57061476@N00</flickr:buddyicon>
     </author>
-    <link rel="enclosure" type="image/jpeg" href="http://farm7.staticflickr.com/6041/6860304136_8ec8c8d3b7_b.jpg" />
-    <category term="" scheme="http://www.flickr.com/photos/tags/" />
+    <link rel="enclosure" type="image/jpeg" href="http://farm8.staticflickr.com/7286/8873545879_c25af3497e_b.jpg" />
+    <category term="fisl" scheme="http://www.flickr.com/photos/tags/" />
 </entry>
 
 <entry>
-    <title>DSC00637</title>
-    <link rel="alternate" type="text/html" href="http://www.flickr.com/photos/76472067@N08/6860303914/in/set-72157629279414302/"/>
-    <id>tag:flickr.com,2005:/photo/6860303914/in/set-72157629279414302</id>
-    <published>2012-03-22T18:58:19Z</published>
-    <updated>2012-03-22T18:58:19Z</updated>
-    <flickr:date_taken>2012-02-27T08:43:42-08:00</flickr:date_taken>
-    <dc:date.Taken>2012-02-27T08:43:42-08:00</dc:date.Taken>
-    <content type="html">			&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/people/76472067@N08/&quot;&gt;Escola de Engenharia de São Carlos&lt;/a&gt; posted a photo:&lt;/p&gt;
+    <title>IMG_1856</title>
+    <link rel="alternate" type="text/html" href="http://www.flickr.com/photos/sergiovl/8874152056/"/>
+    <id>tag:flickr.com,2005:/photo/8874152056</id>
+    <published>2013-05-29T02:26:44Z</published>
+    <updated>2013-05-29T02:26:44Z</updated>
+    <flickr:date_taken>2005-06-03T22:34:50-08:00</flickr:date_taken>
+    <dc:date.Taken>2005-06-03T22:34:50-08:00</dc:date.Taken>
+    <content type="html">			&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/people/sergiovl/&quot;&gt;Animal-X®&lt;/a&gt; postou uma foto:&lt;/p&gt;
 	
-&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/76472067@N08/6860303914/&quot; title=&quot;DSC00637&quot;&gt;&lt;img src=&quot;http://farm7.staticflickr.com/6240/6860303914_c6dd0f4ca1_m.jpg&quot; width=&quot;240&quot; height=&quot;180&quot; alt=&quot;DSC00637&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/sergiovl/8874152056/&quot; title=&quot;IMG_1856&quot;&gt;&lt;img src=&quot;http://farm9.staticflickr.com/8274/8874152056_06bf41e5cc_m.jpg&quot; width=&quot;240&quot; height=&quot;180&quot; alt=&quot;IMG_1856&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 </content>
     <author>
-      <name>Escola de Engenharia de São Carlos</name>
-      <uri>http://www.flickr.com/people/76472067@N08/</uri>
-      <flickr:nsid>76472067@N08</flickr:nsid>
+      <name>Animal-X®</name>
+      <uri>http://www.flickr.com/people/sergiovl/</uri>
+      <flickr:nsid>57061476@N00</flickr:nsid>
+      <flickr:buddyicon>http://farm9.staticflickr.com/8255/buddyicons/57061476@N00.jpg?1369340810#57061476@N00</flickr:buddyicon>
     </author>
-    <link rel="enclosure" type="image/jpeg" href="http://farm7.staticflickr.com/6240/6860303914_c6dd0f4ca1_b.jpg" />
-    <category term="" scheme="http://www.flickr.com/photos/tags/" />
+    <link rel="enclosure" type="image/jpeg" href="http://farm9.staticflickr.com/8274/8874152056_06bf41e5cc_b.jpg" />
+    <category term="fisl" scheme="http://www.flickr.com/photos/tags/" />
 </entry>
 
 <entry>
-    <title>DSC00635</title>
-    <link rel="alternate" type="text/html" href="http://www.flickr.com/photos/76472067@N08/6860303636/in/set-72157629279414302/"/>
-    <id>tag:flickr.com,2005:/photo/6860303636/in/set-72157629279414302</id>
-    <published>2012-03-22T18:58:19Z</published>
-    <updated>2012-03-22T18:58:19Z</updated>
-    <flickr:date_taken>2012-02-27T08:42:53-08:00</flickr:date_taken>
-    <dc:date.Taken>2012-02-27T08:42:53-08:00</dc:date.Taken>
-    <content type="html">			&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/people/76472067@N08/&quot;&gt;Escola de Engenharia de São Carlos&lt;/a&gt; posted a photo:&lt;/p&gt;
+    <title>dsc00647</title>
+    <link rel="alternate" type="text/html" href="http://www.flickr.com/photos/sergiovl/8874166812/"/>
+    <id>tag:flickr.com,2005:/photo/8874166812</id>
+    <published>2013-05-29T02:26:23Z</published>
+    <updated>2013-05-29T02:26:23Z</updated>
+    <flickr:date_taken>2005-06-01T03:58:47-08:00</flickr:date_taken>
+    <dc:date.Taken>2005-06-01T03:58:47-08:00</dc:date.Taken>
+    <content type="html">			&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/people/sergiovl/&quot;&gt;Animal-X®&lt;/a&gt; postou uma foto:&lt;/p&gt;
 	
-&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/76472067@N08/6860303636/&quot; title=&quot;DSC00635&quot;&gt;&lt;img src=&quot;http://farm8.staticflickr.com/7079/6860303636_233a7c4bc3_m.jpg&quot; width=&quot;240&quot; height=&quot;180&quot; alt=&quot;DSC00635&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/sergiovl/8874166812/&quot; title=&quot;dsc00647&quot;&gt;&lt;img src=&quot;http://farm6.staticflickr.com/5336/8874166812_fcbdeabb23_m.jpg&quot; width=&quot;240&quot; height=&quot;180&quot; alt=&quot;dsc00647&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
-</content>
+&lt;p&gt;&lt;/p&gt;</content>
     <author>
-      <name>Escola de Engenharia de São Carlos</name>
-      <uri>http://www.flickr.com/people/76472067@N08/</uri>
-      <flickr:nsid>76472067@N08</flickr:nsid>
+      <name>Animal-X®</name>
+      <uri>http://www.flickr.com/people/sergiovl/</uri>
+      <flickr:nsid>57061476@N00</flickr:nsid>
+      <flickr:buddyicon>http://farm9.staticflickr.com/8255/buddyicons/57061476@N00.jpg?1369340810#57061476@N00</flickr:buddyicon>
     </author>
-    <link rel="enclosure" type="image/jpeg" href="http://farm8.staticflickr.com/7079/6860303636_233a7c4bc3_b.jpg" />
-    <category term="" scheme="http://www.flickr.com/photos/tags/" />
+    <link rel="enclosure" type="image/jpeg" href="http://farm6.staticflickr.com/5336/8874166812_fcbdeabb23_b.jpg" />
+    <category term="fisl" scheme="http://www.flickr.com/photos/tags/" />
 </entry>
 
 <entry>
-    <title>DSC00632</title>
-    <link rel="alternate" type="text/html" href="http://www.flickr.com/photos/76472067@N08/7006419809/in/set-72157629279414302/"/>
-    <id>tag:flickr.com,2005:/photo/7006419809/in/set-72157629279414302</id>
-    <published>2012-03-22T18:58:18Z</published>
-    <updated>2012-03-22T18:58:18Z</updated>
-    <flickr:date_taken>2012-02-27T08:42:34-08:00</flickr:date_taken>
-    <dc:date.Taken>2012-02-27T08:42:34-08:00</dc:date.Taken>
-    <content type="html">			&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/people/76472067@N08/&quot;&gt;Escola de Engenharia de São Carlos&lt;/a&gt; posted a photo:&lt;/p&gt;
+    <title>dsc00746</title>
+    <link rel="alternate" type="text/html" href="http://www.flickr.com/photos/sergiovl/8874160642/"/>
+    <id>tag:flickr.com,2005:/photo/8874160642</id>
+    <published>2013-05-29T02:26:31Z</published>
+    <updated>2013-05-29T02:26:31Z</updated>
+    <flickr:date_taken>2005-06-02T19:33:33-08:00</flickr:date_taken>
+    <dc:date.Taken>2005-06-02T19:33:33-08:00</dc:date.Taken>
+    <content type="html">			&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/people/sergiovl/&quot;&gt;Animal-X®&lt;/a&gt; postou uma foto:&lt;/p&gt;
 	
-&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/76472067@N08/7006419809/&quot; title=&quot;DSC00632&quot;&gt;&lt;img src=&quot;http://farm8.staticflickr.com/7176/7006419809_0c4e458bf8_m.jpg&quot; width=&quot;240&quot; height=&quot;180&quot; alt=&quot;DSC00632&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/sergiovl/8874160642/&quot; title=&quot;dsc00746&quot;&gt;&lt;img src=&quot;http://farm8.staticflickr.com/7310/8874160642_2860fec743_m.jpg&quot; width=&quot;240&quot; height=&quot;180&quot; alt=&quot;dsc00746&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
-</content>
+&lt;p&gt;&lt;/p&gt;</content>
     <author>
-      <name>Escola de Engenharia de São Carlos</name>
-      <uri>http://www.flickr.com/people/76472067@N08/</uri>
-      <flickr:nsid>76472067@N08</flickr:nsid>
+      <name>Animal-X®</name>
+      <uri>http://www.flickr.com/people/sergiovl/</uri>
+      <flickr:nsid>57061476@N00</flickr:nsid>
+      <flickr:buddyicon>http://farm9.staticflickr.com/8255/buddyicons/57061476@N00.jpg?1369340810#57061476@N00</flickr:buddyicon>
     </author>
-    <link rel="enclosure" type="image/jpeg" href="http://farm8.staticflickr.com/7176/7006419809_0c4e458bf8_b.jpg" />
-    <category term="" scheme="http://www.flickr.com/photos/tags/" />
+    <link rel="enclosure" type="image/jpeg" href="http://farm8.staticflickr.com/7310/8874160642_2860fec743_b.jpg" />
+    <category term="fisl" scheme="http://www.flickr.com/photos/tags/" />
 </entry>
 
 <entry>
-    <title>DSC00630</title>
-    <link rel="alternate" type="text/html" href="http://www.flickr.com/photos/76472067@N08/7006419655/in/set-72157629279414302/"/>
-    <id>tag:flickr.com,2005:/photo/7006419655/in/set-72157629279414302</id>
-    <published>2012-03-22T18:58:18Z</published>
-    <updated>2012-03-22T18:58:18Z</updated>
-    <flickr:date_taken>2012-02-27T08:42:07-08:00</flickr:date_taken>
-    <dc:date.Taken>2012-02-27T08:42:07-08:00</dc:date.Taken>
-    <content type="html">			&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/people/76472067@N08/&quot;&gt;Escola de Engenharia de São Carlos&lt;/a&gt; posted a photo:&lt;/p&gt;
+    <title>IMG_1822</title>
+    <link rel="alternate" type="text/html" href="http://www.flickr.com/photos/sergiovl/8873533979/"/>
+    <id>tag:flickr.com,2005:/photo/8873533979</id>
+    <published>2013-05-29T02:26:40Z</published>
+    <updated>2013-05-29T02:26:40Z</updated>
+    <flickr:date_taken>2005-06-02T11:26:08-08:00</flickr:date_taken>
+    <dc:date.Taken>2005-06-02T11:26:08-08:00</dc:date.Taken>
+    <content type="html">			&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/people/sergiovl/&quot;&gt;Animal-X®&lt;/a&gt; postou uma foto:&lt;/p&gt;
 	
-&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/76472067@N08/7006419655/&quot; title=&quot;DSC00630&quot;&gt;&lt;img src=&quot;http://farm7.staticflickr.com/6230/7006419655_efc1d895b1_m.jpg&quot; width=&quot;240&quot; height=&quot;180&quot; alt=&quot;DSC00630&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/sergiovl/8873533979/&quot; title=&quot;IMG_1822&quot;&gt;&lt;img src=&quot;http://farm6.staticflickr.com/5346/8873533979_d7f5314d0b_m.jpg&quot; width=&quot;240&quot; height=&quot;180&quot; alt=&quot;IMG_1822&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 </content>
     <author>
-      <name>Escola de Engenharia de São Carlos</name>
-      <uri>http://www.flickr.com/people/76472067@N08/</uri>
-      <flickr:nsid>76472067@N08</flickr:nsid>
+      <name>Animal-X®</name>
+      <uri>http://www.flickr.com/people/sergiovl/</uri>
+      <flickr:nsid>57061476@N00</flickr:nsid>
+      <flickr:buddyicon>http://farm9.staticflickr.com/8255/buddyicons/57061476@N00.jpg?1369340810#57061476@N00</flickr:buddyicon>
     </author>
-    <link rel="enclosure" type="image/jpeg" href="http://farm7.staticflickr.com/6230/7006419655_efc1d895b1_b.jpg" />
-    <category term="" scheme="http://www.flickr.com/photos/tags/" />
+    <link rel="enclosure" type="image/jpeg" href="http://farm6.staticflickr.com/5346/8873533979_d7f5314d0b_b.jpg" />
+    <category term="fisl" scheme="http://www.flickr.com/photos/tags/" />
 </entry>
 
 <entry>
-    <title>DSC00627</title>
-    <link rel="alternate" type="text/html" href="http://www.flickr.com/photos/76472067@N08/7006419369/in/set-72157629279414302/"/>
-    <id>tag:flickr.com,2005:/photo/7006419369/in/set-72157629279414302</id>
-    <published>2012-03-22T18:58:18Z</published>
-    <updated>2012-03-22T18:58:18Z</updated>
-    <flickr:date_taken>2012-02-27T08:41:27-08:00</flickr:date_taken>
-    <dc:date.Taken>2012-02-27T08:41:27-08:00</dc:date.Taken>
-    <content type="html">			&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/people/76472067@N08/&quot;&gt;Escola de Engenharia de São Carlos&lt;/a&gt; posted a photo:&lt;/p&gt;
+    <title>dsc00739</title>
+    <link rel="alternate" type="text/html" href="http://www.flickr.com/photos/sergiovl/8873545021/"/>
+    <id>tag:flickr.com,2005:/photo/8873545021</id>
+    <published>2013-05-29T02:26:30Z</published>
+    <updated>2013-05-29T02:26:30Z</updated>
+    <flickr:date_taken>2005-06-02T18:38:17-08:00</flickr:date_taken>
+    <dc:date.Taken>2005-06-02T18:38:17-08:00</dc:date.Taken>
+    <content type="html">			&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/people/sergiovl/&quot;&gt;Animal-X®&lt;/a&gt; postou uma foto:&lt;/p&gt;
 	
-&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/76472067@N08/7006419369/&quot; title=&quot;DSC00627&quot;&gt;&lt;img src=&quot;http://farm8.staticflickr.com/7187/7006419369_48b33675a4_m.jpg&quot; width=&quot;240&quot; height=&quot;180&quot; alt=&quot;DSC00627&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/sergiovl/8873545021/&quot; title=&quot;dsc00739&quot;&gt;&lt;img src=&quot;http://farm9.staticflickr.com/8407/8873545021_a8dea5f432_m.jpg&quot; width=&quot;240&quot; height=&quot;180&quot; alt=&quot;dsc00739&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
-</content>
+&lt;p&gt;&lt;/p&gt;</content>
     <author>
-      <name>Escola de Engenharia de São Carlos</name>
-      <uri>http://www.flickr.com/people/76472067@N08/</uri>
-      <flickr:nsid>76472067@N08</flickr:nsid>
+      <name>Animal-X®</name>
+      <uri>http://www.flickr.com/people/sergiovl/</uri>
+      <flickr:nsid>57061476@N00</flickr:nsid>
+      <flickr:buddyicon>http://farm9.staticflickr.com/8255/buddyicons/57061476@N00.jpg?1369340810#57061476@N00</flickr:buddyicon>
     </author>
-    <link rel="enclosure" type="image/jpeg" href="http://farm8.staticflickr.com/7187/7006419369_48b33675a4_b.jpg" />
-    <category term="" scheme="http://www.flickr.com/photos/tags/" />
+    <link rel="enclosure" type="image/jpeg" href="http://farm9.staticflickr.com/8407/8873545021_a8dea5f432_b.jpg" />
+    <category term="fisl" scheme="http://www.flickr.com/photos/tags/" />
 </entry>
 
 <entry>
-    <title>DSC00626</title>
-    <link rel="alternate" type="text/html" href="http://www.flickr.com/photos/76472067@N08/7006419305/in/set-72157629279414302/"/>
-    <id>tag:flickr.com,2005:/photo/7006419305/in/set-72157629279414302</id>
-    <published>2012-03-22T18:58:18Z</published>
-    <updated>2012-03-22T18:58:18Z</updated>
-    <flickr:date_taken>2012-02-27T08:41:13-08:00</flickr:date_taken>
-    <dc:date.Taken>2012-02-27T08:41:13-08:00</dc:date.Taken>
-    <content type="html">			&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/people/76472067@N08/&quot;&gt;Escola de Engenharia de São Carlos&lt;/a&gt; posted a photo:&lt;/p&gt;
+    <title>dsc00701</title>
+    <link rel="alternate" type="text/html" href="http://www.flickr.com/photos/sergiovl/8874166218/"/>
+    <id>tag:flickr.com,2005:/photo/8874166218</id>
+    <published>2013-05-29T02:26:25Z</published>
+    <updated>2013-05-29T02:26:25Z</updated>
+    <flickr:date_taken>2005-06-02T10:54:12-08:00</flickr:date_taken>
+    <dc:date.Taken>2005-06-02T10:54:12-08:00</dc:date.Taken>
+    <content type="html">			&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/people/sergiovl/&quot;&gt;Animal-X®&lt;/a&gt; postou uma foto:&lt;/p&gt;
 	
-&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/76472067@N08/7006419305/&quot; title=&quot;DSC00626&quot;&gt;&lt;img src=&quot;http://farm8.staticflickr.com/7218/7006419305_0fe17dafac_m.jpg&quot; width=&quot;240&quot; height=&quot;180&quot; alt=&quot;DSC00626&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/sergiovl/8874166218/&quot; title=&quot;dsc00701&quot;&gt;&lt;img src=&quot;http://farm4.staticflickr.com/3665/8874166218_0679e45586_m.jpg&quot; width=&quot;240&quot; height=&quot;180&quot; alt=&quot;dsc00701&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
-</content>
+&lt;p&gt;&lt;/p&gt;</content>
     <author>
-      <name>Escola de Engenharia de São Carlos</name>
-      <uri>http://www.flickr.com/people/76472067@N08/</uri>
-      <flickr:nsid>76472067@N08</flickr:nsid>
+      <name>Animal-X®</name>
+      <uri>http://www.flickr.com/people/sergiovl/</uri>
+      <flickr:nsid>57061476@N00</flickr:nsid>
+      <flickr:buddyicon>http://farm9.staticflickr.com/8255/buddyicons/57061476@N00.jpg?1369340810#57061476@N00</flickr:buddyicon>
     </author>
-    <link rel="enclosure" type="image/jpeg" href="http://farm8.staticflickr.com/7218/7006419305_0fe17dafac_b.jpg" />
-    <category term="" scheme="http://www.flickr.com/photos/tags/" />
+    <link rel="enclosure" type="image/jpeg" href="http://farm4.staticflickr.com/3665/8874166218_0679e45586_b.jpg" />
+    <category term="fisl" scheme="http://www.flickr.com/photos/tags/" />
 </entry>
 
 <entry>
-    <title>DSC00624</title>
-    <link rel="alternate" type="text/html" href="http://www.flickr.com/photos/76472067@N08/7006419157/in/set-72157629279414302/"/>
-    <id>tag:flickr.com,2005:/photo/7006419157/in/set-72157629279414302</id>
-    <published>2012-03-22T18:58:18Z</published>
-    <updated>2012-03-22T18:58:18Z</updated>
-    <flickr:date_taken>2012-02-27T08:40:48-08:00</flickr:date_taken>
-    <dc:date.Taken>2012-02-27T08:40:48-08:00</dc:date.Taken>
-    <content type="html">			&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/people/76472067@N08/&quot;&gt;Escola de Engenharia de São Carlos&lt;/a&gt; posted a photo:&lt;/p&gt;
+    <title>IMG_1843</title>
+    <link rel="alternate" type="text/html" href="http://www.flickr.com/photos/sergiovl/8874152462/"/>
+    <id>tag:flickr.com,2005:/photo/8874152462</id>
+    <published>2013-05-29T02:26:43Z</published>
+    <updated>2013-05-29T02:26:43Z</updated>
+    <flickr:date_taken>2005-06-03T21:38:44-08:00</flickr:date_taken>
+    <dc:date.Taken>2005-06-03T21:38:44-08:00</dc:date.Taken>
+    <content type="html">			&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/people/sergiovl/&quot;&gt;Animal-X®&lt;/a&gt; postou uma foto:&lt;/p&gt;
 	
-&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/76472067@N08/7006419157/&quot; title=&quot;DSC00624&quot;&gt;&lt;img src=&quot;http://farm8.staticflickr.com/7264/7006419157_9799e11524_m.jpg&quot; width=&quot;240&quot; height=&quot;180&quot; alt=&quot;DSC00624&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/sergiovl/8874152462/&quot; title=&quot;IMG_1843&quot;&gt;&lt;img src=&quot;http://farm9.staticflickr.com/8403/8874152462_f1ecd80e2c_m.jpg&quot; width=&quot;240&quot; height=&quot;180&quot; alt=&quot;IMG_1843&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 </content>
     <author>
-      <name>Escola de Engenharia de São Carlos</name>
-      <uri>http://www.flickr.com/people/76472067@N08/</uri>
-      <flickr:nsid>76472067@N08</flickr:nsid>
+      <name>Animal-X®</name>
+      <uri>http://www.flickr.com/people/sergiovl/</uri>
+      <flickr:nsid>57061476@N00</flickr:nsid>
+      <flickr:buddyicon>http://farm9.staticflickr.com/8255/buddyicons/57061476@N00.jpg?1369340810#57061476@N00</flickr:buddyicon>
     </author>
-    <link rel="enclosure" type="image/jpeg" href="http://farm8.staticflickr.com/7264/7006419157_9799e11524_b.jpg" />
-    <category term="" scheme="http://www.flickr.com/photos/tags/" />
+    <link rel="enclosure" type="image/jpeg" href="http://farm9.staticflickr.com/8403/8874152462_f1ecd80e2c_b.jpg" />
+    <category term="fisl" scheme="http://www.flickr.com/photos/tags/" />
 </entry>
 
 <entry>
-    <title>DSC00631</title>
-    <link rel="alternate" type="text/html" href="http://www.flickr.com/photos/76472067@N08/6860303354/in/set-72157629279414302/"/>
-    <id>tag:flickr.com,2005:/photo/6860303354/in/set-72157629279414302</id>
-    <published>2012-03-22T18:58:18Z</published>
-    <updated>2012-03-22T18:58:18Z</updated>
-    <flickr:date_taken>2012-02-27T08:42:14-08:00</flickr:date_taken>
-    <dc:date.Taken>2012-02-27T08:42:14-08:00</dc:date.Taken>
-    <content type="html">			&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/people/76472067@N08/&quot;&gt;Escola de Engenharia de São Carlos&lt;/a&gt; posted a photo:&lt;/p&gt;
+    <title>dsc00886</title>
+    <link rel="alternate" type="text/html" href="http://www.flickr.com/photos/sergiovl/8874156452/"/>
+    <id>tag:flickr.com,2005:/photo/8874156452</id>
+    <published>2013-05-29T02:26:36Z</published>
+    <updated>2013-05-29T02:26:36Z</updated>
+    <flickr:date_taken>2005-06-03T23:05:01-08:00</flickr:date_taken>
+    <dc:date.Taken>2005-06-03T23:05:01-08:00</dc:date.Taken>
+    <content type="html">			&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/people/sergiovl/&quot;&gt;Animal-X®&lt;/a&gt; postou uma foto:&lt;/p&gt;
 	
-&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/76472067@N08/6860303354/&quot; title=&quot;DSC00631&quot;&gt;&lt;img src=&quot;http://farm8.staticflickr.com/7180/6860303354_714fb5b25b_m.jpg&quot; width=&quot;240&quot; height=&quot;180&quot; alt=&quot;DSC00631&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/sergiovl/8874156452/&quot; title=&quot;dsc00886&quot;&gt;&lt;img src=&quot;http://farm4.staticflickr.com/3705/8874156452_138a1400e1_m.jpg&quot; width=&quot;240&quot; height=&quot;180&quot; alt=&quot;dsc00886&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
-</content>
+&lt;p&gt;&lt;/p&gt;</content>
     <author>
-      <name>Escola de Engenharia de São Carlos</name>
-      <uri>http://www.flickr.com/people/76472067@N08/</uri>
-      <flickr:nsid>76472067@N08</flickr:nsid>
+      <name>Animal-X®</name>
+      <uri>http://www.flickr.com/people/sergiovl/</uri>
+      <flickr:nsid>57061476@N00</flickr:nsid>
+      <flickr:buddyicon>http://farm9.staticflickr.com/8255/buddyicons/57061476@N00.jpg?1369340810#57061476@N00</flickr:buddyicon>
     </author>
-    <link rel="enclosure" type="image/jpeg" href="http://farm8.staticflickr.com/7180/6860303354_714fb5b25b_b.jpg" />
-    <category term="" scheme="http://www.flickr.com/photos/tags/" />
+    <link rel="enclosure" type="image/jpeg" href="http://farm4.staticflickr.com/3705/8874156452_138a1400e1_b.jpg" />
+    <category term="fisl" scheme="http://www.flickr.com/photos/tags/" />
 </entry>
 
 <entry>
-    <title>DSC00629</title>
-    <link rel="alternate" type="text/html" href="http://www.flickr.com/photos/76472067@N08/6860303138/in/set-72157629279414302/"/>
-    <id>tag:flickr.com,2005:/photo/6860303138/in/set-72157629279414302</id>
-    <published>2012-03-22T18:58:18Z</published>
-    <updated>2012-03-22T18:58:18Z</updated>
-    <flickr:date_taken>2012-02-27T08:41:49-08:00</flickr:date_taken>
-    <dc:date.Taken>2012-02-27T08:41:49-08:00</dc:date.Taken>
-    <content type="html">			&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/people/76472067@N08/&quot;&gt;Escola de Engenharia de São Carlos&lt;/a&gt; posted a photo:&lt;/p&gt;
+    <title>dsc00691</title>
+    <link rel="alternate" type="text/html" href="http://www.flickr.com/photos/sergiovl/8873549531/"/>
+    <id>tag:flickr.com,2005:/photo/8873549531</id>
+    <published>2013-05-29T02:26:25Z</published>
+    <updated>2013-05-29T02:26:25Z</updated>
+    <flickr:date_taken>2005-06-02T09:03:10-08:00</flickr:date_taken>
+    <dc:date.Taken>2005-06-02T09:03:10-08:00</dc:date.Taken>
+    <content type="html">			&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/people/sergiovl/&quot;&gt;Animal-X®&lt;/a&gt; postou uma foto:&lt;/p&gt;
 	
-&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/76472067@N08/6860303138/&quot; title=&quot;DSC00629&quot;&gt;&lt;img src=&quot;http://farm8.staticflickr.com/7222/6860303138_a04713a7d8_m.jpg&quot; width=&quot;240&quot; height=&quot;180&quot; alt=&quot;DSC00629&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/sergiovl/8873549531/&quot; title=&quot;dsc00691&quot;&gt;&lt;img src=&quot;http://farm3.staticflickr.com/2853/8873549531_6e64bde1a9_m.jpg&quot; width=&quot;240&quot; height=&quot;180&quot; alt=&quot;dsc00691&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
-</content>
+&lt;p&gt;&lt;/p&gt;</content>
     <author>
-      <name>Escola de Engenharia de São Carlos</name>
-      <uri>http://www.flickr.com/people/76472067@N08/</uri>
-      <flickr:nsid>76472067@N08</flickr:nsid>
+      <name>Animal-X®</name>
+      <uri>http://www.flickr.com/people/sergiovl/</uri>
+      <flickr:nsid>57061476@N00</flickr:nsid>
+      <flickr:buddyicon>http://farm9.staticflickr.com/8255/buddyicons/57061476@N00.jpg?1369340810#57061476@N00</flickr:buddyicon>
     </author>
-    <link rel="enclosure" type="image/jpeg" href="http://farm8.staticflickr.com/7222/6860303138_a04713a7d8_b.jpg" />
-    <category term="" scheme="http://www.flickr.com/photos/tags/" />
+    <link rel="enclosure" type="image/jpeg" href="http://farm3.staticflickr.com/2853/8873549531_6e64bde1a9_b.jpg" />
+    <category term="fisl" scheme="http://www.flickr.com/photos/tags/" />
 </entry>
 
 <entry>
-    <title>DSC00628</title>
-    <link rel="alternate" type="text/html" href="http://www.flickr.com/photos/76472067@N08/6860303076/in/set-72157629279414302/"/>
-    <id>tag:flickr.com,2005:/photo/6860303076/in/set-72157629279414302</id>
-    <published>2012-03-22T18:58:18Z</published>
-    <updated>2012-03-22T18:58:18Z</updated>
-    <flickr:date_taken>2012-02-27T08:41:36-08:00</flickr:date_taken>
-    <dc:date.Taken>2012-02-27T08:41:36-08:00</dc:date.Taken>
-    <content type="html">			&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/people/76472067@N08/&quot;&gt;Escola de Engenharia de São Carlos&lt;/a&gt; posted a photo:&lt;/p&gt;
+    <title>dsc00848</title>
+    <link rel="alternate" type="text/html" href="http://www.flickr.com/photos/sergiovl/8873534579/"/>
+    <id>tag:flickr.com,2005:/photo/8873534579</id>
+    <published>2013-05-29T02:26:34Z</published>
+    <updated>2013-05-29T02:26:34Z</updated>
+    <flickr:date_taken>2005-06-03T21:37:28-08:00</flickr:date_taken>
+    <dc:date.Taken>2005-06-03T21:37:28-08:00</dc:date.Taken>
+    <content type="html">			&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/people/sergiovl/&quot;&gt;Animal-X®&lt;/a&gt; postou uma foto:&lt;/p&gt;
 	
-&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/76472067@N08/6860303076/&quot; title=&quot;DSC00628&quot;&gt;&lt;img src=&quot;http://farm8.staticflickr.com/7219/6860303076_1d5a3b9754_m.jpg&quot; width=&quot;240&quot; height=&quot;180&quot; alt=&quot;DSC00628&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/sergiovl/8873534579/&quot; title=&quot;dsc00848&quot;&gt;&lt;img src=&quot;http://farm8.staticflickr.com/7327/8873534579_49f05a015c_m.jpg&quot; width=&quot;240&quot; height=&quot;180&quot; alt=&quot;dsc00848&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
-</content>
+&lt;p&gt;&lt;/p&gt;</content>
     <author>
-      <name>Escola de Engenharia de São Carlos</name>
-      <uri>http://www.flickr.com/people/76472067@N08/</uri>
-      <flickr:nsid>76472067@N08</flickr:nsid>
+      <name>Animal-X®</name>
+      <uri>http://www.flickr.com/people/sergiovl/</uri>
+      <flickr:nsid>57061476@N00</flickr:nsid>
+      <flickr:buddyicon>http://farm9.staticflickr.com/8255/buddyicons/57061476@N00.jpg?1369340810#57061476@N00</flickr:buddyicon>
     </author>
-    <link rel="enclosure" type="image/jpeg" href="http://farm8.staticflickr.com/7219/6860303076_1d5a3b9754_b.jpg" />
-    <category term="" scheme="http://www.flickr.com/photos/tags/" />
+    <link rel="enclosure" type="image/jpeg" href="http://farm8.staticflickr.com/7327/8873534579_49f05a015c_b.jpg" />
+    <category term="fisl" scheme="http://www.flickr.com/photos/tags/" />
 </entry>
 
 <entry>
-    <title>DSC00625</title>
-    <link rel="alternate" type="text/html" href="http://www.flickr.com/photos/76472067@N08/6860302832/in/set-72157629279414302/"/>
-    <id>tag:flickr.com,2005:/photo/6860302832/in/set-72157629279414302</id>
-    <published>2012-03-22T18:58:18Z</published>
-    <updated>2012-03-22T18:58:18Z</updated>
-    <flickr:date_taken>2012-02-27T08:41:03-08:00</flickr:date_taken>
-    <dc:date.Taken>2012-02-27T08:41:03-08:00</dc:date.Taken>
-    <content type="html">			&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/people/76472067@N08/&quot;&gt;Escola de Engenharia de São Carlos&lt;/a&gt; posted a photo:&lt;/p&gt;
+    <title>IMG_1834</title>
+    <link rel="alternate" type="text/html" href="http://www.flickr.com/photos/sergiovl/8874153640/"/>
+    <id>tag:flickr.com,2005:/photo/8874153640</id>
+    <published>2013-05-29T02:26:40Z</published>
+    <updated>2013-05-29T02:26:40Z</updated>
+    <flickr:date_taken>2005-06-03T13:57:36-08:00</flickr:date_taken>
+    <dc:date.Taken>2005-06-03T13:57:36-08:00</dc:date.Taken>
+    <content type="html">			&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/people/sergiovl/&quot;&gt;Animal-X®&lt;/a&gt; postou uma foto:&lt;/p&gt;
 	
-&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/76472067@N08/6860302832/&quot; title=&quot;DSC00625&quot;&gt;&lt;img src=&quot;http://farm8.staticflickr.com/7095/6860302832_07e21429d3_m.jpg&quot; width=&quot;240&quot; height=&quot;180&quot; alt=&quot;DSC00625&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/sergiovl/8874153640/&quot; title=&quot;IMG_1834&quot;&gt;&lt;img src=&quot;http://farm8.staticflickr.com/7316/8874153640_ec1405e918_m.jpg&quot; width=&quot;240&quot; height=&quot;180&quot; alt=&quot;IMG_1834&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 </content>
     <author>
-      <name>Escola de Engenharia de São Carlos</name>
-      <uri>http://www.flickr.com/people/76472067@N08/</uri>
-      <flickr:nsid>76472067@N08</flickr:nsid>
+      <name>Animal-X®</name>
+      <uri>http://www.flickr.com/people/sergiovl/</uri>
+      <flickr:nsid>57061476@N00</flickr:nsid>
+      <flickr:buddyicon>http://farm9.staticflickr.com/8255/buddyicons/57061476@N00.jpg?1369340810#57061476@N00</flickr:buddyicon>
     </author>
-    <link rel="enclosure" type="image/jpeg" href="http://farm8.staticflickr.com/7095/6860302832_07e21429d3_b.jpg" />
-    <category term="" scheme="http://www.flickr.com/photos/tags/" />
+    <link rel="enclosure" type="image/jpeg" href="http://farm8.staticflickr.com/7316/8874153640_ec1405e918_b.jpg" />
+    <category term="fisl" scheme="http://www.flickr.com/photos/tags/" />
 </entry>
 
 <entry>
-    <title>DSC00623</title>
-    <link rel="alternate" type="text/html" href="http://www.flickr.com/photos/76472067@N08/6860302620/in/set-72157629279414302/"/>
-    <id>tag:flickr.com,2005:/photo/6860302620/in/set-72157629279414302</id>
-    <published>2012-03-22T18:58:17Z</published>
-    <updated>2012-03-22T18:58:17Z</updated>
-    <flickr:date_taken>2012-02-27T08:40:41-08:00</flickr:date_taken>
-    <dc:date.Taken>2012-02-27T08:40:41-08:00</dc:date.Taken>
-    <content type="html">			&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/people/76472067@N08/&quot;&gt;Escola de Engenharia de São Carlos&lt;/a&gt; posted a photo:&lt;/p&gt;
+    <title>dsc00847</title>
+    <link rel="alternate" type="text/html" href="http://www.flickr.com/photos/sergiovl/8874159292/"/>
+    <id>tag:flickr.com,2005:/photo/8874159292</id>
+    <published>2013-05-29T02:26:33Z</published>
+    <updated>2013-05-29T02:26:33Z</updated>
+    <flickr:date_taken>2005-06-03T21:37:15-08:00</flickr:date_taken>
+    <dc:date.Taken>2005-06-03T21:37:15-08:00</dc:date.Taken>
+    <content type="html">			&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/people/sergiovl/&quot;&gt;Animal-X®&lt;/a&gt; postou uma foto:&lt;/p&gt;
 	
-&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/76472067@N08/6860302620/&quot; title=&quot;DSC00623&quot;&gt;&lt;img src=&quot;http://farm8.staticflickr.com/7247/6860302620_3b97cc70fd_m.jpg&quot; width=&quot;240&quot; height=&quot;180&quot; alt=&quot;DSC00623&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/sergiovl/8874159292/&quot; title=&quot;dsc00847&quot;&gt;&lt;img src=&quot;http://farm6.staticflickr.com/5323/8874159292_71b4224732_m.jpg&quot; width=&quot;240&quot; height=&quot;180&quot; alt=&quot;dsc00847&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
-</content>
+&lt;p&gt;&lt;/p&gt;</content>
     <author>
-      <name>Escola de Engenharia de São Carlos</name>
-      <uri>http://www.flickr.com/people/76472067@N08/</uri>
-      <flickr:nsid>76472067@N08</flickr:nsid>
+      <name>Animal-X®</name>
+      <uri>http://www.flickr.com/people/sergiovl/</uri>
+      <flickr:nsid>57061476@N00</flickr:nsid>
+      <flickr:buddyicon>http://farm9.staticflickr.com/8255/buddyicons/57061476@N00.jpg?1369340810#57061476@N00</flickr:buddyicon>
     </author>
-    <link rel="enclosure" type="image/jpeg" href="http://farm8.staticflickr.com/7247/6860302620_3b97cc70fd_b.jpg" />
-    <category term="" scheme="http://www.flickr.com/photos/tags/" />
+    <link rel="enclosure" type="image/jpeg" href="http://farm6.staticflickr.com/5323/8874159292_71b4224732_b.jpg" />
+    <category term="fisl" scheme="http://www.flickr.com/photos/tags/" />
 </entry>
 
 <entry>
-    <title>DSC00622</title>
-    <link rel="alternate" type="text/html" href="http://www.flickr.com/photos/76472067@N08/6860302496/in/set-72157629279414302/"/>
-    <id>tag:flickr.com,2005:/photo/6860302496/in/set-72157629279414302</id>
-    <published>2012-03-22T18:46:27Z</published>
-    <updated>2012-03-22T18:46:27Z</updated>
-    <flickr:date_taken>2012-02-27T08:40:23-08:00</flickr:date_taken>
-    <dc:date.Taken>2012-02-27T08:40:23-08:00</dc:date.Taken>
-    <content type="html">			&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/people/76472067@N08/&quot;&gt;Escola de Engenharia de São Carlos&lt;/a&gt; posted a photo:&lt;/p&gt;
+    <title>IMG_1868</title>
+    <link rel="alternate" type="text/html" href="http://www.flickr.com/photos/sergiovl/8873533727/"/>
+    <id>tag:flickr.com,2005:/photo/8873533727</id>
+    <published>2013-05-29T02:26:46Z</published>
+    <updated>2013-05-29T02:26:46Z</updated>
+    <flickr:date_taken>2005-06-04T13:14:20-08:00</flickr:date_taken>
+    <dc:date.Taken>2005-06-04T13:14:20-08:00</dc:date.Taken>
+    <content type="html">			&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/people/sergiovl/&quot;&gt;Animal-X®&lt;/a&gt; postou uma foto:&lt;/p&gt;
 	
-&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/76472067@N08/6860302496/&quot; title=&quot;DSC00622&quot;&gt;&lt;img src=&quot;http://farm8.staticflickr.com/7136/6860302496_0cee37ce67_m.jpg&quot; width=&quot;240&quot; height=&quot;180&quot; alt=&quot;DSC00622&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/sergiovl/8873533727/&quot; title=&quot;IMG_1868&quot;&gt;&lt;img src=&quot;http://farm4.staticflickr.com/3827/8873533727_6b1363b193_m.jpg&quot; width=&quot;240&quot; height=&quot;180&quot; alt=&quot;IMG_1868&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 </content>
     <author>
-      <name>Escola de Engenharia de São Carlos</name>
-      <uri>http://www.flickr.com/people/76472067@N08/</uri>
-      <flickr:nsid>76472067@N08</flickr:nsid>
+      <name>Animal-X®</name>
+      <uri>http://www.flickr.com/people/sergiovl/</uri>
+      <flickr:nsid>57061476@N00</flickr:nsid>
+      <flickr:buddyicon>http://farm9.staticflickr.com/8255/buddyicons/57061476@N00.jpg?1369340810#57061476@N00</flickr:buddyicon>
     </author>
-    <link rel="enclosure" type="image/jpeg" href="http://farm8.staticflickr.com/7136/6860302496_0cee37ce67_b.jpg" />
-    <category term="" scheme="http://www.flickr.com/photos/tags/" />
+    <link rel="enclosure" type="image/jpeg" href="http://farm4.staticflickr.com/3827/8873533727_6b1363b193_b.jpg" />
+    <category term="fisl" scheme="http://www.flickr.com/photos/tags/" />
+</entry>
+
+<entry>
+    <title>dsc00648</title>
+    <link rel="alternate" type="text/html" href="http://www.flickr.com/photos/sergiovl/8874151378/"/>
+    <id>tag:flickr.com,2005:/photo/8874151378</id>
+    <published>2013-05-29T02:26:24Z</published>
+    <updated>2013-05-29T02:26:24Z</updated>
+    <flickr:date_taken>2005-06-01T04:35:32-08:00</flickr:date_taken>
+    <dc:date.Taken>2005-06-01T04:35:32-08:00</dc:date.Taken>
+    <content type="html">			&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/people/sergiovl/&quot;&gt;Animal-X®&lt;/a&gt; postou uma foto:&lt;/p&gt;
+	
+&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/sergiovl/8874151378/&quot; title=&quot;dsc00648&quot;&gt;&lt;img src=&quot;http://farm4.staticflickr.com/3813/8874151378_196d2a798b_m.jpg&quot; width=&quot;240&quot; height=&quot;180&quot; alt=&quot;dsc00648&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</content>
+    <author>
+      <name>Animal-X®</name>
+      <uri>http://www.flickr.com/people/sergiovl/</uri>
+      <flickr:nsid>57061476@N00</flickr:nsid>
+      <flickr:buddyicon>http://farm9.staticflickr.com/8255/buddyicons/57061476@N00.jpg?1369340810#57061476@N00</flickr:buddyicon>
+    </author>
+    <link rel="enclosure" type="image/jpeg" href="http://farm4.staticflickr.com/3813/8874151378_196d2a798b_b.jpg" />
+    <category term="fisl" scheme="http://www.flickr.com/photos/tags/" />
+</entry>
+
+<entry>
+    <title>dsc00717</title>
+    <link rel="alternate" type="text/html" href="http://www.flickr.com/photos/sergiovl/8874164700/"/>
+    <id>tag:flickr.com,2005:/photo/8874164700</id>
+    <published>2013-05-29T02:26:26Z</published>
+    <updated>2013-05-29T02:26:26Z</updated>
+    <flickr:date_taken>2005-06-02T14:26:37-08:00</flickr:date_taken>
+    <dc:date.Taken>2005-06-02T14:26:37-08:00</dc:date.Taken>
+    <content type="html">			&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/people/sergiovl/&quot;&gt;Animal-X®&lt;/a&gt; postou uma foto:&lt;/p&gt;
+	
+&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/sergiovl/8874164700/&quot; title=&quot;dsc00717&quot;&gt;&lt;img src=&quot;http://farm8.staticflickr.com/7292/8874164700_98d93da881_m.jpg&quot; width=&quot;240&quot; height=&quot;180&quot; alt=&quot;dsc00717&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</content>
+    <author>
+      <name>Animal-X®</name>
+      <uri>http://www.flickr.com/people/sergiovl/</uri>
+      <flickr:nsid>57061476@N00</flickr:nsid>
+      <flickr:buddyicon>http://farm9.staticflickr.com/8255/buddyicons/57061476@N00.jpg?1369340810#57061476@N00</flickr:buddyicon>
+    </author>
+    <link rel="enclosure" type="image/jpeg" href="http://farm8.staticflickr.com/7292/8874164700_98d93da881_b.jpg" />
+    <category term="fisl" scheme="http://www.flickr.com/photos/tags/" />
 </entry>
 
 
