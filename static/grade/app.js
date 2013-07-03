@@ -301,12 +301,12 @@ var app = {
                            addStyle='background:rgb(0,0,70);color:black ! important;';
                         }
                         if(probeElement.end<thresholdHourNow) { 
-                           addStyle='background:rgb(90,30,0)';
+                           addStyle='background:rgb(0,70,0)';
                         } 
                     }
 
                     if(el.descricao.indexOf('(*)')>-1) { 
-                        addStyle='background:red ! important';
+                        addStyle='background:-moz-linear-gradient( -90deg, rgb(150,30,30), rgb(60,30,30), rgb(60,30,30));';
                     } 
  
                     //if(delta==0) { delta=200 } 
