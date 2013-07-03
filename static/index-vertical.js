@@ -10,7 +10,7 @@ $(document).ready(function() {
    register("/main/middle", "meio", "./grade/index.html", iframeTemplate);
    register("/main/topheader", "topo", "./header-vertical/index.html", iframeTemplate);
    register("/main/topmiddle", "mid", "./destaques/index.html", iframeTemplate);
-   register("/main/bottomsection2", "tweeter", "http://www.telasocial.com/ts/fisl/twitter/index.html", iframeTemplate);
+   register("/main/bottomsection2", "tweeter", "http://www.telasocial.com:8888/static/twitter-new/", iframeTemplate);
    register("/main/bottomsection", "identica", "./feed-cicle/index.html", iframeTemplate);
    register("/main/bottomsection-b", "fotos", "./galeria/index.html", iframeTemplate);
 

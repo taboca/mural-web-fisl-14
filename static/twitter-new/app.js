@@ -37,7 +37,7 @@
 
 var app =  {
 	feedURL : URL_TWIT,
-    MAX_ITEMS: 3,
+    MAX_ITEMS: 10,
 	feed    : null, 
 	start : function() {
 
@@ -120,7 +120,7 @@ var app =  {
 
 				this.total--;
 			} 
-			setTimeout( function () { self.render() }, 19999);
+			setTimeout( function () { self.render() }, 9999);
 		} 
 	},
 
