@@ -301,7 +301,7 @@ var app = {
                            addStyle='background:rgb(0,0,70);color:black ! important;';
                         }
                         if(probeElement.end<thresholdHourNow) { 
-                           addStyle='background:rgb(150,60,0)';
+                           addStyle='background:rgb(90,30,0)';
                         } 
                     }
 
