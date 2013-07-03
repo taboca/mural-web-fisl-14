@@ -1,0 +1,20 @@
+{
+"rules": [
+
+{
+ "about":"start",
+ "function":"loadTXT",
+ "expiretimer":10000, 
+ "data":{"value":"http://www.telasocial.com:8888/channel/fisl.txt","about":"fisl"}, "to":"next"
+}, 
+{
+ "about":"next",
+ "function":"timer",
+ "data":{"value":30000},
+ "to":"start"
+}
+
+]
+
+}
+
