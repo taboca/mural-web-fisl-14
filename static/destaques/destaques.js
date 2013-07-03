@@ -1,4 +1,4 @@
-var destaque =  {
+var app =  {
 	feedURL : URL_DESTAQUES,
 	feed    : null, 
 
@@ -18,8 +18,8 @@ var destaque =  {
 	},
 
 	init : function () { 
-		this.feed = new google.feeds.Feed(this.feedURL);
-		this.feed.setResultFormat(google.feeds.Feed.XML_FORMAT);
+		this.feed = new t8l.feeds.Feed(this.feedURL);
+		this.feed.setResultFormat(t8l.feeds.Feed.XML_FORMAT);
 		this.feed.setNumEntries(10);
 	} ,
 	
@@ -43,7 +43,7 @@ var destaque =  {
 		if (! this.popTweet()) {
 			this.feed.load( function (e) { self.__feedUpdated(e) } );
 		}
-		setTimeout( function(){self.updateFeed()},5000);
+		setTimeout( function(){self.updateFeed()},15000);
 	},
 
 	__feedUpdated : function(result) {
