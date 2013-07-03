@@ -305,7 +305,7 @@ var app = {
                         } 
                     }
 
-                    if(el.descricao.indexOf('mudou')>-1) { 
+                    if(el.descricao.indexOf('(*)')>-1) { 
                         addStyle='background:red ! important';
                     } 
  
