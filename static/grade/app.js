@@ -14,7 +14,7 @@ var app = {
 
   evento: null, 
   chunkHourSpace:60,
-  ratioForHeight:1.5,
+  ratioForHeight:1.6,
   descricao : new Array(),
   gridCols: 0, 
   gridBuffer: null, 
@@ -291,14 +291,14 @@ var app = {
                     var addStyle='';
                     if(probeElement.flag) { 
                         delta=delta+these.chunkHourSpace;
-                        addStyle+='background:rgb(250,190,00);color:black';
+                        addStyle+='background:rgb(0,0,70);color:black';
                         //marcio
                     } 
                     var dateTodayNow = new Date();
                     var thresholdHourNow = dateTodayNow.getHours()*60+dateTodayNow.getMinutes();
                     if(probeElement.flagToday) {
                        if(probeElement.begin<thresholdHourNow) { 
-                           addStyle='background:rgb(250,190,0);color:black ! important;';
+                           addStyle='background:rgb(0,0,70);color:black ! important;';
                         }
                         if(probeElement.end<thresholdHourNow) { 
                            addStyle='background:rgb(150,60,0)';

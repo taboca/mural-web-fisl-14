@@ -8,9 +8,13 @@ function doFilter(str) {
     var fontSize = INNER_FONT_SIZE;
     var s = str.split(' ');
     htmlMarkup = '';
+    var gg = 255;
     for (var i=0;i<s.length;i++) { 
         var el = s[i];
-        var elMark = '<span style=" float:left; ;color:inherit;margin-right:3px;font-size:'+fontSize+'px">'+el+'</span>';
+        if(gg>50) { 
+           gg-=30;
+        } 
+        var elMark = '<span style=";color:rgb('+gg+','+gg+','+gg+');margin-right:3px;font-size:'+fontSize+'px">'+el+'</span>';
         fontSize-=1;
         htmlMarkup+=elMark;
     }

@@ -15,11 +15,14 @@ body {
   overflow:hidden;
 } 
 
+/*
+  background:rgb(70,70,70);
+  */
 .innerInnerCell { 
-  margin-left:4px;
+  margin-left:2px;
   font-size:13px;
-  background: -moz-linear-gradient( -90deg, rgb(120,120,120), rgba(40,40,40,1));
   padding:2px;
+  background: -moz-linear-gradient( -90deg, rgb(100,100,100), rgba(60,60,60,1));
   height:100%;
   text-overflow:ellipsis;
   word-wrap:break-word;
@@ -35,7 +38,7 @@ body {
 } 
 
 .innerInnerHour { 
-  margin-top:4px;
+  margin-top:2px;
 } 
 
 .innerHeader { 
@@ -44,7 +47,7 @@ body {
 .innerInnerHeader { 
   padding:.5em;
   padding-left:1em;
-  margin-left:4px;
+  margin-left:2px;
   margin-bottom:2px;
   background: -moz-linear-gradient( -90deg, rgba(120,120,120,1), rgba(100,100,100,1));
   font-weight:bold;
