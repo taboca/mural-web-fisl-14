@@ -1,6 +1,6 @@
 $(document).ready(function() {
   register("/main/topheader", "topo", "./header/index.html", iframeTemplate);
-  register("/main/flyershow", "flyer", "./grade/index.html", iframeTemplate);
+  register("/main/flyershow", "flyer", "./grade2/index.html", iframeTemplate);
   //register("/main/flyershow", "flyer", "./flyer/index.html", iframeTemplate);
   register("/main/thumbs", "thumbs", "./thumbs/index.html", iframeTemplate);
   compile();   
