@@ -35,6 +35,11 @@ body {
 
 } 
 
+.innerNoneHor { 
+  background: -moz-linear-gradient( 90deg, rgba(5,5,5,.2),  rgba(255,255,255,0));
+} 
+
+
 
 .innerNone { 
   background: -moz-linear-gradient( 0deg, rgba(5,5,5,.2),  rgba(255,255,255,0));
@@ -42,6 +47,11 @@ body {
 
 .innerHour { 
   background: -moz-linear-gradient( 0deg, rgba(5,5,5,.2), rgba(255,255,255,0), rgba(255,255,255,0));
+  text-align:center;
+} 
+
+.innerHourHor { 
+  background: -moz-linear-gradient( 90deg, rgba(5,5,5,.2), rgba(255,255,255,0), rgba(255,255,255,0));
   text-align:center;
 } 
 

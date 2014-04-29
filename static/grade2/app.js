@@ -328,13 +328,14 @@
             if(probeElement.flag) { 
                 delta=these.chunkHourSpace;
             } 
-            $(this).addClass('innerNone');
             //alert(delta);
 
             if(!modeFlip) {
               $(this).attr("style",';width:'+these.fixScaleWidth(delta)+'px;height:'+cssHeight+'px;');
+              $(this).addClass('innerNone');
             } else { 
               $(this).attr("style",'width:'+cssWidth+'px;height:'+these.fixScaleHeight(delta)+'px;');
+              $(this).addClass('innerNoneHor');
             }
 
 
@@ -346,7 +347,13 @@
             var hour = probeElement.value;
             var delta = probeElement.width;
             if(!delta) { delta=these.chunkHourSpace; } 
-            $(this).addClass('innerHour');
+
+            if(!modeFlip) {
+                $(this).addClass('innerHour');
+            } else { 
+                $(this).addClass('innerHourHor');
+            }
+
             var localWidth='50px';
             var localHeight='50px';
             var hourSliceId = 'hourSlice_'+Math.random(); 
