@@ -122,7 +122,9 @@
         for(var i in compressHours) {
             for(var j in compressColumns) {
 
+                /* Cols = hours and Rows = Rooms */
                 if(i==0 && j==0) {
+                  
                   for(var ii=0; ii<compressHours.length+1;ii++) {
                      if(ii==0) {
                         buffer[ii]= mapCell({type: 'corner'})
@@ -134,6 +136,7 @@
                         buffer[ii]=mapCell({type:'slices', value:compressHours[ii-1], 'width':delta});
                      }
                   }
+
                   for(var jj=0;jj<compressColumns.length+1;jj++) {
                         if(jj==0) {
                         } 
@@ -148,9 +151,6 @@
 
             }
         }
-
-
-
 
         for(var key in slots) {
           var item = slots[key]; 
