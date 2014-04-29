@@ -119,36 +119,53 @@
 
         var buffer = [];
 
+        var modeFlip = true ; 
+
         for(var i in compressHours) {
             for(var j in compressColumns) {
 
                 /* Cols = hours and Rows = Rooms */
                 if(i==0 && j==0) {
-                  
-                  for(var ii=0; ii<compressHours.length+1;ii++) {
-                     if(ii==0) {
-                        buffer[ii]= mapCell({type: 'corner'})
+
+                  var list = compressHours; 
+
+                  for(var jj=0; jj<list.length+1;jj++) {
+                     if(jj==0) {
+                        buffer[jj]= mapCell({type: 'corner'})
                      } 
                      else {
-                        var curr = compressHours[ii-1]/60000;
-                        var end = compressHours[ii]/60000;
+                        var curr = list[jj-1]/60000;
+                        var end = list[jj]/60000;
                         var delta = (end-curr);
-                        buffer[ii]=mapCell({type:'slices', value:compressHours[ii-1], 'width':delta});
+                        
+                        var index = jj;
+                        if(modeFlip) {
+                            index= (parseInt(jj))*(list.length+1);
+                        }
+                        buffer[index]=mapCell({type:'slices', value:list[jj-1], 'width':delta});
                      }
                   }
 
-                  for(var jj=0;jj<compressColumns.length+1;jj++) {
+                  var list = compressColumns; 
+
+                  for(var jj=0;jj<list.length+1;jj++) {
                         if(jj==0) {
                         } 
                         else {
-                           buffer[(parseInt(jj))*(compressHours.length+1)]=mapCell({type:'header', value:compressColumns[jj-1]});
+                          var index = (parseInt(jj))*(list.length+1); 
+                          if(modeFlip) { 
+                              index=jj;
+                          }
+                          buffer[index]=mapCell({type:'header', value:list[jj-1]});
                         }
                   }
-                } 
-
+                }
                 var delta  = parseInt(compressHours[parseInt(i)+1]-compressHours[i])/60000;
-                buffer[(parseInt(i)+1)+((compressHours.length+1)*(parseInt(j)+1))]=mapCell({type:'none' , value:delta});
-
+                if(!modeFlip) { 
+                  buffer[(parseInt(i)+1)+((compressHours.length+1)*(parseInt(j)+1))]=mapCell({type:'none' , value:delta});
+                } else {
+                  buffer[(parseInt(j)+1)+((compressColumns.length+1)*(parseInt(i)+1))]=mapCell({type:'none', value:delta});
+                }
             }
         }
 
@@ -160,8 +177,12 @@
               for (k in compressHours) {
                 var curr = compressHours[k];
                 if (curr >= item.getTimeBegin && curr < item.getTimeEnd) {
-                   buffer[((parseInt(indexForColumn)+1)*(compressHours.length+1))+(parseInt(k)+1)]=item.cellMap;
-
+                   if(!modeFlip) {
+                      buffer[((parseInt(indexForColumn)+1)*(compressHours.length+1))+(parseInt(k)+1)]=item.cellMap;
+                   } else {
+                   //   ( (parseInt(k)+1) * compressHours.length+1 ) + parseInt(indexForColumn)+1)
+                      buffer[(compressColumns.length+1)*(parseInt(k)+1)+(parseInt(indexForColumn)+1)]=item.cellMap;
+                   }
                 }
               }
           }
@@ -179,7 +200,11 @@
 
         this.gridBuffer = buffer.join("");
 
-        this.generateDivs(compressHours.length);
+        var len = compressHours.length;
+        if(modeFlip) {
+            len = compressColumns.length;
+        } 
+        this.generateDivs(len, modeFlip);
 
   }, 
 
@@ -233,7 +258,7 @@
 
   },
 
-  generateDivs: function (len) { 
+  generateDivs: function (len, modeFlip) { 
 
     var buffer = this.gridBuffer; 
     var cols   = len;
@@ -288,9 +313,11 @@
                 addStyle='background:-moz-linear-gradient( 0deg, rgb(150,30,30), rgb(60,30,30), rgb(60,30,30));';
             } 
 
-            //if(delta==0) { delta=200 } 
-            $(this).attr("style",';width:'+these.fixScaleWidth(delta)+'px;height:'+cssHeight+'px;');
-//            $(this).attr("style",';width:'+cssWidth+'px;height:'+these.fixScaleHeight(delta)+'px;');
+            if(!modeFlip) {
+              $(this).attr("style",';width:'+these.fixScaleWidth(delta)+'px;height:'+cssHeight+'px;');
+            } else { 
+              $(this).attr("style",';width:'+cssWidth+'px;height:'+these.fixScaleHeight(delta)+'px;');
+            }
 
             $(this).find('div').attr("style",addStyle);
         } 
@@ -303,8 +330,13 @@
             } 
             $(this).addClass('innerNone');
             //alert(delta);
-            //$(this).attr("style",'width:'+cssWidth+'px;height:'+these.fixScaleHeight(delta)+'px;');
-             $(this).attr("style",';width:'+these.fixScaleWidth(delta)+'px;height:'+cssHeight+'px;');
+
+            if(!modeFlip) {
+              $(this).attr("style",';width:'+these.fixScaleWidth(delta)+'px;height:'+cssHeight+'px;');
+            } else { 
+              $(this).attr("style",'width:'+cssWidth+'px;height:'+these.fixScaleHeight(delta)+'px;');
+            }
+
 
              $(this).html('');
  
@@ -330,7 +362,11 @@
                 delta=these.chunkHourSpace;
             } 
             //$(this).attr("style",'width:'+localWidth+';height:'+these.fixScaleHeight(delta)+'px;');
-            $(this).attr("style",'width:'+these.fixScaleWidth(delta)+';height:'+localHeight+'px;');
+            if(!modeFlip) {
+              $(this).attr("style",'width:'+these.fixScaleWidth(delta)+';height:'+localHeight+'px;');
+            } else { 
+              $(this).attr("style",'width:'+localWidth+';height:'+these.fixScaleHeight(delta)+'px;');
+            }
             $(this).html('<div id="'+hourSliceId+'" class="innerInnerHour" style="display:inline-block;padding:0px"><div>'+strProposal+'</div></div>');
             // This -20 is due to the padding and the 4 is for borders? 
             var elWidth = document.getElementById(hourSliceId).offsetWidth; 
@@ -338,8 +374,14 @@
 
         if(probeElement.type == 'header') { 
             var room = probeElement.value;
+            var localWidth='50px';
+
             $(this).addClass('innerHeader');
-            $(this).attr("style",'width:'+localWidth+'px;');
+            if(!modeFlip) {
+                $(this).attr("style",'width:'+localWidth+'px;');
+            } else { 
+                $(this).attr("style",'width:'+cssWidth+'px;');
+            }
             $(this).html('<div class="innerInnerHeader">'+ util_roomNameReplacer[room]+'</div>');
         } 
 
