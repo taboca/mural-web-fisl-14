@@ -11,6 +11,7 @@ var timer = null;
 function start(name, appPath) {
 
     var href = 'http://fisl.org.br/14/papers_ng/public/fast_grid?event_id=3';
+    var href = 'http://papers.softwarelivre.org/papers_ng/public/fast_grid?event_id=4';
 
 	var buffer = "";
 	var host = url.parse(href).host;
@@ -43,7 +44,7 @@ function start(name, appPath) {
    request.on('response', function (res) {
       var strOut = "";
 
-      res.setEncoding('binary')
+      res.setEncoding('utf-8')
 
       res.on('data', function (buffer) {
               strOut += buffer;
