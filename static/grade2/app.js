@@ -140,7 +140,7 @@
                         
                         var index = jj;
                         if(modeFlip) {
-                            index= (parseInt(jj))*(list.length+1);
+                            index= (parseInt(jj))*(compressColumns.length+1);
                         }
                         buffer[index]=mapCell({type:'slices', value:list[jj-1], 'width':delta});
                      }
@@ -152,10 +152,11 @@
                         if(jj==0) {
                         } 
                         else {
-                          var index = (parseInt(jj))*(list.length+1); 
+                          var index = (parseInt(jj))*(compressHours.length+1); 
                           if(modeFlip) { 
                               index=jj;
                           }
+
                           buffer[index]=mapCell({type:'header', value:list[jj-1]});
                         }
                   }
@@ -165,6 +166,7 @@
                   buffer[(parseInt(i)+1)+((compressHours.length+1)*(parseInt(j)+1))]=mapCell({type:'none' , value:delta});
                 } else {
                   buffer[(parseInt(j)+1)+((compressColumns.length+1)*(parseInt(i)+1))]=mapCell({type:'none', value:delta});
+
                 }
             }
         }
