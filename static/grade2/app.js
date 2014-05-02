@@ -25,7 +25,7 @@
   },
 
 
-  start : function (slots, currentDay) {
+  start : function (slots, rooms, currentDay) {
 
         var eventsByHours = [];
         var eventsByColumn = [];
@@ -33,9 +33,9 @@
         var columns = [];
 
         for(var key in slots) {
+
           var item = slots[key];
           if(item.date == currentDay ) {
-        
              var fullDate = item.date.split('-'); 
              var da = parseFloat(fullDate[2]);
              var mo = parseFloat(fullDate[1]);
@@ -127,6 +127,23 @@
           }
         }
 
+        var roomByPos = [];
+        var listPosKeys = []; 
+        for(key in rooms) {
+             var currRoom = rooms[key];
+             roomByPos[currRoom.position]=currRoom;
+             listPosKeys.push(parseInt(currRoom.position));
+        }
+
+        listPosKeys.sort(function sortFunc(a,b) { return a-b; } );
+
+        var linear =0;
+
+        for(key in listPosKeys) {
+            var currRoom= roomByPos[listPosKeys[key]];
+            util_columnOrderReference[currRoom.id]=key;
+            util_roomNameReplacer[currRoom.id]=currRoom.name;
+        }
 
         var columnsByIndex=[];
         var hC=0;
@@ -134,11 +151,14 @@
         var old = -1;
         for (var h in columns) {
           var curr = columns[h];
+
           if(old!=curr) {
              old = curr;
-             columnsByIndex[curr]=hC;
-             compressColumns[hC]=curr; 
-             hC++;
+//             columnsByIndex[curr]=hC;
+//               columnsByIndex[curr]=util_columnOrderReference[curr];
+
+               compressColumns[hC]=curr; 
+               hC++;
           }
         }
 
@@ -181,7 +201,7 @@
                               index=jj;
                           }
 
-                          buffer[index]=mapCell({type:'header', value:list[jj-1]});
+                          buffer[index]=mapCell({type:'header', value: (""+roomByPos[(""+listPosKeys[jj-1])].name)   });
                         }
                   }
                 }
@@ -190,16 +210,17 @@
                   buffer[(parseInt(i)+1)+((compressHours.length+1)*(parseInt(j)+1))]=mapCell({type:'none' , value:delta});
                 } else {
                   buffer[(parseInt(j)+1)+((compressColumns.length+1)*(parseInt(i)+1))]=mapCell({type:'none', value:delta});
-
                 }
             }
         }
+
+
 
         for(var key in slots) {
           var item = slots[key]; 
           if(item.date == currentDay ) {
               var indexForHours = hoursByIndex[item.getTimeBegin];
-              var indexForColumn = columnsByIndex[item.room];
+              var indexForColumn = util_columnOrderReference[item.room];
               for (k in compressHours) {
                 var curr = compressHours[k];
                 if (curr >= item.getTimeBegin && curr < item.getTimeEnd) {
@@ -449,7 +470,7 @@
             } else { 
                 $(this).attr("style",'width:'+cssWidth+'px;');
             }
-            $(this).html('<div class="innerInnerHeader">'+ util_roomNameReplacer[room]+'</div>');
+            $(this).html('<div class="innerInnerHeader">'+ room+'</div>');
         } 
 
         if(probeElement.type == 'corner') { 
@@ -579,44 +600,9 @@ var dateUtil =  {
 INNER_FONT_SIZE = 16;
 
 var util_roomNameReplacer = new Array(); 
-util_roomNameReplacer[8]='40T';
-util_roomNameReplacer[1]='41A';
-util_roomNameReplacer[2]='41B';
-util_roomNameReplacer[3]='41C';
-util_roomNameReplacer[4]='41D';
-util_roomNameReplacer[5]='41E';
-util_roomNameReplacer[6]='41F';
-util_roomNameReplacer[7]='40A';
-util_roomNameReplacer[716]='P09';
-util_roomNameReplacer[11]='P11';
-util_roomNameReplacer[701]='701';
-util_roomNameReplacer[702]='702';
-util_roomNameReplacer[715]='710';
-util_roomNameReplacer[723]='713';
-util_roomNameReplacer[714]='714';
-util_roomNameReplacer[722]='715';
-util_roomNameReplacer[717]='F12';
-util_roomNameReplacer[718]='F13';
 
 var util_columnOrderReference = new Array();
-util_columnOrderReference[0]='40T';
-util_columnOrderReference[1]='41A';
-util_columnOrderReference[2]='41B';
-util_columnOrderReference[3]='41C';
-util_columnOrderReference[4]='41D';
-util_columnOrderReference[5]='41E';
-util_columnOrderReference[6]='41F';
-util_columnOrderReference[7]='40A';
-util_columnOrderReference[8]='P09';
-util_columnOrderReference[9]='P11';
-util_columnOrderReference[10]='701';
-util_columnOrderReference[11]='702';
-util_columnOrderReference[12]='710';
-util_columnOrderReference[13]='713';
-util_columnOrderReference[14]='714';
-util_columnOrderReference[15]='715';
-util_columnOrderReference[16]='F12';
-util_columnOrderReference[17]='F13';
+
 
 
 

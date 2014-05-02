@@ -18,9 +18,9 @@
         transport.setUrl('/channel/fisl.json');
         transport.init();
         transport.start(function (evento) { 
-            var slots = evento[0].slot; 
+            var slots = evento.slots[0].slot;
             var dayRange = "2014-05-08";
-            gridMaker.start(slots, dayRange);
+            gridMaker.start(slots, evento.rooms[0].room, dayRange);
 	    }); 
      }); 
     </script>

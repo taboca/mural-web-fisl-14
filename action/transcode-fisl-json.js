@@ -44,7 +44,7 @@ function start(name, appPath) {
    request.on('response', function (res) {
       var strOut = "";
 
-      res.setEncoding('utf-8')
+      res.setEncoding('binary')
 
       res.on('data', function (buffer) {
               strOut += buffer;
@@ -58,7 +58,7 @@ function start(name, appPath) {
                     result.response.slots[0].slot[i].abstract='';
                     //result.response.slots[i].abstract='';
                 } 
-                var strOut = JSON.stringify(result.response.slots);
+                var strOut = JSON.stringify(result.response);
                 var filePath = pathFS.join( __dirname, '..', appPath, 'channel', name+'.json');
                 fs.writeFile(filePath, strOut, 'utf-8', function(err){
                   if (err) { 
