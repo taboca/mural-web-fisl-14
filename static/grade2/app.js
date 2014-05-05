@@ -202,7 +202,7 @@
             }
         }
 
-var count=0;
+        var count=0;
 
         for(var key in slots) {
           var item = slots[key]; 
@@ -216,17 +216,13 @@ var count=0;
                    if(!this.flipMode) {
                       buffer[((parseInt(indexForColumn)+1)*(compressHours.length+1))+(parseInt(k)+1)]=item.cellMap;
                    } else {
-
                    //   ( (parseInt(k)+1) * compressHours.length+1 ) + parseInt(indexForColumn)+1)
                       buffer[(parseInt(compressColumns.length)+1)*(parseInt(k)+1)+(parseInt(indexForColumn)+1)]=item.cellMap;
-//marcio
                    }
                 }
               }
           }
         }
-
-
 
         this.rawBuffer = buffer;
 
@@ -236,7 +232,6 @@ var count=0;
         if(dateTodayNow.getDate()==parseInt(currentDay.split('-')[2])) { 
            this.bufferStrip(hourPast, hourNow, compressColumns.length+1, compressHours.length+1);
         }
-
 
         this.gridBuffer = this.rawBuffer.join("");
         var len = compressHours.length;

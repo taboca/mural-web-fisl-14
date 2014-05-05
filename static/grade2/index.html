@@ -18,11 +18,38 @@
         transport.setUrl('/channel/fisl.json');
         transport.init();
         transport.start(function (evento) { 
-            var slots = evento.slots[0].slot;
-            var dayRange = "2014-05-09";
-            gridMaker.start(slots, evento.rooms[0].room, evento.authorship[0].person , dayRange);
+            $('#container').html("");
+            var allRanges = ["2014-05-07","2014-05-08","2014-05-09","2014-05-10"];
+            for(var k in allRanges) {
+
+                var dayRange = allRanges[k];
+
+                var fullDate = dayRange.split('-'); 
+                var da = parseInt(fullDate[2]);
+
+                var dateTodayNow = new Date();
+                if(dateTodayNow.getDate()!=da) { 
+                    var preHeaderElement= document.createElement("div");
+                    preHeaderElement.setAttribute("class","dayStamp");  
+                    preHeaderElement.innerHTML="<div style='clear:both'></div><h2>"+da+" de "+( dateUtil.getPtBrMonth());
+                    document.getElementById('container').appendChild(preHeaderElement);
+                }  
+
+                var slots = evento.slots[0].slot;
+                gridMaker.start(slots, evento.rooms[0].room, evento.authorship[0].person , dayRange);
+            }
 	    }); 
      }); 
+
+    var dateUtil =  {
+     mos: ['Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro'],
+      getPtBrMonth: function () { 
+        var ddd = new Date();
+        return this.mos[ddd.getMonth()];
+      }
+    }
+
+
     </script>
   </head>
   <body >
