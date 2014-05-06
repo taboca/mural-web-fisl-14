@@ -1,8 +1,9 @@
 <html>
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="refresh" content="1640">
     <link media="screen, projection" type="text/css" href="../base.css" rel="stylesheet">
-    <script src="../t8l/jquery-min.js" type="text/javascript"></script>
+    <script src="../vendor/jquery-min.js" type="text/javascript"></script>
     <script src="../t8l/proxy.js" type="text/javascript"></script>
     <script src="../t8l/config.js" type="text/javascript"></script>
 
@@ -21,33 +22,41 @@
 
     <style>
     span { 
-        border:0px solid red;
-		padding:15px;
+		padding:12px;
    	} 
     /* 
 	img { box-shadow: 3px 3px 5px black; } 
     */
 
 	img.loading { 
+    -moz-transition-property:-moz-transform; 
+    -moz-transform: rotateY(0deg) rotateX(90deg) perspective(170px); 
+    -moz-transition-duration:2s; 
 		opacity:0;
 	} 
     /* no styles accel
-		-moz-transition-property:opacity; 
-		-moz-transform: rotateY(0deg) rotateX(0deg); 
-		-moz-transition-duration:2s; 
     */
 	img.active { 
+    -moz-transition-property:-moz-transform; 
+    -moz-transform: rotateY(0deg) rotateX(0deg) perspective(170px); 
+    -moz-transition-duration:2s; 
 		opacity:1;
 	} 
-	body { padding:10px;padding-top:0 ; background-color:transparent;padding-bottom:0} 
-    h2 { color:yellow ; margin:20px} 
+  img.fadeout { 
+    -moz-transition-property:-moz-transform; 
+    -moz-transform: rotateY(0deg) rotateX(90deg) perspective(17px); 
+    -moz-transition-duration:2s; 
+    opacity:1;
+  } 
+
+	body { padding:6px;padding-top:0 ; background-color:transparent;padding-bottom:0;text-align: center} 
+
     </style>
   </head>
   <body>
 <div id="container" >
 </div>
 
-      <h2 style='position:absolute;top:90px;left:400px;width:200px;-moz-transform-origin:50% 50%; -moz-transform:rotateZ(90deg)' >#FISL @ Flickr</h2>
 
   </body>
 </html>

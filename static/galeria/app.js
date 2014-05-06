@@ -6,10 +6,11 @@ var app =  {
     refElement   : null, 
     imageNumber  : 0,
     element      : null,
-    picWidth     : 420,
-    picHeight    : 250,
+    picWidth     : 230,
+    picHeight    : 230,
+    timer        : 2000,
     picQueue     : null, 
-    totalElements: 1, 
+    totalElements: 8, 
     refContainers: null, 
     refContainerCycle : -1, 
 		
@@ -34,12 +35,12 @@ var app =  {
 		}
 
 		var scopedThis = this;
-       	setTimeout( function () { scopedThis.popPic() }, 195000);
+       	setTimeout( function () { scopedThis.popPic() }, this.timer);
 	},
 
 	init : function() {
 		this.feed = new t8l.feeds.Feed(this.feedURL);
-		this.feed.setResultFormat(t8l.feeds.Feed.XML_FORMAT);
+		this.feed.setResultFormat('text'); // differs from google now
 		this.feed.setNumEntries(10);
 	},
 
@@ -56,15 +57,34 @@ var app =  {
 				this.refContainerCycle=0;
 			} 
 			var currentContainer = this.refContainers[this.refContainerCycle];
-			currentContainer.innerHTML = "<img id='posterimage"+this.imageNumber+"' src='"+t+"' class='loading'>";
 			these = this;
-			document.getElementById("posterimage"+this.imageNumber).onload = function () { these.imageLoaded() };
+			$(currentContainer).find("img").attr('class','fadeout');
+			setTimeout(function () { 
+				currentContainer.innerHTML = "<img id='posterimage"+these.imageNumber+"' src='"+t+"' class='loading'>";
+				these.doExpire = true; 
+				//setTimeout(function () { these.tryExpire() }, these.timer*20);
+				setTimeout(function () { these.imageLoaded() }, these.timer)
+				//document.getElementById("posterimage"+these.imageNumber).onload = function () { these.imageLoaded() };
+
+			}, these.timer)
+			
 			return true;
 		} 
 
 	},
 
+    tryExpire: function () { 
+    		if(this.doExpire) { 
+                 location.reload();
+    		}
+    },
+     
+    doExpire : true, 
+
 	imageLoaded : function() { 
+
+		//this.doExpire = false; 
+
 		var currImage =  document.getElementById("posterimage"+this.imageNumber);
 		var x= parseInt(currImage.width); 
 		var y= parseInt(currImage.height); 
@@ -87,7 +107,7 @@ var app =  {
         this.cycle++;	
         if(this.cycle<=this.totalElements) { 
             var scopedThis = this;
-            setTimeout( function () { scopedThis.popPic() }, 195000);
+            setTimeout( function () { scopedThis.popPic() }, this.timer);
         }  else { 
             this.cycle=0;
             this.kickFadeIn();
@@ -95,17 +115,14 @@ var app =  {
 	},
 
 	__feedUpdated : function(result) {
-		var self  = this;
+		this.dataOut = new Array();
 		if(result.error) { }; 
-     		$(result.xmlDocument).find('entry').each(function(){ 
-			var link = $(this).find('link[rel="enclosure"]');
-			if(link.attr("rel") == "enclosure" ) { 
-				var src = link.attr("href");
-                if(src.indexOf("jpg")>-1 || src.indexOf("gif")>-1) {
-                    self.picQueue.push(src);
-                }
-			} 
-		});
+		var text = result.xmlDocument; 
+		var objs = $.parseJSON(text);
+		for( var k in objs) {
+			var src = (objs[k].images.standard_resolution);
+            this.picQueue.push(src.url);
+		} 
 		this.kickFadeIn();
 	}
 }
