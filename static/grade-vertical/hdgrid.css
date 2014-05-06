@@ -1,0 +1,141 @@
+body { 
+ padding:0;margin:0;
+ background:#333;
+} 
+
+.gv { 
+  clear:both;
+} 
+
+.gh { 
+  display:inline;
+  float:left;
+}
+
+/*
+  border:1px solid red;
+  padding:4px;
+  color:white;
+*/
+
+.inner { 
+  overflow:hidden;
+} 
+
+/*
+.cluster { 
+    border:1px solid green;
+    padding:4px;
+}*/
+
+
+/*
+  background:rgb(50,50,50);
+
+  */
+.innerInnerInnerCell { 
+  word-wrap:break-word;
+  width:100%;
+  padding:4px;
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+
+.innerInnerCell { 
+  font-size:12px;
+  overflow:hidden;
+  font-family:verdana;
+  border:1px solid #222;
+  background: -moz-linear-gradient( 90deg,  rgb(40,40,40), rgb(40,40,40), rgb(40,40,40), rgb(50,50,50) );
+  height:100%;
+
+} 
+
+.innerNoneHor { 
+  background: -moz-linear-gradient( 90deg, rgba(5,5,5,.2),  rgba(255,255,255,0));
+  background: -moz-linear-gradient( 90deg,  #222, #222, #222, #222, #222, #333 );
+} 
+
+.innerNone { 
+  background: -moz-linear-gradient( 0deg, rgba(5,5,5,.2),  rgba(255,255,255,0));
+} 
+
+.innerHour { 
+  background: -moz-linear-gradient( 0deg, rgba(5,5,5,.2), rgba(255,255,255,0), rgba(255,255,255,0));
+  text-align:center;
+  color:white;
+} 
+
+.innerHourHor { 
+  background: -moz-linear-gradient( 90deg, rgba(5,5,5,.2), rgba(255,255,255,0) );
+  background: -moz-linear-gradient( 90deg,  #222, #222, #222, #222, #222, #333 );
+  text-align:center;
+  border-top:1px solid black;
+  color:white;
+  padding:5px;
+   -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+} 
+
+.innerInnerHour { 
+  margin-top:2px;
+} 
+
+.innerHeader { 
+   width:50px; 
+   overflow:hidden;
+} 
+
+.innerHeaderHor { 
+   width:40px; 
+   overflow:hidden;
+   text-align:center;
+} 
+
+.innerInnerHeader { 
+  padding:.5em;
+  padding-left:1em;
+  font-family:arial;
+  margin-left:2px;
+  margin-bottom:2px;
+  font-weight:bold;
+  font-size:18px;
+  text-align:center;
+  color:gray;
+} 
+
+.innerInnerHeaderHor { 
+  padding:.2em;
+  font-family:arial;
+
+  margin-left:2px;
+  margin-bottom:2px;
+  font-weight:bold;
+  font-size:14px;
+  text-align:center;
+  color:gray;
+} 
+
+.innerInnerCorner { 
+  margin:.5em;
+  width:50px;
+} 
+
+.innerInnerCornerHor { 
+  width:40px;
+
+} 
+
+.author { 
+   padding:3px;vertical-align:top;font-size:8px;white-space:nowrap;margin-right:1em;
+font-family:verdana;
+}
+
+.zone {
+   vertical-align:top;
+font-size:8px;
+
+}
+
+.dayStamp { 
+    color:white;
+    padding:1em;
+}

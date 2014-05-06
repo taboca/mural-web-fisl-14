@@ -1,0 +1,66 @@
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" href="hdgrid.css" type="text/css" />
+
+    <script src="../vendor/jquery-min.js" type="text/javascript"></script>
+
+    <script src="../t8l/proxy.js" type="text/javascript"></script>
+    <script src="../t8l/config-jquery.js" type="text/javascript"></script>
+
+    <script src="transport_json.js" type="text/javascript"></script>
+    <script src="gridtype.js" type="text/javascript"></script>
+    <script src="app.js" type="text/javascript"></script>
+    
+    <!-- maybe this can be moved to afterProxyRun... --> 
+    <script type="text/javascript">
+     t8l.loaded(function () { 
+        transport.setUrl('/channel/fisl.json');
+        transport.init();
+        transport.start(function (evento) { 
+            $('#container').html("");
+            var allRanges = ["2014-05-07","2014-05-08","2014-05-09","2014-05-10"];
+            for(var k in allRanges) {
+
+                var dayRange = allRanges[k];
+
+                var fullDate = dayRange.split('-'); 
+                var da = parseInt(fullDate[2]);
+
+                var dateTodayNow = new Date();
+                if(dateTodayNow.getDate()!=da) { 
+                    var preHeaderElement= document.createElement("div");
+                    preHeaderElement.setAttribute("class","dayStamp");  
+                    preHeaderElement.innerHTML="<div style='clear:both'></div><h2>"+da+" de "+( dateUtil.getPtBrMonth());
+                    document.getElementById('container').appendChild(preHeaderElement);
+                }  
+
+                var slots = evento.slots[0].slot;
+                gridMaker.start(slots, evento.rooms[0].room, evento.authorship[0].person , dayRange, false);
+            }
+	    }); 
+     }); 
+
+    var dateUtil =  {
+     mos: ['Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro'],
+      getPtBrMonth: function () { 
+        var ddd = new Date();
+        return this.mos[ddd.getMonth()];
+      }
+    }
+
+
+    </script>
+  </head>
+  <body >
+    <div id='debug'>
+    </div>
+    <div id='container'>
+    </div>
+    <div id='bye'>
+    </div>
+
+    <div id='temp' style='display:none'></div>
+
+  </body>
+</html>

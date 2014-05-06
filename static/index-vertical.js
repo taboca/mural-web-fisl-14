@@ -7,7 +7,7 @@ $(document).ready(function() {
       iframe pages are ready. */
 
    register("/main/footer", "cabecalho", "./patrocinadores/index.html?mode=tv", iframeTemplate);
-   register("/main/middle", "meio", "./grade/index.html", iframeTemplate);
+   register("/main/middle", "meio", "./grade-vertical/index.html", iframeTemplate);
    register("/main/topheader", "topo", "./header-vertical/index.html", iframeTemplate);
    register("/main/topmiddle", "mid", "http://www.telasocial.com:8888/static/destaques/index.html", iframeTemplate);
    register("/main/bottomsection2", "tweeter", "http://www.telasocial.com:8888/static/twitter-new/index.html", iframeTemplate);

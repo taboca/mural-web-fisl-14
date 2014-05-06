@@ -3,7 +3,7 @@
   evento: null, 
   chunkHourSpace:60,
   ratioForHeight:1.6,
-  ratioForWidth:2.2,
+  ratioForWidth:4.32,
   descricao : new Array(),
   gridCols: 0, 
   gridBuffer: null, 
@@ -26,8 +26,10 @@
   },
 
 
-  start : function (slots, rooms, authors, currentDay) {
+  start : function (slots, rooms, authors, currentDay, flip) {
 
+
+        this.flipMode = flip;
         var eventsByHours = [];
         var eventsByColumn = [];
         var hours = [];
@@ -138,7 +140,7 @@
 
         var columnsByIndex=[];
         var hC=0;
-        var compressColumns = [];
+        var compressRooms = [];
         var old = -1;
         for (var h in columns) {
           var curr = columns[h];
@@ -146,7 +148,7 @@
              old = curr;
 //             columnsByIndex[curr]=hC;
 //               columnsByIndex[curr]=util_columnOrderReference[curr];
-               compressColumns[hC]=curr; 
+               compressRooms[hC]=curr; 
                hC++;
           }
         }
@@ -155,7 +157,7 @@
 
 
         for(var i in compressHours) {
-            for(var j in compressColumns) {
+            for(var j in compressRooms) {
 
                 /* Cols = hours and Rows = Rooms */
                 if(i==0 && j==0) {
@@ -172,13 +174,13 @@
                         
                         var index = jj;
                         if(this.flipMode) {
-                            index= (parseInt(jj))*(compressColumns.length+1);
+                            index= (parseInt(jj))*(compressRooms.length+1);
                         }
                         buffer[index]=mapCell({type:'slices', value:list[jj-1], endHour:list[jj], 'width':delta});
                      }
                   }
 
-                  var list = compressColumns; 
+                  var list = compressRooms; 
 
                   for(var jj=0;jj<list.length+1;jj++) {
                         if(jj==0) {
@@ -197,7 +199,7 @@
                 if(!this.flipMode) { 
                   buffer[(parseInt(i)+1)+((compressHours.length+1)*(parseInt(j)+1))]=mapCell({type:'none' , value:delta});
                 } else {
-                  buffer[(parseInt(j)+1)+((compressColumns.length+1)*(parseInt(i)+1))]=mapCell({type:'none', value:delta});
+                  buffer[(parseInt(j)+1)+((compressRooms.length+1)*(parseInt(i)+1))]=mapCell({type:'none', value:delta});
                 }
             }
         }
@@ -217,7 +219,7 @@
                       buffer[((parseInt(indexForColumn)+1)*(compressHours.length+1))+(parseInt(k)+1)]=item.cellMap;
                    } else {
                    //   ( (parseInt(k)+1) * compressHours.length+1 ) + parseInt(indexForColumn)+1)
-                      buffer[(parseInt(compressColumns.length)+1)*(parseInt(k)+1)+(parseInt(indexForColumn)+1)]=item.cellMap;
+                      buffer[(parseInt(compressRooms.length)+1)*(parseInt(k)+1)+(parseInt(indexForColumn)+1)]=item.cellMap;
                    }
                 }
               }
@@ -230,13 +232,13 @@
         var hourPast = dateTodayNow.getTime()-(1000*60*60); // go back one hour
         var hourNow = dateTodayNow.getTime();
         if(dateTodayNow.getDate()==parseInt(currentDay.split('-')[2])) { 
-           this.bufferStrip(hourPast, hourNow, compressColumns.length+1, compressHours.length+1);
+          // this.bufferStrip(hourPast, hourNow, compressRooms.length+1, compressHours.length+1);
         }
 
         this.gridBuffer = this.rawBuffer.join("");
         var len = compressHours.length;
         if(this.flipMode) {
-            len = compressColumns.length;
+            len = compressRooms.length;
         } 
         this.generateDivs(len);
 
@@ -343,10 +345,10 @@
     var container=document.createElement('div');
     var cName = 'container_'+Math.random();
     container.setAttribute('id', cName);
-    container.setAttribute('style','width:100%')
+    container.setAttribute('style','width:2920px')
     document.getElementById('container').appendChild(container);
     cssWidth = parseInt(parseInt(document.getElementById(cName).offsetWidth-50)/cols);
-    cssHeight = parseInt(parseInt(document.getElementById(cName).offsetHeight-650)/cols);
+    cssHeight = ((13*60-200)/cols);
     
     var uniqueClassName = 'inner'+parseInt(Math.random()*1000);
     if(buffer.length>cols+1) { 
@@ -405,6 +407,7 @@
             //alert(delta);
 
             if(!these.flipMode) {
+
               $(this).attr("style",';width:'+these.fixScaleWidth(delta)+'px;height:'+cssHeight+'px;');
               $(this).addClass('innerNone');
             } else { 
@@ -455,19 +458,35 @@
 
         if(probeElement.type == 'header') { 
             var room = probeElement.value;
-            var localWidth='50px';
 
-            $(this).addClass('innerHeader');
+            var addStr = "innerInnerHeader";
             if(!these.flipMode) {
-                $(this).attr("style",'width:'+localWidth+'px;');
+                addStr = 'innerInnerHeaderHor';
+                $(this).addClass('innerHeaderHor');
+            } else { 
+                $(this).addClass('innerHeader');
+            }
+
+            if(!these.flipMode) {
+                $(this).attr("style",'height:50px');
             } else { 
                 $(this).attr("style",'width:'+cssWidth+'px;');
             }
-            $(this).html('<div class="innerInnerHeader">'+ room+'</div>');
+
+            var rSimple = room.split(' ')[0];
+            $(this).html('<div class="'+addStr+'">'+ rSimple+'</div>');
         } 
 
         if(probeElement.type == 'corner') { 
-            var localWidth='50px';
+
+            var addStr = "innerInnerCorner";
+
+            if(!these.flipMode) {
+                addStr = 'innerInnerCornerHor';
+            } else { 
+            }
+
+            var localWidth='40px';
             var room = probeElement.value;
             $(this).attr("style",'width:'+localWidth+';');
             $(this).html('<div class="innerInnerCorner" style="-moz-transform-orifin:0px 0px; -moz-transform:rotate(-90deg)"> </div>');

@@ -22,7 +22,6 @@ body {
   background: -moz-radial-gradient( 10% 10%, circle ,white, rgb(250,220,0), rgb(250,220,0), rgb(250,220,0) ) ;
 */
 #viewport { 
-  background-color:rgb(250,220,0);
   background-size:1080px 1920px;
   width:1080px; height:1920px;
 } 
