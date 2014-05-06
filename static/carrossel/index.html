@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Carrossel</title>
+		
+		<!-- JS CUSTOM -->
+		<script type="text/javascript" src="carrossel.js"></script>
+		
+		<!-- CSS CUSTOM -->
+		<link rel="stylesheet" href="carrossel.css" />
+		
+		<script>
+			window.onload = function() {
+				var el = document.getElementById('card-container');
+				Carrossel.buildCarrossel(el);
+			};
+		</script>
+	</head>
+	<body>
+		<div id="card-container"></div>
+	</body>
+</html>
