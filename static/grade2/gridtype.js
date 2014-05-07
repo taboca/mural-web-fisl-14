@@ -29,7 +29,7 @@
            classType = 'c gv';
         }  
         var el = document.createElement("div");
-        el.setAttribute("class", classType);
+        el.setAttribute("class", "cluster " + classType);
         currEl.appendChild(el);	
         index = clusterQuery(flipFlop, el,str,shift);
 		str = str.substr(index*shift, str.length);
@@ -65,7 +65,17 @@
 		var lines = o.length/shift;
 		
 		var charFromStr =o[0];	
-   		el.innerHTML='<div class="inner '+gClassName+'" id="'+charFromStr+'">qq</div>';	
+		var dumpStr = 'no';
+		if(charToElement[charFromStr]&&charToElement[charFromStr].value) {
+			if(typeof charToElement[charFromStr].value == 'string') {
+				dumpStr=charToElement[charFromStr].value;
+			} else { 
+				dumpStr=charToElement[charFromStr].value.candidate;
+			}
+			
+
+		}
+   		el.innerHTML='<div class="inner '+gClassName+'" id="'+charFromStr+'">'+dumpStr+'</div>';	
 		var yHeight = cssHeight*lines;
 		var xWidth = cssWidth*shift;
 		if(flipflop) { 
