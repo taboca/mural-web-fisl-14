@@ -4,12 +4,12 @@
 {
  "about":"start",
  "function":"spawnJS",
- "data":{"value":"mergeTwitter.js","about":"fisl15"}, "to":"next"
+ "data":{"value":"mergeInstagram.js","about":"fisl15"}, "to":"next"
 }, 
 {
  "about":"next",
  "function":"timer",
- "data":{"value":30000},
+ "data":{"value":60000},
  "to":"start"
 }
 
