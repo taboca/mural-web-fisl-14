@@ -3,7 +3,7 @@
   evento: null, 
   chunkHourSpace:60,
   ratioForHeight:1.6,
-  ratioForWidth:4.32,
+  ratioForWidth:2.32,
   descricao : new Array(),
   gridCols: 0, 
   gridBuffer: null, 
@@ -61,6 +61,9 @@
              item.getTimeBegin=aDate.getTime();
              var bDate = new Date(aDate.getTime() + c20*60000);
              item.getTimeEnd =bDate.getTime();
+ 
+             var dateTodayNow = new Date();
+             var hourPast = dateTodayNow.getTime()-(1000*60*60*2); // go back one hour
 
                  var key=""+item.getTimeBegin;
                  if(!eventsByHours[key]) {
@@ -90,7 +93,7 @@
                  var end  = parseInt(item.getTimeEnd)/60000;
 
                  item.cellMap=mapCell({type:'event', value:item, 'begin':begin, 'end':end });
-   //           } 
+            
 
            }
         };
@@ -240,10 +243,14 @@
         if(this.flipMode) {
             len = compressRooms.length;
         } 
+
+
+
         this.generateDivs(len);
 
-  }, 
+       // window.scroll(100,0);
 
+  }, 
 
   bufferStrip: function (dateTimeThresholdToCut, dateTimeNow, lenCol, lenRows) { 
 
