@@ -8,7 +8,6 @@ $(document).ready(function() {
 
    register("/main/footer", "cabecalho", "./patrocinadores/index.html?mode=tv", iframeTemplate);
    register("/main/middle", "meio", "./grade-vertical/index.html", iframeTemplate);
-   register("/main/topheader", "topo", "./header-vertical/index.html", iframeTemplate);
    register("/main/topmiddle", "mid", "./header-vertical/index.html", iframeTemplate);
    register("/main/bottomsection2", "tweeter", "./twitter-new/index.html", iframeTemplate);
    register("/main/bottomsection", "identica", "./feed-cicle/index.html", iframeTemplate);
