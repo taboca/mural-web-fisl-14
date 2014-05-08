@@ -232,6 +232,7 @@
            this.bufferStrip(hourPast, hourNow, compressColumns.length+1, compressHours.length+1);
         }
 
+
         this.gridBuffer = this.rawBuffer.join("");
         var len = compressHours.length;
         if(this.flipMode) {
@@ -244,91 +245,93 @@
 
   bufferStrip: function (dateTimeThresholdToCut, dateTimeNow, lenCol, lenRows) { 
 
-  // Example, if cols = 3 we have in fact lines of 4 chars because 
-  // the prior algorithm adds a first column for the sake of hours 
-  // reference. 
+    // Example, if cols = 3 we have in fact lines of 4 chars because 
+    // the prior algorithm adds a first column for the sake of hours 
+    // reference. 
 
-  var i=0,j=0;
-  var cutChars = false;
-  var buffer2 = [];
-  var collectBuffer = [];
-  var one= true;
-  var time_start=0; var time_end=0;
-  var counter = 0;
-      var processLater = false; 
-          var bottomCrop = null;
+    var i=0,j=0;
+    var cutChars = false;
+    var buffer2 = [];
+    var collectBuffer = [];
+    var one= true;
+    var time_start=0; var time_end=0;
+    var counter = 0;
+    var processLater = false; 
+    var bottomCrop = null;
 
-  for(var row = 0; row<lenRows; row++) {
+    for(var row = 0; row<lenRows; row++) {
 
-      var processRow = false; 
+        var processRow = false; 
 
-      for (var col = 0; col<lenCol; col++) {
+        for (var col = 0; col<lenCol; col++) {
 
-          var indexInline = col+(row*lenCol);
+            var indexInline = col+(row*lenCol);
 
-          var electChar = this.rawBuffer[indexInline]; 
+            var electChar = this.rawBuffer[indexInline]; 
 
 
-          charToElement[electChar].flagToday = true;
+            charToElement[electChar].flagToday = true;
 
-          var currEl = charToElement[electChar];
+            var currEl = charToElement[electChar];
 
-          if(row == 0 ) { 
-              buffer2[counter++]=electChar;
-          }
+            if(row == 0 ) { 
+                buffer2[counter++]=electChar;
+            }
 
-          if(row>0) {
+            if(row>0) {
 
-              var currBegin = currEl.type; 
-              if(currEl.type == 'slices') { 
-                    if(currEl.value<dateTimeThresholdToCut&&currEl.endHour>dateTimeThresholdToCut&&currEl.endHour<=dateTimeNow) {
-                        processRow = true; 
-                        bottomCrop = currEl.endHour;
-                        currEl.value = dateTimeThresholdToCut;
+                var currBegin = currEl.type; 
+                if(currEl.type == 'slices') { 
+                  logDateTime('TEst:',dateTimeThresholdToCut);
 
-                        currEl.width=null;
-                        buffer2[counter++]=electChar;
-                        currEl.flag=true;
-                  
+                      if(currEl.value<dateTimeThresholdToCut&&currEl.endHour>dateTimeThresholdToCut&&currEl.endHour<=dateTimeNow) {
+                          processRow = true; 
+                          bottomCrop = currEl.endHour;
+
+
+                          currEl.value = dateTimeThresholdToCut;
+                          currEl.width=null;
+                          buffer2[counter++]=electChar;
+                          currEl.flag=true;
+                      }
+                }
+
+                if(processLater) {
+                    buffer2[counter++]=electChar;
+                } 
+
+                if(processRow) { 
+                    if(currEl.type=='none') {
+                         buffer2[counter++]=electChar;
+                         currEl.delta=dateTimeThresholdToCut/60000;
+                         currEl.flag=true;
                     }
-              }
-
-              if(processLater) {
-                  buffer2[counter++]=electChar;
-              } 
-
-              if(processRow) { 
-                  if(currEl.type=='none') {
-                       buffer2[counter++]=electChar;
-                       currEl.delta=dateTimeThresholdToCut/60000;
-                       currEl.flag=true;
-
-                  }
-                  if(currEl.type=='event') {
-                       if(currEl.end<parseInt(bottomCrop/60000)) {
-                           currEl.begin=currEl.end;
-                       }
-                       else { 
-                           currEl.begin=parseInt(bottomCrop/60000);
-                       }
-                       currEl.flag=true;
-                       buffer2[counter++]=electChar;
-
-                  } 
-                  if(col==lenCol-1) {
-                      processRow=false;
-                      processLater = true;
-
-                  }
-              }
+                    if(currEl.type=='event') {
+                         if(currEl.end<parseInt(bottomCrop/60000)) {
+                             currEl.begin=currEl.end;
+                         }
+                         else { 
+                             currEl.begin=parseInt(bottomCrop/60000);
+                         }
+                         currEl.flag=true;
+                         buffer2[counter++]=electChar;
+                    } 
+                    if(col==lenCol-1) {
+                        processRow=false;
+                        processLater = true;
+                    }
+                }
 
 
-          }
-      }
-  }
+            }
+        }
+    }
 
-
-  this.rawBuffer=buffer2;  
+    if(!processLater) { 
+      //this.rawBuffer=buffer2;  
+    } else { 
+      this.rawBuffer=buffer2;  
+    }
 
   },
 
@@ -381,7 +384,7 @@
                 if(probeElement.begin>parseInt(thresholdHourNow/60000)) { 
                    addStyle='background:rgb(70,0,0);color:white';
                 } */
-                
+
             }
 
             if(!these.flipMode) {
@@ -601,7 +604,11 @@ var util_roomNameReplacer = new Array();
 
 var util_columnOrderReference = new Array();
 
-
+function logDateTime(str, time) { 
+   var temp = new Date();
+   temp.setTime(time);
+   console.log(str + ' and day = ' + temp.getDate() + ' / ' + temp.getHours()+':'+temp.getMinutes())
+}
 
 
 
