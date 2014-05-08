@@ -369,7 +369,7 @@
             var addStyle='';
             if(probeElement.flag) { 
                 delta=delta+these.chunkHourSpace;
-                addStyle+='color:white;background:red';
+              //  addStyle+='color:white;background:red';
             } 
 
             var dateTodayNow = new Date();
