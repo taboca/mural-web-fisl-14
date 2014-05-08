@@ -23,20 +23,22 @@
             for(var k in allRanges) {
 
                 var dayRange = allRanges[k];
-
                 var fullDate = dayRange.split('-'); 
                 var da = parseInt(fullDate[2]);
 
                 var dateTodayNow = new Date();
-                if(dateTodayNow.getDate()!=da) { 
-                    var preHeaderElement= document.createElement("div");
-                    preHeaderElement.setAttribute("class","dayStamp");  
-                    preHeaderElement.innerHTML="<div style='clear:both'></div><h2>"+da+" de "+( dateUtil.getPtBrMonth());
-                    document.getElementById('container').appendChild(preHeaderElement);
-                }  
 
-                var slots = evento.slots[0].slot;
-                gridMaker.start(slots, evento.rooms[0].room, evento.authorship[0].person , dayRange);
+                if(da>=dateTodayNow.getDate()) { 
+                    if(dateTodayNow.getDate()!=da) { 
+                        var preHeaderElement= document.createElement("div");
+                        preHeaderElement.setAttribute("class","dayStamp");  
+                        preHeaderElement.innerHTML="<div style='clear:both'></div><h2>"+da+" de "+( dateUtil.getPtBrMonth());
+                        document.getElementById('container').appendChild(preHeaderElement);
+                    }  
+
+                    var slots = evento.slots[0].slot;
+                    gridMaker.start(slots, evento.rooms[0].room, evento.authorship[0].person , dayRange)
+                }
             }
 	    }); 
      }); 

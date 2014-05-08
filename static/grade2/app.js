@@ -376,7 +376,7 @@
             var thresholdHourNow = dateTodayNow.getTime();
             if(probeElement.flagToday) {
                if(probeElement.begin<parseInt(thresholdHourNow/60000)) { 
-                   addStyle='background:rgb(0,0,200);color:white ! important;';
+                   addStyle='background:rgb(0,0,100);color:white ! important;';
                 }
                 if(probeElement.end<parseInt(thresholdHourNow/60000)) { 
                    addStyle='background:rgb(0,70,0);color:white';
@@ -505,6 +505,7 @@ function doFilter(str, authorContainer) {
     var str = $('#temp').text();
     var fontSize = INNER_FONT_SIZE;
     var s = str.split(' ');
+    var authorProposal = '';
     if(authorContainer) {
         if(typeof gridMaker.candidates[authorContainer] != 'undefined') {
             authorProposal = gridMaker.candidates[authorContainer][0];
