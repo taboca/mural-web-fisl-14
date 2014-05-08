@@ -31,7 +31,7 @@
         var columns = [];
 
         for(var key in slots) {
-          var item = slots[key];        
+          var item = slots[key];
           if(item.date == currentDay ) {
         
              var fullDate = item.date.split('-'); 
@@ -42,7 +42,7 @@
              var mi = parseFloat(item.minute);
              var c20 = parseFloat(item.colspan)*20;
 
-             var aDate = new Date(parseInt(ye),parseInt(mo)+1,parseInt(da));
+             var aDate = new Date(parseInt(ye),parseInt(mo)-1,parseInt(da));
              aDate.setHours(ho);
              aDate.setMinutes(mi);
              item.getTimeBegin=aDate.getTime();
@@ -77,7 +77,6 @@
              var end  = parseInt(item.getTimeEnd)/60000;
 
              item.cellMap=mapCell({type:'event', value:item, 'begin':begin, 'end':end });
-
            }
         };
 
@@ -126,8 +125,10 @@
                         buffer[ii]= mapCell({type: 'corner'})
                      } 
                      else {
-                        buffer[ii]=mapCell({type:'slices', value:compressHours[ii-1]});
-
+                        var curr = compressHours[ii-1]/60000;
+                        var end = compressHours[ii]/60000;
+                        var delta = (end-curr);
+                        buffer[ii]=mapCell({type:'slices', value:compressHours[ii-1], 'width':delta});
                      }
                   }
                   for(var jj=0;jj<compressColumns.length+1;jj++) {
@@ -142,10 +143,14 @@
                 } 
 
                 var delta  = parseInt(compressHours[parseInt(i)+1]-compressHours[i])/60000;
-                buffer[(parseInt(i)+1)+((compressColumns.length)*(parseInt(j)+1))]=mapCell({type:'none' , value:delta});
+                buffer[(parseInt(i)+1)+((compressHours.length+1)*(parseInt(j)+1))]=mapCell({type:'none' , value:delta});
 
             }
         }
+
+
+
+
         for(var key in slots) {
           var item = slots[key]; 
           if(item.date == currentDay ) {
@@ -161,10 +166,71 @@
           }
         }
 
+
+        this.gridBuffer = buffer;
+
+        var dateTodayNow = new Date();
+        var thresholdHour = dateTodayNow.getTime()-(1000*60*60); // go back one hour
+        var thresholdHourNow = dateTodayNow.getTime();
+        if(dateTodayNow.getDate()==parseInt(currentDay.split('-')[2])) { 
+        //  this.bufferStrip(thresholdHour, thresholdHourNow, compressHours.length+1,  compressColumns.length+1);
+        }
+
         this.gridBuffer = buffer.join("");
+
         this.generateDivs(compressHours.length);
 
   }, 
+
+
+  bufferStrip: function (dateTimeThresholdToCut, dateTimeNow, lenCol, lenRows) { 
+
+  // Example, if cols = 3 we have in fact lines of 4 chars because 
+  // the prior algorithm adds a first column for the sake of hours 
+  // reference. 
+
+  var i=0,j=0;
+  var cutChars = false;
+  var buffer2 = '';
+  var collectBuffer = [];
+  var one= true;
+  var time_start=0; var time_end=0;
+
+  
+  for(var row = 0; row<lenRows; row++) {
+      for (var col = 0; col<lenCol; col++) {
+          var indexInline = col+(row*lenCol);
+          var electChar = this.gridBuffer[indexInline]; 
+          charToElement[electChar].flagToday = true;
+          var currEl = charToElement[electChar];
+          if(row>0&&col>0) {
+              var currBegin = currEl.begin; // example 840 mins 
+                // dateTimeThresholdToCut = 360 min  = 6AM 
+
+              if(currBegin<dateTimeThresholdToCut/60000) { 
+                cutChars=true;  
+                time_start = parseInt(currEl.begin);
+                time_end = parseInt(currEl.end);
+
+              } else { 
+                  if(one==true && collectBuffer!='') { 
+                    one=false;
+                    var from = collectBuffer.length-this.gridCols-1;
+                    collectBuffer = collectBuffer.substring(from,collectBuffer.length);
+                    for(var cB=0;cB<collectBuffer.length;cB++) { 
+                          charToElement[collectBuffer[cB]].flag=true;
+                    } 
+                    buffer2+=collectBuffer;
+                  }     
+              }  
+          }
+      }
+  }
+
+
+  this.gridBuffer=buffer2;  
+
+  },
 
   generateDivs: function (len) { 
 
@@ -245,7 +311,7 @@
 
         if(probeElement.type == 'slices') { 
             var hour = probeElement.value;
-            var delta = probeElement.height;
+            var delta = probeElement.width;
             if(!delta) { delta=these.chunkHourSpace; } 
             $(this).addClass('innerHour');
             var localWidth='50px';
