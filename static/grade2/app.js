@@ -7,7 +7,9 @@
   descricao : new Array(),
   gridCols: 0, 
   gridBuffer: null, 
+  rawBuffer: null, 
   local : new Array(),
+  flipMode : true,
 
   fixScaleHeight : function (dd) {  
   return parseInt(dd*this.ratioForHeight);
@@ -49,36 +51,59 @@
              var bDate = new Date(aDate.getTime() + c20*60000);
              item.getTimeEnd =bDate.getTime();
 
-             var key=""+item.getTimeBegin;
-             if(!eventsByHours[key]) {
-                eventsByHours[key] = [];
-                hours.push(key);
+/*
+             var processEvent=true;  
+             var cropNow = true;
+
+             if(cropNow) { 
+               var dateTodayNow = new Date();
+               var pastOne = dateTodayNow.getTime()-(1000*60*60); // go back one hour
+               var justNow = dateTodayNow.getTime();
+         
+               if(item.getTimeEnd<pastOne) {
+                    processEvent=false;
+               } else { 
+                   if(item.getTimeBegin<=pastOne) {
+                        flagPastHour = item.getTimeBegin; 
+                        item.getTimeBegin=pastOne;
+                        item.flag=true; // so we can inflate the delta height 
+                   }
+               }
              }
-             eventsByHours[key].push(item);
-             hours.push(key);
- 
-             var key=""+item.getTimeEnd;
-             if(!eventsByHours[key]) {
-               eventsByHours[key] = [];
-               hours.push(key);
-             }
-             eventsByHours[key].push(item);
+*/
 
-             var roomKey = ""+item.room;
-             if(!eventsByColumn[roomKey]) {
-               eventsByColumn[roomKey]=[];
-               columns.push(roomKey);
-             }
+//             if(processEvent) {
 
-             eventsByColumn[roomKey].push(item);
+                 var key=""+item.getTimeBegin;
+                 if(!eventsByHours[key]) {
+                    eventsByHours[key] = [];
+                    hours.push(key);
+                 }
+                 eventsByHours[key].push(item);
+                 hours.push(key);
+     
+                 var key=""+item.getTimeEnd;
+                 if(!eventsByHours[key]) {
+                   eventsByHours[key] = [];
+                   hours.push(key);
+                 }
+                 eventsByHours[key].push(item);
 
-             item.type ='event';
-             item.descricao = item.title;
-             var begin  = parseInt(item.getTimeBegin)/60000;
-             var end  = parseInt(item.getTimeEnd)/60000;
+                 var roomKey = ""+item.room;
+                 if(!eventsByColumn[roomKey]) {
+                   eventsByColumn[roomKey]=[];
+                   columns.push(roomKey);
+                 }
 
-             item.cellMap=mapCell({type:'event', value:item, 'begin':begin, 'end':end });
+                 eventsByColumn[roomKey].push(item);
 
+                 item.type ='event';
+                 item.descricao = item.title;
+                 var begin  = parseInt(item.getTimeBegin)/60000;
+                 var end  = parseInt(item.getTimeEnd)/60000;
+
+                 item.cellMap=mapCell({type:'event', value:item, 'begin':begin, 'end':end });
+   //           } 
 
            }
         };
@@ -119,7 +144,6 @@
 
         var buffer = [];
 
-        var modeFlip = true ; 
 
         for(var i in compressHours) {
             for(var j in compressColumns) {
@@ -139,10 +163,10 @@
                         var delta = (end-curr);
                         
                         var index = jj;
-                        if(modeFlip) {
+                        if(this.flipMode) {
                             index= (parseInt(jj))*(compressColumns.length+1);
                         }
-                        buffer[index]=mapCell({type:'slices', value:list[jj-1], 'width':delta});
+                        buffer[index]=mapCell({type:'slices', value:list[jj-1], endHour:list[jj], 'width':delta});
                      }
                   }
 
@@ -153,7 +177,7 @@
                         } 
                         else {
                           var index = (parseInt(jj))*(compressHours.length+1); 
-                          if(modeFlip) { 
+                          if(this.flipMode) { 
                               index=jj;
                           }
 
@@ -162,7 +186,7 @@
                   }
                 }
                 var delta  = parseInt(compressHours[parseInt(i)+1]-compressHours[i])/60000;
-                if(!modeFlip) { 
+                if(!this.flipMode) { 
                   buffer[(parseInt(i)+1)+((compressHours.length+1)*(parseInt(j)+1))]=mapCell({type:'none' , value:delta});
                 } else {
                   buffer[(parseInt(j)+1)+((compressColumns.length+1)*(parseInt(i)+1))]=mapCell({type:'none', value:delta});
@@ -179,9 +203,10 @@
               for (k in compressHours) {
                 var curr = compressHours[k];
                 if (curr >= item.getTimeBegin && curr < item.getTimeEnd) {
-                   if(!modeFlip) {
+                   if(!this.flipMode) {
                       buffer[((parseInt(indexForColumn)+1)*(compressHours.length+1))+(parseInt(k)+1)]=item.cellMap;
                    } else {
+
                    //   ( (parseInt(k)+1) * compressHours.length+1 ) + parseInt(indexForColumn)+1)
                       buffer[(compressColumns.length+1)*(parseInt(k)+1)+(parseInt(indexForColumn)+1)]=item.cellMap;
                    }
@@ -191,22 +216,21 @@
         }
 
 
-        this.gridBuffer = buffer;
+        this.rawBuffer = buffer;
 
         var dateTodayNow = new Date();
-        var thresholdHour = dateTodayNow.getTime()-(1000*60*60); // go back one hour
-        var thresholdHourNow = dateTodayNow.getTime();
+        var hourPast = dateTodayNow.getTime()-(1000*60*60); // go back one hour
+        var hourNow = dateTodayNow.getTime();
         if(dateTodayNow.getDate()==parseInt(currentDay.split('-')[2])) { 
-        //  this.bufferStrip(thresholdHour, thresholdHourNow, compressHours.length+1,  compressColumns.length+1);
+           this.bufferStrip(hourPast, hourNow, compressColumns.length+1, compressHours.length+1);
         }
 
-        this.gridBuffer = buffer.join("");
-
+        this.gridBuffer = this.rawBuffer.join("");
         var len = compressHours.length;
-        if(modeFlip) {
+        if(this.flipMode) {
             len = compressColumns.length;
         } 
-        this.generateDivs(len, modeFlip);
+        this.generateDivs(len);
 
   }, 
 
@@ -219,48 +243,89 @@
 
   var i=0,j=0;
   var cutChars = false;
-  var buffer2 = '';
+  var buffer2 = [];
   var collectBuffer = [];
   var one= true;
   var time_start=0; var time_end=0;
+  var counter = 0;
+      var processLater = false; 
+          var bottomCrop = null;
 
-  
   for(var row = 0; row<lenRows; row++) {
+
+      var processRow = false; 
+
       for (var col = 0; col<lenCol; col++) {
+
           var indexInline = col+(row*lenCol);
-          var electChar = this.gridBuffer[indexInline]; 
+
+          var electChar = this.rawBuffer[indexInline]; 
+
+
           charToElement[electChar].flagToday = true;
+
           var currEl = charToElement[electChar];
-          if(row>0&&col>0) {
-              var currBegin = currEl.begin; // example 840 mins 
-                // dateTimeThresholdToCut = 360 min  = 6AM 
 
-              if(currBegin<dateTimeThresholdToCut/60000) { 
-                cutChars=true;  
-                time_start = parseInt(currEl.begin);
-                time_end = parseInt(currEl.end);
+          if(row == 0 ) { 
+              buffer2[counter++]=electChar;
+          }
 
-              } else { 
-                  if(one==true && collectBuffer!='') { 
-                    one=false;
-                    var from = collectBuffer.length-this.gridCols-1;
-                    collectBuffer = collectBuffer.substring(from,collectBuffer.length);
-                    for(var cB=0;cB<collectBuffer.length;cB++) { 
-                          charToElement[collectBuffer[cB]].flag=true;
-                    } 
-                    buffer2+=collectBuffer;
-                  }     
-              }  
+          if(row>0) {
+
+              var currBegin = currEl.type; 
+              if(currEl.type == 'slices') { 
+                    if(currEl.value<dateTimeThresholdToCut&&currEl.endHour>dateTimeThresholdToCut&&currEl.endHour<=dateTimeNow) {
+                        processRow = true; 
+                        bottomCrop = currEl.endHour;
+                        currEl.value = dateTimeThresholdToCut;
+
+                        currEl.width=null;
+                        buffer2[counter++]=electChar;
+                        currEl.flag=true;
+                  
+                    }
+              }
+
+              if(processLater) {
+                  buffer2[counter++]=electChar;
+              } 
+
+              if(processRow) { 
+                  if(currEl.type=='none') {
+                       buffer2[counter++]=electChar;
+                       currEl.delta=dateTimeThresholdToCut/60000;
+                       currEl.flag=true;
+
+                  }
+                  if(currEl.type=='event') {
+                       if(currEl.end<parseInt(bottomCrop/60000)) {
+                           currEl.begin=currEl.end;
+                       }
+                       else { 
+                           currEl.begin=parseInt(bottomCrop/60000);
+                       }
+                       currEl.flag=true;
+                       buffer2[counter++]=electChar;
+
+                  } 
+                  if(col==lenCol-1) {
+                      processRow=false;
+                      processLater = true;
+
+                  }
+              }
+
+
           }
       }
   }
 
 
-  this.gridBuffer=buffer2;  
+  this.rawBuffer=buffer2;  
 
   },
 
-  generateDivs: function (len, modeFlip) { 
+  generateDivs: function (len) { 
 
     var buffer = this.gridBuffer; 
     var cols   = len;
@@ -273,14 +338,13 @@
     cssWidth = parseInt(parseInt(document.getElementById(cName).offsetWidth-50)/cols);
     cssHeight = parseInt(parseInt(document.getElementById(cName).offsetHeight-650)/cols);
     
-
     var uniqueClassName = 'inner'+parseInt(Math.random()*1000);
-
     if(buffer.length>cols+1) { 
       grid(buffer, cols+1, cName, uniqueClassName);
     } 
     var proposedHeight=0;
     var these = this;
+
     $('.'+uniqueClassName).each(function() { 
       var probeElement = charToElement[$(this).attr('id')];
 
@@ -293,11 +357,9 @@
             var delta = probeElement.end-probeElement.begin;
 
             var addStyle='';
-
             if(probeElement.flag) { 
                 delta=delta+these.chunkHourSpace;
-                addStyle+='background:rgb(0,0,70);color:white';
-                //marcio
+                addStyle+='background:rgb(0,0,170);color:white';
             } 
 
             var dateTodayNow = new Date();
@@ -311,11 +373,7 @@
                 } 
             }
 
-            if(el.descricao.indexOf('(*)')>-1) { 
-                addStyle='background:-moz-linear-gradient( 0deg, rgb(150,30,30), rgb(60,30,30), rgb(60,30,30));';
-            } 
-
-            if(!modeFlip) {
+            if(!these.flipMode) {
               $(this).attr("style",';width:'+these.fixScaleWidth(delta)+'px;height:'+cssHeight+'px;');
             } else { 
               $(this).attr("style",';width:'+cssWidth+'px;height:'+these.fixScaleHeight(delta)+'px;');
@@ -332,7 +390,7 @@
             } 
             //alert(delta);
 
-            if(!modeFlip) {
+            if(!these.flipMode) {
               $(this).attr("style",';width:'+these.fixScaleWidth(delta)+'px;height:'+cssHeight+'px;');
               $(this).addClass('innerNone');
             } else { 
@@ -350,7 +408,7 @@
             var delta = probeElement.width;
             if(!delta) { delta=these.chunkHourSpace; } 
 
-            if(!modeFlip) {
+            if(!these.flipMode) {
                 $(this).addClass('innerHour');
             } else { 
                 $(this).addClass('innerHourHor');
@@ -371,7 +429,7 @@
                 delta=these.chunkHourSpace;
             } 
             //$(this).attr("style",'width:'+localWidth+';height:'+these.fixScaleHeight(delta)+'px;');
-            if(!modeFlip) {
+            if(!these.flipMode) {
               $(this).attr("style",'width:'+these.fixScaleWidth(delta)+';height:'+localHeight+'px;');
             } else { 
               $(this).attr("style",'width:'+localWidth+';height:'+these.fixScaleHeight(delta)+'px;');
@@ -386,7 +444,7 @@
             var localWidth='50px';
 
             $(this).addClass('innerHeader');
-            if(!modeFlip) {
+            if(!these.flipMode) {
                 $(this).attr("style",'width:'+localWidth+'px;');
             } else { 
                 $(this).attr("style",'width:'+cssWidth+'px;');
