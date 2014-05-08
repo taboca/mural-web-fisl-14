@@ -69,6 +69,7 @@
                eventsByColumn[roomKey]=[];
                columns.push(roomKey);
              }
+
              eventsByColumn[roomKey].push(item);
 
              item.type ='event';
@@ -77,6 +78,8 @@
              var end  = parseInt(item.getTimeEnd)/60000;
 
              item.cellMap=mapCell({type:'event', value:item, 'begin':begin, 'end':end });
+
+
            }
         };
 
@@ -132,13 +135,11 @@
                      }
                   }
                   for(var jj=0;jj<compressColumns.length+1;jj++) {
-                     //alert((parseInt(jj)+1)*(compressHours.length));
                         if(jj==0) {
                         } 
                         else {
                            buffer[(parseInt(jj))*(compressHours.length+1)]=mapCell({type:'header', value:compressColumns[jj-1]});
                         }
-
                   }
                 } 
 
@@ -339,7 +340,7 @@
             var room = probeElement.value;
             $(this).addClass('innerHeader');
             $(this).attr("style",'width:'+localWidth+'px;');
-            $(this).html('<div class="innerInnerHeader">'+room+'</div>');
+            $(this).html('<div class="innerInnerHeader">'+ util_roomNameReplacer[room]+'</div>');
         } 
 
         if(probeElement.type == 'corner') { 
