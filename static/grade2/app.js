@@ -514,7 +514,7 @@ function doFilter(str, authorContainer) {
     cor1 = parseInt(Math.random()*155);
     cor2 = parseInt(Math.random()*155);
     cor3 = parseInt(Math.random()*155);
-    htmlMarkup = '<span class="zone" style="background-color:rgb('+cor1+','+cor2+','+cor3+');">/</span><span class="author" s>'+authorProposal+'</span><br>';
+    htmlMarkup = '<span class="zone" style="display:inline-block;background-color:rgb('+cor1+','+cor2+','+cor3+');"></span><span class="author" >'+authorProposal+'</span><br>';
     var gg = 200;
     for (var i=0;i<s.length;i++) { 
         var el = s[i];
