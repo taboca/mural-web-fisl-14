@@ -1,5 +1,6 @@
 body { 
  padding:0;margin:0;
+ background:#333;
 } 
 
 .gv { 
@@ -16,30 +17,30 @@ body {
 } 
 
 /*
-  background:rgb(70,70,70);
+  background:rgb(50,50,50);
 
   */
 .innerInnerInnerCell { 
   word-wrap:break-word;
-  width:100px;
+  width:100%;
+  padding:4px;
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
 }
 
 .innerInnerCell { 
-  margin-top:2px;
-  padding:10px;
-  font-size:10px;
+  font-size:12px;
   overflow:hidden;
   font-family:verdana;
-  background: -moz-linear-gradient( 0deg,  rgb(40,40,40),rgb(70,70,70) );
+  border:1px solid #222;
+  background: -moz-linear-gradient( 90deg,  rgb(40,40,40), rgb(40,40,40), rgb(40,40,40), rgb(50,50,50) );
   height:100%;
 
 } 
 
 .innerNoneHor { 
   background: -moz-linear-gradient( 90deg, rgba(5,5,5,.2),  rgba(255,255,255,0));
+  background: -moz-linear-gradient( 90deg,  #222, #222, #222, #222, #222, #333 );
 } 
-
-
 
 .innerNone { 
   background: -moz-linear-gradient( 0deg, rgba(5,5,5,.2),  rgba(255,255,255,0));
@@ -51,8 +52,13 @@ body {
 } 
 
 .innerHourHor { 
-  background: -moz-linear-gradient( 90deg, rgba(5,5,5,.2), rgba(255,255,255,0), rgba(255,255,255,0));
+  background: -moz-linear-gradient( 90deg, rgba(5,5,5,.2), rgba(255,255,255,0) );
+  background: -moz-linear-gradient( 90deg,  #222, #222, #222, #222, #222, #333 );
   text-align:center;
+  border-top:1px solid black;
+  color:white;
+  padding:5px;
+   -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
 } 
 
 .innerInnerHour { 
@@ -61,22 +67,32 @@ body {
 
 .innerHeader { 
    width:50px; 
-   background:white;
    overflow:hidden;
 } 
  
 .innerInnerHeader { 
   padding:.5em;
   padding-left:1em;
+  font-family:arial;
   margin-left:2px;
   margin-bottom:2px;
   font-weight:bold;
   font-size:18px;
   text-align:center;
-  color:black;
+  color:gray;
 } 
 
 .innerInnerCorner { 
   margin:.5em;
 } 
 
+.author { 
+   padding:3px;vertical-align:top;font-size:8px;white-space:nowrap;margin-right:1em;
+font-family:verdana;
+}
+
+.zone {
+   vertical-align:top;
+font-size:8px;
+
+}

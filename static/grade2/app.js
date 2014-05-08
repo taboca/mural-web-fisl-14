@@ -10,6 +10,7 @@
   rawBuffer: null, 
   local : new Array(),
   flipMode : true,
+  candidates: [],
 
   fixScaleHeight : function (dd) {  
   return parseInt(dd*this.ratioForHeight);
@@ -25,12 +26,20 @@
   },
 
 
-  start : function (slots, rooms, currentDay) {
+  start : function (slots, rooms, authors, currentDay) {
 
         var eventsByHours = [];
         var eventsByColumn = [];
         var hours = [];
         var columns = [];
+
+        for(var key in authors) {
+           var item = authors[key];
+           if(!this.candidates[item.candidate]) {
+               this.candidates[item.candidate] = [];
+           }
+           this.candidates[item.candidate].push(item.name);
+        }
 
         for(var key in slots) {
 
@@ -50,29 +59,6 @@
              item.getTimeBegin=aDate.getTime();
              var bDate = new Date(aDate.getTime() + c20*60000);
              item.getTimeEnd =bDate.getTime();
-
-/*
-             var processEvent=true;  
-             var cropNow = true;
-
-             if(cropNow) { 
-               var dateTodayNow = new Date();
-               var pastOne = dateTodayNow.getTime()-(1000*60*60); // go back one hour
-               var justNow = dateTodayNow.getTime();
-         
-               if(item.getTimeEnd<pastOne) {
-                    processEvent=false;
-               } else { 
-                   if(item.getTimeBegin<=pastOne) {
-                        flagPastHour = item.getTimeBegin; 
-                        item.getTimeBegin=pastOne;
-                        item.flag=true; // so we can inflate the delta height 
-                   }
-               }
-             }
-*/
-
-//             if(processEvent) {
 
                  var key=""+item.getTimeBegin;
                  if(!eventsByHours[key]) {
@@ -354,7 +340,7 @@
     var container=document.createElement('div');
     var cName = 'container_'+Math.random();
     container.setAttribute('id', cName);
-    container.setAttribute('style','height:200%;width:1400px')
+    container.setAttribute('style','height:200%;width:1920px')
     document.getElementById('container').appendChild(container);
     cssWidth = parseInt(parseInt(document.getElementById(cName).offsetWidth-50)/cols);
     cssHeight = parseInt(parseInt(document.getElementById(cName).offsetHeight-650)/cols);
@@ -373,25 +359,29 @@
 
         if(probeElement.type=='event') { 
             var el = probeElement.value;
-            $(this).html('<div class="innerInnerCell" onclick="callCalendar(this)"><div class="innerInnerInnerCell">'+doFilter(el.descricao)+'</div></div>');
+            $(this).html('<div class="innerInnerCell" onclick="callCalendar(this)"><div class="innerInnerInnerCell">'+doFilter(el.descricao, el.candidate)+'</div></div>');
             $(this).addClass('inner');
             var delta = probeElement.end-probeElement.begin;
 
             var addStyle='';
             if(probeElement.flag) { 
                 delta=delta+these.chunkHourSpace;
-                addStyle+='background:rgb(0,0,170);color:white';
+                addStyle+='color:white;background:red';
             } 
 
             var dateTodayNow = new Date();
-            var thresholdHourNow = dateTodayNow.getHours()*60+dateTodayNow.getMinutes();
+            var thresholdHourNow = dateTodayNow.getTime();
             if(probeElement.flagToday) {
-               if(probeElement.begin<thresholdHourNow) { 
+               if(probeElement.begin<parseInt(thresholdHourNow/60000)) { 
                    addStyle='background:rgb(0,0,200);color:white ! important;';
                 }
-                if(probeElement.end<thresholdHourNow) { 
+                if(probeElement.end<parseInt(thresholdHourNow/60000)) { 
                    addStyle='background:rgb(0,70,0);color:white';
-                } 
+                } /*
+                if(probeElement.begin>parseInt(thresholdHourNow/60000)) { 
+                   addStyle='background:rgb(70,0,0);color:white';
+                } */
+                
             }
 
             if(!these.flipMode) {
@@ -506,21 +496,29 @@ function mapCell(storeElement) {
 // if you want a cloud crazy wrap spans 
 // style="float:left
 
-function doFilter(str) { 
+function doFilter(str, authorContainer) { 
     //return str; 
     $('#temp').html(str);
     var str = $('#temp').text();
     var fontSize = INNER_FONT_SIZE;
     var s = str.split(' ');
-    htmlMarkup = '';
-    var gg = 255;
+    if(authorContainer) {
+        if(typeof gridMaker.candidates[authorContainer] != 'undefined') {
+            authorProposal = gridMaker.candidates[authorContainer][0];
+        }
+    }
+    cor1 = parseInt(Math.random()*155);
+    cor2 = parseInt(Math.random()*155);
+    cor3 = parseInt(Math.random()*155);
+    htmlMarkup = '<span class="zone" style="background-color:rgb('+cor1+','+cor2+','+cor3+');">/</span><span class="author" s>'+authorProposal+'</span><br>';
+    var gg = 200;
     for (var i=0;i<s.length;i++) { 
         var el = s[i];
         if(gg>50) { 
-           gg-=30;
+           gg-=25;
         } 
         var elMark = '<span style=";color:rgb('+gg+','+gg+','+gg+');margin-right:3px;font-size:'+fontSize+'px">'+el+'</span>';
-        var elMark = '<span style="color:white;padding:.1em">'+el+'</span>';
+       // var elMark = '<span style="color:white;padding:.1em">'+el+'</span>';
         fontSize-=1;
         htmlMarkup+=elMark;
     }

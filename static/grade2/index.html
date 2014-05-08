@@ -20,7 +20,7 @@
         transport.start(function (evento) { 
             var slots = evento.slots[0].slot;
             var dayRange = "2014-05-08";
-            gridMaker.start(slots, evento.rooms[0].room, dayRange);
+            gridMaker.start(slots, evento.rooms[0].room, evento.authorship[0].person , dayRange);
 	    }); 
      }); 
     </script>

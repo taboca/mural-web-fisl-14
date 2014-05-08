@@ -25,6 +25,7 @@ var app = {
   },
 
   start : function (queryDays) {
+
     document.getElementById('container').innerHTML='';
     for(var k in queryDays) { 
         //var ddate = new Date();
